@@ -1,0 +1,3777 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-03-12T11:02:09Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/38159396",
+        "leisure": "park",
+        "name": "Bäderpark Leimen",
+        "sport": "swimming",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6907565,
+          49.3402109
+        ]
+      },
+      "id": "way/38159396"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/66363300",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "25a - b",
+        "addr:postcode": "69181",
+        "addr:street": "Stralsunder Ring",
+        "brand": "REWE",
+        "brand:wikidata": "Q16968817",
+        "brand:wikipedia": "de:Rewe (Markt)",
+        "building": "commercial",
+        "check_date:opening_hours": "2021-03-07",
+        "name": "REWE",
+        "opening_hours": "Mo-Sa 07:00-22:00",
+        "operator": "REWE",
+        "shop": "supermarket",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6827441,
+          49.3540912
+        ]
+      },
+      "id": "way/66363300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/66505837",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "27",
+        "addr:postcode": "69181",
+        "addr:street": "Stralsunder Ring",
+        "brand": "denn's Biomarkt",
+        "brand:wikidata": "Q48883773",
+        "brand:wikipedia": "de:Denn’s Biomarkt",
+        "building": "retail",
+        "building:levels": "1",
+        "name": "denn's Biomarkt",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "organic": "only",
+        "shop": "supermarket",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6816328,
+          49.3539886
+        ]
+      },
+      "id": "way/66505837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/66666338",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "10",
+        "addr:postcode": "69181",
+        "addr:street": "Stralsunder Ring",
+        "brand": "ALDI Süd",
+        "brand:wikidata": "Q41171672",
+        "brand:wikipedia": "en:Aldi",
+        "building": "commercial",
+        "name": "ALDI Süd",
+        "shop": "supermarket",
+        "source": "Bing 2012",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6805893,
+          49.35517
+        ]
+      },
+      "id": "way/66666338"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/111679432",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "66",
+        "addr:street": "Bürgermeister-Weidemaier-Straße",
+        "brand": "PENNY",
+        "brand:wikidata": "Q284688",
+        "brand:wikipedia": "en:Penny (supermarket)",
+        "building": "yes",
+        "name": "PENNY",
+        "opening_hours": "Mo-Sa 08:00-22:00; Su,PH off",
+        "shop": "supermarket",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6881379,
+          49.3477699
+        ]
+      },
+      "id": "way/111679432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/114425591",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "60",
+        "addr:postcode": "69181",
+        "addr:street": "Sankt Ilgener Straße",
+        "brand": "EDEKA",
+        "brand:wikidata": "Q701755",
+        "brand:wikipedia": "de:Edeka",
+        "building": "retail",
+        "building:levels": "1",
+        "name": "EDEKA",
+        "opening_hours": "Mo-We 08:00-21:00; Th-Sa 08:00-22:00",
+        "roof:levels": "0",
+        "roof:shape": "double_saltbox",
+        "shop": "supermarket",
+        "source": "HiRes aerial imagery",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6817284,
+          49.3465671
+        ]
+      },
+      "id": "way/114425591"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/122520015",
+        "amenity": "kindergarten",
+        "name": "Nikolaus-Lenau-Haus",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6729279,
+          49.344587
+        ]
+      },
+      "id": "way/122520015"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/132654971",
+        "leisure": "park",
+        "name": "Menzerpark",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6934131,
+          49.3466339
+        ]
+      },
+      "id": "way/132654971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/136399229",
+        "leisure": "playground",
+        "max_age": "12",
+        "name": "Kastanienbuckel",
+        "opening_hours": "08:00-20:00",
+        "source:geometry": "HiRes aerial imagery",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.723464,
+          49.3558462
+        ]
+      },
+      "id": "way/136399229"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/172428675",
+        "access": "yes",
+        "barrier": "fence",
+        "leisure": "playground",
+        "name": "Unterwegs mit dem Sternenschiff",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6697388,
+          49.3440514
+        ]
+      },
+      "id": "way/172428675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/172510621",
+        "leisure": "playground",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.671763,
+          49.3504378
+        ]
+      },
+      "id": "way/172510621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/172510624",
+        "leisure": "garden",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6722088,
+          49.3458663
+        ]
+      },
+      "id": "way/172510624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/172510625",
+        "leisure": "garden",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6721211,
+          49.3459514
+        ]
+      },
+      "id": "way/172510625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/172510626",
+        "leisure": "playground",
+        "max_age": "12",
+        "name": "Welfenallee",
+        "opening_hours": "08:00-20:00",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6747436,
+          49.3477163
+        ]
+      },
+      "id": "way/172510626"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/178498351",
+        "access": "yes",
+        "leisure": "playground",
+        "name": "Schützenstraße",
+        "opening_hours": "8:00-20:00",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6674596,
+          49.3298457
+        ]
+      },
+      "id": "way/178498351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/180696035",
+        "addr:housenumber": "19",
+        "addr:postcode": "69181",
+        "addr:street": "Weberstraße",
+        "building": "yes",
+        "name": "Sailer",
+        "shop": "bakery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6724904,
+          49.3346514
+        ]
+      },
+      "id": "way/180696035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/181272368",
+        "leisure": "playground",
+        "name": "Klostergarten",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.674676,
+          49.33636
+        ]
+      },
+      "id": "way/181272368"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/183503607",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "1",
+        "addr:postcode": "69181",
+        "addr:street": "In der Heidelslach",
+        "addr:suburb": "St. Ilgen",
+        "brand": "PENNY",
+        "brand:wikidata": "Q284688",
+        "building": "retail",
+        "name": "PENNY",
+        "shop": "supermarket",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6721008,
+          49.3279431
+        ]
+      },
+      "id": "way/183503607"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/183992110",
+        "amenity": "kindergarten",
+        "name": "Comenius",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6781932,
+          49.3535804
+        ]
+      },
+      "id": "way/183992110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184046446",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "63",
+        "addr:postcode": "69181",
+        "addr:street": "Bahnhofstraße",
+        "brand": "Netto Marken-Discount",
+        "brand:wikidata": "Q879858",
+        "brand:wikipedia": "de:Netto Marken-Discount",
+        "building": "supermarket",
+        "name": "Netto Marken-Discount",
+        "opening_hours": "Mo-Sa 07:00-21:00; PH off",
+        "shop": "supermarket",
+        "source": "HiRes aerial imagery",
+        "website": "https://www.netto-online.de/filialen/leimen/bahnhofstrasse-63/8148",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6693224,
+          49.3426023
+        ]
+      },
+      "id": "way/184046446"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184046468",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "platform",
+        "lit": "yes",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source": "HiRes aerial imagery",
+        "tactile_paving": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6683429,
+          49.3419401
+        ]
+      },
+      "id": "way/184046468"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184046477",
+        "area": "yes",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "source": "HiRes aerial imagery",
+        "tactile_paving": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6693545,
+          49.3412614
+        ]
+      },
+      "id": "way/184046477"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184046480",
+        "area": "yes",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source": "HiRes aerial imagery",
+        "tactile_paving": "yes",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6684547,
+          49.3420539
+        ]
+      },
+      "id": "way/184046480"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184046488",
+        "area": "yes",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "source": "HiRes aerial imagery",
+        "tactile_paving": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6692561,
+          49.3413167
+        ]
+      },
+      "id": "way/184046488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184046492",
+        "area": "yes",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "source": "HiRes aerial imagery",
+        "tactile_paving": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6684714,
+          49.3421193
+        ]
+      },
+      "id": "way/184046492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184046505",
+        "alt_name": "Bertha-Benz-Weg",
+        "leisure": "playground",
+        "max_age": "12",
+        "name": "Der unbekannte Planet",
+        "opening_hours": "08:00-20:00",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6707711,
+          49.3419308
+        ]
+      },
+      "id": "way/184046505"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184092425",
+        "addr:city": "Leimen",
+        "addr:housenumber": "6-8",
+        "addr:postcode": "69181",
+        "addr:street": "Ferdinand-Porsche-Straße",
+        "brand": "Mix Markt",
+        "brand:wikidata": "Q327854",
+        "brand:wikipedia": "de:Mix Markt",
+        "building": "retail",
+        "email": "mixmarkt56@monolith-gruppe.com",
+        "fax": "+49 6224 148912",
+        "name": "Mix Markt",
+        "opening_hours": "Mo-Sa 09:00-20:00; Su,PH off",
+        "operator": "Viktor Ullman",
+        "phone": "+49 6224 148911",
+        "shop": "supermarket",
+        "source:geometry": "Maxar Premium Imagery",
+        "website": "https://www.mixmarkt.eu/de/germany/maerkte/56/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6787245,
+          49.3434622
+        ]
+      },
+      "id": "way/184092425"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184092507",
+        "barrier": "fence",
+        "leisure": "playground",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6761154,
+          49.338087
+        ]
+      },
+      "id": "way/184092507"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184092509",
+        "barrier": "fence",
+        "leisure": "playground",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6737519,
+          49.3436835
+        ]
+      },
+      "id": "way/184092509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/184819302",
+        "access": "yes",
+        "leisure": "playground",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6692406,
+          49.3506572
+        ]
+      },
+      "id": "way/184819302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/186240081",
+        "amenity": "kindergarten",
+        "name": "Pestalozzi-Kindergarten",
+        "source": "HiRes aerial imagery",
+        "website": "http://www.pestalozzi-kiga.de",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6734364,
+          49.3341578
+        ]
+      },
+      "id": "way/186240081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/187903535",
+        "leisure": "playground",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6687628,
+          49.3458411
+        ]
+      },
+      "id": "way/187903535"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/192452597",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "20",
+        "addr:postcode": "69181",
+        "addr:street": "Wilhelm-Haug-Straße",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6852646,
+          49.3461278
+        ]
+      },
+      "id": "way/192452597"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/193501318",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "29",
+        "addr:postcode": "69181",
+        "addr:street": "Stralsunder Ring",
+        "brand": "Lidl",
+        "brand:wikidata": "Q151954",
+        "brand:wikipedia": "en:Lidl",
+        "building": "commercial",
+        "building:levels": "1",
+        "name": "Lidl",
+        "opening_hours": "Mo-Sa 07:00-21:00",
+        "shop": "supermarket",
+        "source": "Bing 2012",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6812356,
+          49.3539841
+        ]
+      },
+      "id": "way/193501318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/193584840",
+        "access": "yes",
+        "leisure": "playground",
+        "name": "Spuk im Wald",
+        "source:geometry": "HiRes aerial imagery",
+        "toilets": "yes",
+        "wheelchair": "limited",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7058019,
+          49.3535383
+        ]
+      },
+      "id": "way/193584840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/203507218",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6657143,
+          49.3193118
+        ]
+      },
+      "id": "way/203507218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/220882649",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "1",
+        "addr:postcode": "69181",
+        "addr:street": "Am Stadtpark",
+        "amenity": "kindergarten",
+        "building": "house",
+        "name": "Ludwig-Uhland-Kindergarten",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6861896,
+          49.3420694
+        ]
+      },
+      "id": "way/220882649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/220882865",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6863553,
+          49.3422692
+        ]
+      },
+      "id": "way/220882865"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/228966135",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6835005,
+          49.3518183
+        ]
+      },
+      "id": "way/228966135"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/229169130",
+        "leisure": "playground",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6823242,
+          49.3524543
+        ]
+      },
+      "id": "way/229169130"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/261562719",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Karlsruher Straße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6669197,
+          49.3480223
+        ]
+      },
+      "id": "node/261562719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/261562720",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Karlsruher Straße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6668077,
+          49.3479647
+        ]
+      },
+      "id": "node/261562720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/261562729",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "St. Ilgen Probsterwald",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6669349,
+          49.3443612
+        ]
+      },
+      "id": "node/261562729"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/261562730",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Probsterwald",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6671219,
+          49.343864
+        ]
+      },
+      "id": "node/261562730"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269775758",
+        "name": "Friedhof",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "ref:RNV:RBL": "LEFH",
+        "tram": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6934889,
+          49.3434386
+        ]
+      },
+      "id": "node/269775758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/271459236",
+        "addr:city": "Leimen",
+        "addr:housenumber": "23a",
+        "addr:postcode": "69181",
+        "addr:street": "Stralsunder Ring",
+        "brand": "dm",
+        "brand:wikidata": "Q266572",
+        "brand:wikipedia": "en:Dm-drogerie markt",
+        "building": "commercial",
+        "building:levels": "1",
+        "name": "dm",
+        "opening_hours": "Mo-Th 08:00-21:00; Fr,Sa 08:00-21:00",
+        "phone": "+49 6224 766970",
+        "ref": "530",
+        "shop": "chemist",
+        "source:geometry": "DigitalGlobe Standard Imagery",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.dm.de/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6823787,
+          49.3545044
+        ]
+      },
+      "id": "way/271459236"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336244605",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Friedhof",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6933324,
+          49.34343
+        ]
+      },
+      "id": "node/336244605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336244607",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Moltkestraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "railway": "tram_stop",
+        "ref:RNV:RBL": "LEMS",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6924802,
+          49.3453171
+        ]
+      },
+      "id": "node/336244607"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336376892",
+        "name": "Zementwerk",
+        "old_name": "Eternit",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "ref:RNV:RBL": "LEZW",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6893757,
+          49.3575586
+        ]
+      },
+      "id": "node/336376892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336376896",
+        "name": "Johann-Reidel-Straße",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "ref:RNV:RBL": "LEJR",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6892279,
+          49.3535404
+        ]
+      },
+      "id": "node/336376896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336376904",
+        "name": "Georgi-Marktplatz",
+        "old_name": "Rathausstraße",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "ref:RNV:RBL": "LEGP",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6888861,
+          49.3493074
+        ]
+      },
+      "id": "node/336376904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336376941",
+        "name": "Kurpfalz-Centrum",
+        "old_name": "Stadtmitte",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "ref:RNV:RBL": "LEKC",
+        "tram": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6894214,
+          49.3481858
+        ]
+      },
+      "id": "node/336376941"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336376951",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Kurpfalz-Centrum",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "note": "Linie 758",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6888453,
+          49.3485756
+        ]
+      },
+      "id": "node/336376951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336376955",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Kurpfalz-Centrum",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "note": "Linie 751, 757, 758",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6890476,
+          49.3488261
+        ]
+      },
+      "id": "node/336376955"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/389984752",
+        "leisure": "playground",
+        "max_age": "12",
+        "name": "Im Neurott",
+        "opening_hours": "08:00-20:00",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7535882,
+          49.3491114
+        ]
+      },
+      "id": "way/389984752"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/389984754",
+        "leisure": "playground",
+        "max_age": "12",
+        "name": "Am Römerhof",
+        "opening_hours": "08:00-20:00",
+        "source:geometry": "Bing 2012",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7580397,
+          49.3424363
+        ]
+      },
+      "id": "way/389984754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/390533633",
+        "leisure": "playground",
+        "min_age": "12",
+        "name": "Smaragdweg",
+        "opening_hours": "08:00-20:00",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7525635,
+          49.3439577
+        ]
+      },
+      "id": "way/390533633"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/390820810",
+        "leisure": "playground",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7493925,
+          49.3458874
+        ]
+      },
+      "id": "way/390820810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/390884272",
+        "leisure": "playground",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7561934,
+          49.3431529
+        ]
+      },
+      "id": "way/390884272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/390884277",
+        "leisure": "playground",
+        "max_age": "12",
+        "name": "Lindenplatz",
+        "opening_hours": "08:00-20:00",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7389309,
+          49.3386322
+        ]
+      },
+      "id": "way/390884277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/400573921",
+        "access": "yes",
+        "leisure": "playground",
+        "max_age": "12",
+        "name": "Ahornweg",
+        "opening_hours": "08:00-20:00",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7041119,
+          49.3517021
+        ]
+      },
+      "id": "way/400573921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/403738228",
+        "leisure": "playground",
+        "max_age": "12",
+        "name": "Wölfelweg",
+        "opening_hours": "08:00-20:00",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7018144,
+          49.34308
+        ]
+      },
+      "id": "way/403738228"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/404490705",
+        "leisure": "playground",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6872332,
+          49.3412545
+        ]
+      },
+      "id": "way/404490705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/406079245",
+        "access": "yes",
+        "leisure": "playground",
+        "max_age": "12",
+        "name": "Menzerpark",
+        "opening_hours": "08:00-20:00",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6930761,
+          49.3466938
+        ]
+      },
+      "id": "way/406079245"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/414707882",
+        "leisure": "playground",
+        "max_age": "12",
+        "name": "Dornierstraße",
+        "opening_hours": "08:00-20:00",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6784972,
+          49.3480307
+        ]
+      },
+      "id": "way/414707882"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/414708919",
+        "access": "yes",
+        "leisure": "playground",
+        "max_age": "12",
+        "name": "In der Warthütte",
+        "opening_hours": "08:00-20:00",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6872202,
+          49.3538767
+        ]
+      },
+      "id": "way/414708919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/446003920",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Leimen Gottlieb-Daimer-Straße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.678268,
+          49.3446349
+        ]
+      },
+      "id": "node/446003920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/446003922",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Leimen Tuchbleiche",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6822021,
+          49.3453511
+        ]
+      },
+      "id": "node/446003922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552358118",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6912748,
+          49.3429966
+        ]
+      },
+      "id": "way/552358118"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/632490437",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.75332,
+          49.3405873
+        ]
+      },
+      "id": "way/632490437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/632490503",
+        "bench": "no",
+        "bus": "yes",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6914943,
+          49.3486914
+        ]
+      },
+      "id": "way/632490503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/632490508",
+        "bench": "no",
+        "bus": "yes",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6914766,
+          49.348653
+        ]
+      },
+      "id": "way/632490508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/692700616",
+        "description": "Privates Grundstück, Betreten auf eigene Gefahr",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6878576,
+          49.3451177
+        ]
+      },
+      "id": "way/692700616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/765264126",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ochsenbacher Straße",
+        "network": "VRN",
+        "operator": "BRN",
+        "public_transport": "platform",
+        "route_ref": "757"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7535826,
+          49.3404773
+        ]
+      },
+      "id": "node/765264126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/765264127",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ochsenbacher Straße",
+        "network": "VRN",
+        "operator": "BRN",
+        "public_transport": "platform",
+        "route_ref": "757"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7531868,
+          49.340363
+        ]
+      },
+      "id": "node/765264127"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/980949876",
+        "amenity": "kindergarten",
+        "name": "Kath. Kindergarten St. Georg",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6850981,
+          49.3460315
+        ]
+      },
+      "id": "way/980949876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/982594834",
+        "amenity": "cafe",
+        "name": "Rutz",
+        "shop": "bakery",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6891489,
+          49.3490669
+        ]
+      },
+      "id": "node/982594834"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1001459968",
+        "amenity": "kindergarten",
+        "name": "Ludwig-Uhland-Kinderkrippe",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6878062,
+          49.341965
+        ]
+      },
+      "id": "way/1001459968"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1032636800",
+        "amenity": "kindergarten",
+        "denomination": "protestant",
+        "name": "Elisabeth Ding Kindergarten",
+        "religion": "christian",
+        "website": "https://www.ding-kiga.de",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6913818,
+          49.3480381
+        ]
+      },
+      "id": "way/1032636800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1032654494",
+        "amenity": "kindergarten",
+        "name": "St. Mauritius",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6925649,
+          49.3492777
+        ]
+      },
+      "id": "way/1032654494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1042698014",
+        "addr:city": "Leimen",
+        "addr:housenumber": "11a",
+        "addr:postcode": "69181",
+        "addr:street": "Tinqueux-Allee",
+        "amenity": "kindergarten",
+        "name": "Ludwig-Uhland-Kindergarten",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6882213,
+          49.3422391
+        ]
+      },
+      "id": "way/1042698014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1055201893",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6676794,
+          49.3451905
+        ]
+      },
+      "id": "way/1055201893"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1071321462",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6771836,
+          49.3433232
+        ]
+      },
+      "id": "way/1071321462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1117985406",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Leimen Tuchbleiche",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6824643,
+          49.3458107
+        ]
+      },
+      "id": "node/1117985406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1117985409",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Rathaus",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6914488,
+          49.3486529
+        ]
+      },
+      "id": "node/1117985409"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1118868451",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "5",
+        "addr:postcode": "69181",
+        "addr:street": "Marktgasse",
+        "amenity": "pharmacy",
+        "contact:phone": "+49 6224 75036",
+        "healthcare": "pharmacy",
+        "name": "Rathausapotheke",
+        "operator": "Apotheke",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6899243,
+          49.3493183
+        ]
+      },
+      "id": "node/1118868451"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864740484",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Gauangelloch Nord",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "operator": "VRN",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:1876:0:RiS",
+        "ref:IFOPT:description": "RiS Schwanen",
+        "route_ref": "757",
+        "source:position": "HiRes aerial imagery",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7522106,
+          49.3472117
+        ]
+      },
+      "id": "node/1864740484"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864740485",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Gauangelloch Nord",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "operator": "VRN",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:1876:0:RiN",
+        "ref:IFOPT:description": "RiN Gaiberg",
+        "route_ref": "757",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7523548,
+          49.3473469
+        ]
+      },
+      "id": "node/1864740485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864740486",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ochsenbach",
+        "network": "VRN",
+        "operator": "VRN",
+        "public_transport": "platform",
+        "route_ref": "757",
+        "source:position": "HiRes aerial imagery",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7390005,
+          49.338181
+        ]
+      },
+      "id": "node/1864740486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864740487",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ochsenbach",
+        "network": "VRN",
+        "operator": "VRN",
+        "public_transport": "platform",
+        "route_ref": "757",
+        "source:position": "HiRes aerial imagery",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7388093,
+          49.3381418
+        ]
+      },
+      "id": "node/1864740487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864740488",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Gauangelloch Schwanen",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:1878:0:RiN",
+        "ref:IFOPT:description": "RiN Nord",
+        "route_ref": "757",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7551162,
+          49.341913
+        ]
+      },
+      "id": "node/1864740488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864740489",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Gauangelloch Schwanen",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:1878:0:RiS",
+        "ref:IFOPT:description": "RiS Birk./Ochs. Str./Reils./Ende aus RiN",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7547746,
+          49.3419189
+        ]
+      },
+      "id": "node/1864740489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864950000",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Bürgermeister-Lingg-Straße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "HiRes aerial imagery",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6917123,
+          49.3490893
+        ]
+      },
+      "id": "node/1864950000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864950003",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Bürgermeister-Lingg-Straße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "HiRes aerial imagery",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6919087,
+          49.349077
+        ]
+      },
+      "id": "node/1864950003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864950006",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Gossenbrunnen",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7050325,
+          49.3540241
+        ]
+      },
+      "id": "node/1864950006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864950021",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Gossenbrunnen",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7033709,
+          49.3543013
+        ]
+      },
+      "id": "node/1864950021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864950024",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lingentaler Hof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7227187,
+          49.3536747
+        ]
+      },
+      "id": "node/1864950024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1864950025",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lingentaler Hof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7229085,
+          49.3538154
+        ]
+      },
+      "id": "node/1864950025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1879132393",
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Aegidius Apotheke",
+        "phone": "+49 6224 4475"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6703271,
+          49.335983
+        ]
+      },
+      "id": "node/1879132393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1896447312",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6730836,
+          49.3320795
+        ]
+      },
+      "id": "node/1896447312"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1900674326",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.672465,
+          49.33096
+        ]
+      },
+      "id": "node/1900674326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1923475833",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.672647,
+          49.3296451
+        ]
+      },
+      "id": "node/1923475833"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1944752629",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Fasanerie Kurfürstenallee",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source": "HiRes aerial imagery",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6721471,
+          49.3475241
+        ]
+      },
+      "id": "node/1944752629"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1951635360",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "3",
+        "addr:postcode": "69181",
+        "addr:street": "Philipp-Stumpf-Straße",
+        "name": "Sailer",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6711921,
+          49.3360824
+        ]
+      },
+      "id": "node/1951635360"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1954775158",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Bahnhof West",
+        "public_transport": "stop_position",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6684387,
+          49.3421124
+        ]
+      },
+      "id": "node/1954775158"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2040599008",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Leimen Friedhof",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "HiRes aerial imagery",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6931557,
+          49.3432212
+        ]
+      },
+      "id": "node/2040599008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2131996083",
+        "addr:housenumber": "4",
+        "addr:postcode": "69181",
+        "addr:street": "Hanfackerweg",
+        "amenity": "kindergarten",
+        "name": "Friedrich-Fröbel-Kindergarten Gauangelloch",
+        "website": "http://www.kindergarten-leimen.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7530186,
+          49.3411902
+        ]
+      },
+      "id": "node/2131996083"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2506193206",
+        "amenity": "cafe",
+        "name": "Bäckerei Riegler",
+        "shop": "bakery",
+        "source": "HiRes aerial imagery",
+        "wheelchair": "yes",
+        "wheelchair:description": "Barrierefrei Toilette"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6885819,
+          49.3488014
+        ]
+      },
+      "id": "node/2506193206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2517267500",
+        "brand": "Nahkauf",
+        "brand:wikidata": "Q57515238",
+        "name": "Nahkauf",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-18:00",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6891913,
+          49.3476998
+        ]
+      },
+      "id": "node/2517267500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2696629954",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Schwetzinger Straße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "note": "Bus 758, 726",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "HiRes aerial imagery",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6870715,
+          49.3513108
+        ]
+      },
+      "id": "node/2696629954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2697492094",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Schwetzinger Straße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6868509,
+          49.3512616
+        ]
+      },
+      "id": "node/2697492094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2705259326",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "20",
+        "addr:postcode": "69181",
+        "addr:street": "Turmgasse",
+        "name": "Bäckerei Simon",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6903922,
+          49.3491239
+        ]
+      },
+      "id": "node/2705259326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2860900180",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Gutenbergstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source": "Bing 2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.682706,
+          49.3439931
+        ]
+      },
+      "id": "node/2860900180"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2860900186",
+        "name": "Moltkestraße",
+        "railway": "tram_stop",
+        "ref:RNV:RBL": "LEMS",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6924631,
+          49.3454879
+        ]
+      },
+      "id": "node/2860900186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2860914819",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Bahnhof West",
+        "public_transport": "stop_position"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6683656,
+          49.3420818
+        ]
+      },
+      "id": "node/2860914819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2915823047",
+        "addr:city": "Leimen",
+        "addr:housenumber": "13",
+        "addr:postcode": "69181",
+        "addr:street": "Ochsenbacher Straße",
+        "fax": "+49 6226 990072",
+        "name": "Holzofenbäckerei Emert",
+        "opening_hours": "Mo-Fr 6:30-13:00,15:00-18:00; Sa 6:30-12:00; Su 8:00-11:00",
+        "phone": "+49 6226 2606",
+        "shop": "bakery",
+        "website": "http://www.holzofenbäckerei-emert.de/index.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7547856,
+          49.3404975
+        ]
+      },
+      "id": "node/2915823047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2996565787",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "St. Ilgen Siedlerstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6685154,
+          49.3333916
+        ]
+      },
+      "id": "node/2996565787"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2996573622",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "St. Ilgen Siedlerstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.668661,
+          49.3333923
+        ]
+      },
+      "id": "node/2996573622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2996581353",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Weberstraße",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6726471,
+          49.3301815
+        ]
+      },
+      "id": "node/2996581353"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2996581354",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Weberstraße",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6724294,
+          49.3304677
+        ]
+      },
+      "id": "node/2996581354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2998495121",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Europaplatz",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6713313,
+          49.3358354
+        ]
+      },
+      "id": "node/2998495121"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2998495122",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Europaplatz",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.67109,
+          49.3358427
+        ]
+      },
+      "id": "node/2998495122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2998495123",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Theodor Heuss Straße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6737121,
+          49.3389501
+        ]
+      },
+      "id": "node/2998495123"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3517139469",
+        "amenity": "pharmacy",
+        "contact:phone": "+49 6224 72585",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Central Apotheke",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6884714,
+          49.3488898
+        ]
+      },
+      "id": "node/3517139469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3544048212",
+        "addr:city": "Leimen",
+        "addr:country": "DE",
+        "addr:housenumber": "57",
+        "addr:postcode": "69181",
+        "addr:street": "Bahnhofstraße",
+        "addr:suburb": "St. Ilgen",
+        "indoor_seating": "yes",
+        "name": "Can's Backwaren",
+        "opening_hours": "Mo-Fr 05:00-13:00; Sa 06:00-13:00; PH,Su 07:30-11:00",
+        "outdoor_seating": "no",
+        "phone": "+49 6224 146623",
+        "shop": "bakery",
+        "website": "http://www.baeckerei-mantei.de/verkaufsstellen.html",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6688788,
+          49.341114
+        ]
+      },
+      "id": "node/3544048212"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3768997324",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Leimen Realschule",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6902659,
+          49.3424465
+        ]
+      },
+      "id": "node/3768997324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3778817423",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Gauangelloch Schwanen",
+        "note": "737, 757, 7900",
+        "public_transport": "platform",
+        "source:position": "HiRes aerial imagery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7562499,
+          49.3412053
+        ]
+      },
+      "id": "node/3778817423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3979114754",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Evangelische Kirche",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6713243,
+          49.3374043
+        ]
+      },
+      "id": "node/3979114754"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018008667",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Fasanerie Wittelsbacherallee",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6696319,
+          49.3449966
+        ]
+      },
+      "id": "node/4018008667"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018008668",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Fasanerie Wittelsbacherallee",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6697844,
+          49.3451333
+        ]
+      },
+      "id": "node/4018008668"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018008669",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Fasanerie Kurfürstenallee",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.672172,
+          49.3474527
+        ]
+      },
+      "id": "node/4018008669"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018093762",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Leimen Gottlieb-Daimer-Straße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6784137,
+          49.3445031
+        ]
+      },
+      "id": "node/4018093762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018093763",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Gutenbergstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6827881,
+          49.3440809
+        ]
+      },
+      "id": "node/4018093763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018093765",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Realschule",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6893274,
+          49.3425759
+        ]
+      },
+      "id": "node/4018093765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018093766",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Lenaustraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6745855,
+          49.3386594
+        ]
+      },
+      "id": "node/4018093766"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018093767",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Lenaustraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6746449,
+          49.3387425
+        ]
+      },
+      "id": "node/4018093767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018093768",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Moltkestraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "HiRes aerial imagery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.692469,
+          49.3453126
+        ]
+      },
+      "id": "node/4018093768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018093779",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Fasanerie Salierallee",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6745111,
+          49.3458179
+        ]
+      },
+      "id": "node/4018093779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018093780",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Fasanerie Salierallee",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6739473,
+          49.3465629
+        ]
+      },
+      "id": "node/4018093780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018093781",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "St. Ilgen Schule",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6750293,
+          49.3355185
+        ]
+      },
+      "id": "node/4018093781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018093782",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "St. Ilgen Schule",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.674908,
+          49.3360451
+        ]
+      },
+      "id": "node/4018093782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4031224497",
+        "amenity": "kindergarten",
+        "name": "Waldkindergarten Leimen",
+        "website": "https://www.postillion.org/leimen/index.shtml"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7068598,
+          49.3516365
+        ]
+      },
+      "id": "node/4031224497"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4033879178",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Kurpfalz-Centrum",
+        "public_transport": "platform",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6894422,
+          49.3489082
+        ]
+      },
+      "id": "node/4033879178"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4033879179",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Kurpfalz-Centrum",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6894912,
+          49.3489538
+        ]
+      },
+      "id": "node/4033879179"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4058915940",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Rathaus",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6913951,
+          49.3487148
+        ]
+      },
+      "id": "node/4058915940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4060635500",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Leimen Im Bubenwingert",
+        "note": "758",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6957964,
+          49.3472871
+        ]
+      },
+      "id": "node/4060635500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4060635501",
+        "bench": "no",
+        "bin": "no",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Leimen Steige",
+        "note": "758",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "HiRes aerial imagery",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7028153,
+          49.350703
+        ]
+      },
+      "id": "node/4060635501"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4081962587",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Römerstraße",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.692817,
+          49.3460992
+        ]
+      },
+      "id": "node/4081962587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4450686192",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Goethestraße",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6735097,
+          49.3419147
+        ]
+      },
+      "id": "node/4450686192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4483945634",
+        "amenity": "kindergarten",
+        "name": "Probsterwald"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6675249,
+          49.3454639
+        ]
+      },
+      "id": "node/4483945634"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4613801145",
+        "amenity": "pharmacy",
+        "contact:fax": "+49 6224 951060",
+        "contact:phone": "+49 6224 72112",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Turm Apotheke",
+        "opening_hours": "Mo-Fr 08:30-18:30; Sa 09:00-13:00",
+        "operator": "Wolfgang Müller",
+        "website": "https://www.turm-apotheke-leimen.de/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6886938,
+          49.3493615
+        ]
+      },
+      "id": "node/4613801145"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4945514308",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Stralsunder Ring",
+        "public_transport": "platform",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6822569,
+          49.3550447
+        ]
+      },
+      "id": "node/4945514308"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4945514309",
+        "brand": "Bäcker Görtz",
+        "brand:wikidata": "Q97572517",
+        "brand:wikipedia": "de:Bäcker Görtz",
+        "name": "Bäcker Görtz",
+        "opening_hours": "Mo-Sa 05:30-20:00; Su 07:30-12:00",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.682375,
+          49.3541637
+        ]
+      },
+      "id": "node/4945514309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5411029810",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "St. Ilgen Bahnhof",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6693166,
+          49.3412768
+        ]
+      },
+      "id": "node/5411029810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5442349611",
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "healthcare:speciality": "general",
+        "name": "Dr. Stefan Wagner",
+        "opening_hours": "Mo, Tu, Fr 8:00 - 11:00; We, Fr 8:00 - 11:30; Mo, Tu, Fr 15:00 - 18:00",
+        "phone": "+49 6224 77422",
+        "source": "HiRes aerial imagery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6899769,
+          49.3493312
+        ]
+      },
+      "id": "node/5442349611"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6065364289",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Leimen St. Ilgener Straße",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6874626,
+          49.3489033
+        ]
+      },
+      "id": "node/6065364289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6065364290",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Leimen St. Ilgener Straße",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6872397,
+          49.3486374
+        ]
+      },
+      "id": "node/6065364290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6328410140",
+        "drink:coffee": "yes",
+        "name": "Breiter",
+        "opening_hours": "Mo-Fr 06:00-18:00; Sa 06:00-13:00; Su 08:00-11:00",
+        "payment:cash": "yes",
+        "phone": "+49 6224 5937955",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.671606,
+          49.3358365
+        ]
+      },
+      "id": "node/6328410140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6753201191",
+        "bench": "no",
+        "bin": "no",
+        "description": "757",
+        "highway": "bus_stop",
+        "name": "Gauangelloch Birkenhof",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7582949,
+          49.332171
+        ]
+      },
+      "id": "node/6753201191"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6753201192",
+        "bench": "no",
+        "bin": "no",
+        "description": "757",
+        "highway": "bus_stop",
+        "name": "Gauangelloch Birkenhof",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7584149,
+          49.3319774
+        ]
+      },
+      "id": "node/6753201192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7555726883",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Jägerpfad",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6988595,
+          49.345863
+        ]
+      },
+      "id": "node/7555726883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7555726884",
+        "highway": "bus_stop",
+        "name": "Leimen Im Schilling",
+        "public_transport": "platform",
+        "shelter": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7003578,
+          49.3493178
+        ]
+      },
+      "id": "node/7555726884"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7556204022",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Wilhelm-Haug-Straße",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6818357,
+          49.3504328
+        ]
+      },
+      "id": "node/7556204022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7556338606",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Leimen Wilhelm-Haug-Straße",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6819678,
+          49.350371
+        ]
+      },
+      "id": "node/7556338606"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7601927355",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "St. Ilgen Bahnhof",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6691996,
+          49.3412501
+        ]
+      },
+      "id": "node/7601927355"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8201279686",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "St. Ilgen Evangelische Kirche",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6713766,
+          49.3373312
+        ]
+      },
+      "id": "node/8201279686"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8730225616",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "St. Ilgen Bahnhof West",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6684473,
+          49.3421234
+        ]
+      },
+      "id": "node/8730225616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8792327333",
+        "name": "Moltkestraße",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6925385,
+          49.3453266
+        ]
+      },
+      "id": "node/8792327333"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8797994718",
+        "name": "Kurpfalz-Centrum",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6895158,
+          49.348004
+        ]
+      },
+      "id": "node/8797994718"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10196583010",
+        "name": "Merdanem",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6890349,
+          49.3480518
+        ]
+      },
+      "id": "node/10196583010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10302186098",
+        "name": "Serpa Markt",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6738402,
+          49.3275851
+        ]
+      },
+      "id": "node/10302186098"
+    }
+  ]
+}

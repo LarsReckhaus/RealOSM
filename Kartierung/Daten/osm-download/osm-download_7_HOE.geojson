@@ -1,0 +1,1218 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-03-16T09:24:06Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/4722140",
+        "description": "Schulhofspielplatz",
+        "leisure": "playground",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.910676,
+          51.8702388
+        ]
+      },
+      "id": "relation/4722140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/41610883",
+        "addr:city": "Warendorf",
+        "addr:country": "DE",
+        "addr:housenumber": "28",
+        "addr:postcode": "48231",
+        "addr:street": "Dechant-Wessing-Straße",
+        "addr:suburb": "Hoetmar",
+        "amenity": "school",
+        "contact:email": "gs.dechantwessing@warendorf.de",
+        "contact:fax": "+49 2585 935225",
+        "contact:phone": "+49 2585 226",
+        "contact:website": "https://www.dechant-wessing-schule.de/",
+        "isced:level": "1",
+        "name": "Dechant-Wessing-Schule",
+        "operator": "Stadt Warendorf",
+        "operator:type": "public",
+        "school": "primary",
+        "school:DE": "Grundschule",
+        "wheelchair": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9108335,
+          51.8706889
+        ]
+      },
+      "id": "way/41610883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/118298704",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.941824,
+          51.8735679
+        ]
+      },
+      "id": "way/118298704"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/261899233",
+        "addr:city": "Warendorf",
+        "addr:country": "DE",
+        "addr:housenumber": "12",
+        "addr:postcode": "48231",
+        "addr:street": "Dechant-Wessing-Straße",
+        "addr:suburb": "Hoetmar",
+        "building": "retail",
+        "contact:phone": "+49 2585 9409750",
+        "contact:website": "https://www.ihr-frischmarkt.de/frischmarkt/hoetmar",
+        "name": "Ihr frischmarkt",
+        "opening_hours": "Mo-Fr 07:00-18:30; Sa 07:00-14:00",
+        "operator": "Mehmet Alptekin",
+        "shop": "supermarket",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.909183,
+          51.8714757
+        ]
+      },
+      "id": "way/261899233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/325924149",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8739062,
+          51.8664196
+        ]
+      },
+      "id": "way/325924149"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/325924150",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8740775,
+          51.8661571
+        ]
+      },
+      "id": "way/325924150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/689465708",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Raiffeisenstraße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30249:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9107213,
+          51.8727488
+        ]
+      },
+      "id": "node/689465708"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/689465713",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mitte",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14667:0:2",
+        "shelter": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9088907,
+          51.8704171
+        ]
+      },
+      "id": "node/689465713"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1105212760",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9169314,
+          51.8715549
+        ]
+      },
+      "id": "way/1105212760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1139005566",
+        "addr:city": "Hoetmar",
+        "addr:country": "DE",
+        "addr:housenumber": "8",
+        "addr:postcode": "48231",
+        "addr:street": "Rövkamp",
+        "amenity": "kindergarten",
+        "contact:email": "kita.stlambertus-warendorf@bistum-muenster.de",
+        "contact:phone": "+49 25 85 200",
+        "contact:website": "https://www.hoetmar.de/index.php/schule/lambertus",
+        "denomination": "catholic",
+        "name": "Katholische Kindertageseinrichtung St. Lambertus",
+        "operator": "Katholische Kirchengemeinde St. Bonifatius und St. Lambertus",
+        "operator:type": "religious",
+        "religion": "christian",
+        "start_date": "1965",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9097094,
+          51.8704043
+        ]
+      },
+      "id": "way/1139005566"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449310192",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mitte",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14667:0:1",
+        "shelter": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9086856,
+          51.8705664
+        ]
+      },
+      "id": "node/1449310192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449310212",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Raiffeisenstraße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30249:0",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9114252,
+          51.872787
+        ]
+      },
+      "id": "node/1449310212"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449494536",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Abzweig Holtrup",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:19047:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9083558,
+          51.8650203
+        ]
+      },
+      "id": "node/1449494536"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449494537",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Abzweig Holtrup",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:19047:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9081611,
+          51.8651338
+        ]
+      },
+      "id": "node/1449494537"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449494586",
+        "highway": "bus_stop",
+        "name": "Wendelhoff",
+        "school_bus": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9371489,
+          51.8752771
+        ]
+      },
+      "id": "node/1449494586"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521940952",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Haarbaum",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:29631:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9290778,
+          51.8528513
+        ]
+      },
+      "id": "node/3521940952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521940954",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Haarbaum",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:29631:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9292623,
+          51.8529851
+        ]
+      },
+      "id": "node/3521940954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521940955",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lütkehaus",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30154:0:1",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9218209,
+          51.856715
+        ]
+      },
+      "id": "node/3521940955"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521940957",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lütkehaus",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30154:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9216144,
+          51.856893
+        ]
+      },
+      "id": "node/3521940957"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521943902",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Roberg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30250:0:1",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9111436,
+          51.8610863
+        ]
+      },
+      "id": "node/3521943902"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521943904",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Roberg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30250:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9110547,
+          51.8612398
+        ]
+      },
+      "id": "node/3521943904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521943906",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Roberg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30250:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9111854,
+          51.8613008
+        ]
+      },
+      "id": "node/3521943906"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521943907",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Stork",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30215:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9161968,
+          51.8581023
+        ]
+      },
+      "id": "node/3521943907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521943909",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Stork",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30215:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9159368,
+          51.8582569
+        ]
+      },
+      "id": "node/3521943909"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521980882",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schulzenhof",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14333:0:2",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9070194,
+          51.8738517
+        ]
+      },
+      "id": "node/3521980882"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521980883",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schulzenhof",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14333:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9071868,
+          51.8738859
+        ]
+      },
+      "id": "node/3521980883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521980884",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wagenfeldstraße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14300:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9113761,
+          51.8680371
+        ]
+      },
+      "id": "node/3521980884"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521990198",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Grundschule",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30277:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9112786,
+          51.871073
+        ]
+      },
+      "id": "node/3521990198"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3522289190",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lentruper Weg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30248:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9170406,
+          51.8759925
+        ]
+      },
+      "id": "node/3522289190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3522289191",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lentruper Weg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30248:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9167614,
+          51.8759939
+        ]
+      },
+      "id": "node/3522289191"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3522289495",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Stellmacherei",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14273:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9138266,
+          51.8727507
+        ]
+      },
+      "id": "node/3522289495"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3522988916",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Jungmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30247:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9272212,
+          51.8864986
+        ]
+      },
+      "id": "node/3522988916"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3522988917",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Jungmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30247:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9274265,
+          51.8865174
+        ]
+      },
+      "id": "node/3522988917"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898711665",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Abzweig Wessenhorst",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14670:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8838435,
+          51.8686991
+        ]
+      },
+      "id": "node/3898711665"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898711667",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Abzweig Wessenhorst",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14670:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8836803,
+          51.8687753
+        ]
+      },
+      "id": "node/3898711667"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898711668",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Drees",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:10011:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.872674,
+          51.8661975
+        ]
+      },
+      "id": "node/3898711668"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898711669",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Drees",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:10011:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8723177,
+          51.8662563
+        ]
+      },
+      "id": "node/3898711669"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4004597298",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ferienhof",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14358:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9032759,
+          51.8826944
+        ]
+      },
+      "id": "node/4004597298"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4004597299",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ferienhof",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14358:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9031439,
+          51.8828167
+        ]
+      },
+      "id": "node/4004597299"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4004597300",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Große Farwick",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14355:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9011232,
+          51.8767249
+        ]
+      },
+      "id": "node/4004597300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4004597302",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Große Farwick",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14355:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.901034,
+          51.8768644
+        ]
+      },
+      "id": "node/4004597302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4004618903",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schulze-Langenhorst",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:12000:0:1",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9022294,
+          51.8966707
+        ]
+      },
+      "id": "node/4004618903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4004618905",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schulze-Langenhorst",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:12000:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9020761,
+          51.8968055
+        ]
+      },
+      "id": "node/4004618905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4004618906",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schulze-Selting",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14665:0:1",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9042167,
+          51.8913445
+        ]
+      },
+      "id": "node/4004618906"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4005114594",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Flaskamp",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14359:0:1",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8910092,
+          51.8866709
+        ]
+      },
+      "id": "node/4005114594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4005114595",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Flaskamp",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14359:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8908863,
+          51.8866119
+        ]
+      },
+      "id": "node/4005114595"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4005114597",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hanhoff",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:10010:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9020801,
+          51.8892283
+        ]
+      },
+      "id": "node/4005114597"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4005114599",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hanhoff",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:10010:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9021014,
+          51.889289
+        ]
+      },
+      "id": "node/4005114599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4005154092",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hagenhoff",
+        "note": "Schulbus",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14664:0:",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8820225,
+          51.8814374
+        ]
+      },
+      "id": "node/4005154092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4142527039",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Dorgeist",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14668:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9101141,
+          51.8583369
+        ]
+      },
+      "id": "node/4142527039"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4249923989",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hagenhoff",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14664:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8821201,
+          51.8814948
+        ]
+      },
+      "id": "node/4249923989"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4249923991",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kortenjan",
+        "note": "Schulbus",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8896912,
+          51.886426
+        ]
+      },
+      "id": "node/4249923991"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4249923992",
+        "bus": "yes",
+        "check_date:shelter": "2021-12-31",
+        "highway": "bus_stop",
+        "name": "Murrenhoff",
+        "note": "Schulbus",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9295183,
+          51.8672686
+        ]
+      },
+      "id": "node/4249923992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4249923995",
+        "bus": "yes",
+        "check_date:shelter": "2021-12-31",
+        "highway": "bus_stop",
+        "name": "Murrenhoff",
+        "note": "Schulbus",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9294983,
+          51.8673474
+        ]
+      },
+      "id": "node/4249923995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4249923996",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Peter",
+        "note": "Schulbus",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9522921,
+          51.8605434
+        ]
+      },
+      "id": "node/4249923996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4249923999",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Peter",
+        "note": "Schulbus",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9521216,
+          51.86058
+        ]
+      },
+      "id": "node/4249923999"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4249924000",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ruthmann",
+        "note": "Schulbus",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8841534,
+          51.8690534
+        ]
+      },
+      "id": "node/4249924000"
+    }
+  ]
+}

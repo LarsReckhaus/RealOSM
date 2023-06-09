@@ -1,0 +1,93 @@
+			{{geocodeArea:<Kartierungsort>}}->.a;  -- <Kartierungsort> = z.B. Heidelberg
+			(
+			// Apotheke:
+			nwr[amenity=pharmacy](area.a);
+
+			// Bäckerei:
+			nwr[shop=bakery](area.a);
+
+			// Bushaltestelle:
+			nwr[highway=bus_stop](area.a);
+			nwr[public_transport=platform][bus=yes](area.a);
+			nwr[highway=platform][bus=yes](area.a);
+
+			// Drogerie:
+			nwr[shop=chemist](area.a);
+
+			// Grünanlage / Park:
+			nwr[leisure=park][access!=private][access!=customers](area.a);
+			nwr[landuse=recreation_ground][access!=private](area.a);
+			nwr[leisure=recreation_ground][access!=private](area.a);
+			nwr[landuse=village_green][access!=private](area.a);
+			nwr[leisure=garden][access!=private][access!=customers][access!=permissive]["garden:type"!=residential]["garden:type"!=private][landuse!=residential](area.a);
+
+			// Grundschule:
+			nwr[amenity=school]["isced:level"=1](area.a);
+			nwr[school=elementary](area.a);
+			nwr[school=primary](area.a);
+			nwr["school:de"~"Grundschule",i](area.a);
+			nwr["school:DE"~"Grundschule",i](area.a);
+			nwr[amenity=school][name~"Grundschule",i](area.a);
+
+			// Hausarzt:
+			nwr[amenity=doctors]["healthcare:speciality"=general](area.a);
+			nwr[healthcare=doctor]["healthcare:speciality"=general](area.a);
+			nwr[amenity=clinic]["healthcare:speciality"=general](area.a);
+			nwr[healthcare=clinic]["healthcare:speciality"=general](area.a);
+
+			// Kita:
+			nwr[amenity=kindergarten][after_school!=yes](area.a);
+			nwr[amenity=childcare][after_school!=yes](area.a);
+			nwr[nursery=yes](area.a);
+			nwr[preschool=yes](area.a);
+
+			// Straßenbahnhaltestelle:
+			nwr[railway=tram_stop](area.a);	
+
+			// Spielplatz:
+			nwr[leisure=playground][access!=private][access!=customers][access!=permissive][indoor!=yes](area.a);
+
+			// Supermarkt:
+			nwr[shop=supermarket](area.a);
+			nwr[shop=health_food][brand~"Alnatura",i](area.a);
+			nwr[shop=health_food][name~"Alnatura",i](area.a);
+			nwr[shop=health_food][brand~"Denn.*s",i](area.a);
+			nwr[shop=health_food][name~"Denn.*s",i](area.a);
+			nwr[shop=health_food][brand~"Bio.*Company",i](area.a);
+			nwr[shop=health_food][name~"Bio.*Company",i](area.a);
+			nwr[shop=health_food][brand~"basic",i](area.a);
+			nwr[shop=health_food][name~"basic",i](area.a);
+			nwr[shop=health_food][brand~"Ebl.*Naturkost",i](area.a);
+			nwr[shop=health_food][name~"Ebl.*Naturkost",i](area.a);
+			nwr[shop=health_food][brand~"SuperBioMarkt",i](area.a);
+			nwr[shop=health_food][name~"SuperBioMarkt",i](area.a);
+			nwr[shop=health_food][brand~"LPG.*Biomarkt",i](area.a);
+			nwr[shop=health_food][name~"LPG.*Biomarkt",i](area.a);
+			nwr[shop=health_food][brand~"Vollcorner",i](area.a);
+			nwr[shop=health_food][name~"Vollcorner",i](area.a);
+			nwr[shop=health_food][brand~"Aleco",i](area.a);
+			nwr[shop=health_food][name~"Aleco",i](area.a);
+			nwr[shop=health_food][brand~"Naturgut",i](area.a);
+			nwr[shop=health_food][name~"Naturgut",i](area.a);
+			nwr[shop=health_food][brand~"Erdkorn",i](area.a);
+			nwr[shop=health_food][name~"Erdkorn",i](area.a);
+			nwr[shop=health_food][brand~"Vorwerk.*Podemus",i](area.a);
+			nwr[shop=health_food][name~"Vorwerk.*Podemus",i](area.a);
+			nwr[shop=health_food][brand~"Erdi",i](area.a);
+			nwr[shop=health_food][name~"Erdi",i](area.a);
+			nwr[shop=health_food][brand~"Füllhorn",i](area.a);
+			nwr[shop=health_food][name~"Füllhorn",i](area.a);
+			nwr[shop=health_food][brand~"Fuellhorn",i](area.a);
+			nwr[shop=health_food][name~"Fuellhorn",i](area.a);
+			nwr[shop=health_food][brand~"Landmann.*s",i](area.a);
+			nwr[shop=health_food][name~"Landmann.*s",i](area.a);
+			nwr[shop=health_food][brand~"Naturkind",i](area.a);
+			nwr[shop=health_food][name~"Naturkind",i](area.a);
+			nwr[shop=health_food][brand~"pro.*bio.*MARKT",i](area.a);
+			nwr[shop=health_food][name~"pro.*bio.*MARKT",i](area.a);
+			nwr[shop=health_food][brand~"TEMMA",i](area.a);
+			nwr[shop=health_food][name~"TEMMA",i](area.a);
+			nwr[shop=health_food][brand~"bioladen*",i](area.a);
+			nwr[shop=health_food][name~"bioladen*",i](area.a);
+			);
+			out center;

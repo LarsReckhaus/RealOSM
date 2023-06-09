@@ -1,0 +1,491 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-03-12T09:13:52Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/33481182",
+        "leisure": "playground",
+        "name": "Dammäckerring",
+        "source:geometry": "Bing 2012",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.794906,
+          49.3438897
+        ]
+      },
+      "id": "way/33481182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/193414920",
+        "addr:city": "Mauer",
+        "addr:country": "DE",
+        "addr:housenumber": "1",
+        "addr:postcode": "69256",
+        "addr:street": "Sandklinge",
+        "brand": "REWE",
+        "brand:wikidata": "Q16968817",
+        "brand:wikipedia": "en:REWE",
+        "building": "supermarket",
+        "name": "REWE",
+        "opening_hours": "Mo-Sa 07:00-22:00",
+        "shop": "supermarket",
+        "source:geometry": "Bing 2012",
+        "website": "https://www.rewe.de/marktseite/mauer/840308/rewe-markt-sandklinge-1/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7963064,
+          49.346636
+        ]
+      },
+      "id": "way/193414920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/247244582",
+        "addr:city": "Mauer",
+        "addr:housenumber": "11",
+        "addr:postcode": "69256",
+        "addr:street": "Kirchenstraße",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8003132,
+          49.3379997
+        ]
+      },
+      "id": "way/247244582"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/263618967",
+        "leisure": "playground",
+        "name": "Dinospielplatz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7985531,
+          49.3367459
+        ]
+      },
+      "id": "way/263618967"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320120486",
+        "addr:city": "Mauer",
+        "addr:country": "DE",
+        "addr:housenumber": "11",
+        "addr:postcode": "69256",
+        "addr:street": "Kirchenstraße",
+        "amenity": "kindergarten",
+        "denomination": "catholic",
+        "name": "Sankt Elisabeth",
+        "religion": "christian",
+        "source:geometry": "Bing 2012",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8004228,
+          49.3380296
+        ]
+      },
+      "id": "way/320120486"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/321388497",
+        "leisure": "playground",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8064493,
+          49.3360322
+        ]
+      },
+      "id": "way/321388497"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/321388498",
+        "leisure": "playground",
+        "name": "Hüttenklinge",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8010185,
+          49.3423389
+        ]
+      },
+      "id": "way/321388498"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/331153843",
+        "leisure": "playground",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7987705,
+          49.3445999
+        ]
+      },
+      "id": "way/331153843"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/492740454",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8025271,
+          49.3420025
+        ]
+      },
+      "id": "way/492740454"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/713899964",
+        "leisure": "playground",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7846198,
+          49.336049
+        ]
+      },
+      "id": "way/713899964"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1012465901",
+        "amenity": "kindergarten",
+        "denomination": "protestant",
+        "email": "ev.kindergarten-mauer@t-online.de",
+        "name": "Kindergarten Matthias Claudius",
+        "operator": "Evangelische Kirchengemeinde Maurer",
+        "operator:type": "religious",
+        "phone": "+49 6226 3806",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8000511,
+          49.3385997
+        ]
+      },
+      "id": "way/1012465901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2640322492",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mauer, Abzweigung B45",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:4721:0:RiN",
+        "ref:IFOPT:description": "RiN Alte Post",
+        "route_ref": "755 Mauer Alte Post, Heidelberg",
+        "shelter": "no",
+        "source:position": "Bing 2012",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7966831,
+          49.3363993
+        ]
+      },
+      "id": "node/2640322492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2640322493",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mauer, Abzweigung B45",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:4721:0:RiS",
+        "ref:IFOPT:description": "RiS Meckesheim",
+        "route_ref": "748; 755 Meckesheim Gasthaus Ochsen, Sinsheim",
+        "shelter": "no",
+        "source:position": "Bing 2012",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7965329,
+          49.336436
+        ]
+      },
+      "id": "node/2640322493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2739426843",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mauer, Ortsein-/ausgang",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:4711:0:RiN",
+        "ref:IFOPT:description": "RiN Reilsheim/Wiesenbach/Neckargemünd",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7960163,
+          49.3439937
+        ]
+      },
+      "id": "node/2739426843"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2739426844",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mauer, Ortsein-/ausgang",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:4711:0:RiS",
+        "ref:IFOPT:description": "RiS Alte Post",
+        "route_ref": "748 Mauer, Meckesheim, Waldwimmersbach; 755 Meckesheim, Sinsheim",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7964945,
+          49.3424002
+        ]
+      },
+      "id": "node/2739426844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2739443954",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mauer, Alte Post",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:2804:0:RiS",
+        "ref:IFOPT:description": "RiS Abzw. B 45/Ende aus RiN",
+        "route_ref": "748 Mauer Abzweigung B45, Meckesheim",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7991161,
+          49.339138
+        ]
+      },
+      "id": "node/2739443954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2739443955",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mauer Alte Post",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:2804:0:RiN",
+        "ref:IFOPT:description": "RiN Ortsein-/ausgang",
+        "route_ref": "748 Neckargemünd; 855 Bammental, Neckargemünd; 795 Waibstadt, Neckarbischofsheim",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7991628,
+          49.3390646
+        ]
+      },
+      "id": "node/2739443955"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2744344295",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mauer, Bahnhof",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:2828",
+        "route_ref": "748 Neckargemünd, Bammental Gasthaus Eisenbahn; 794 Schatthausen",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7947833,
+          49.3358662
+        ]
+      },
+      "id": "node/2744344295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3281205147",
+        "addr:city": "Mauer",
+        "addr:housenumber": "7",
+        "addr:postcode": "69256",
+        "addr:street": "Blumenstraße",
+        "name": "Bäckerei Dussinger",
+        "opening_hours": "Mo-Fr 06:00-13:00; Sa 06:00-12:00",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7928724,
+          49.3348665
+        ]
+      },
+      "id": "node/3281205147"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3309531204",
+        "name": "Bäckerei Frick",
+        "opening_hours": "Mo,Tu,Th,Fr 06:00-13:00,15:00-18:00; We 06:00-13:00; Sa 06:00-12:00; Su 08:00-11:00",
+        "shop": "bakery",
+        "website": "http://www.stadtbaeckerei-frick.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8004441,
+          49.3393493
+        ]
+      },
+      "id": "node/3309531204"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3309532172",
+        "addr:city": "Mauer",
+        "addr:housenumber": "5",
+        "addr:postcode": "69256",
+        "addr:street": "Sinsheiner Straße",
+        "amenity": "pharmacy",
+        "contact:phone": "+49 6226 9939340",
+        "dispensing": "yes",
+        "fax": "+49 6226 9939341",
+        "healthcare": "pharmacy",
+        "name": "Weinberg-Apotheke",
+        "opening_hours": "Mo-Fr 08:30-13:00,15:00-18:30; We,Sa 08:30-13:00",
+        "website": "http://www.weinberg-apotheke-mauer.de",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8005465,
+          49.3392674
+        ]
+      },
+      "id": "node/3309532172"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3350830832",
+        "description": "im REWE",
+        "name": "Frick",
+        "opening_hours": "Mo-Sa 07:00-20:00",
+        "shop": "bakery",
+        "website": "https://www.stadtbaeckerei-frick.de",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7960966,
+          49.3465191
+        ]
+      },
+      "id": "node/3350830832"
+    }
+  ]
+}

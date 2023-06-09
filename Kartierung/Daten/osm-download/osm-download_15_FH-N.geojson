@@ -1,0 +1,1448 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-03-22T10:45:38Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/10792061",
+        "leisure": "garden",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9621863,
+          51.9195146
+        ]
+      },
+      "id": "relation/10792061"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/10815352",
+        "leisure": "garden",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9751366,
+          51.927129
+        ]
+      },
+      "id": "relation/10815352"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24231930",
+        "leisure": "playground",
+        "name": "Am Weißen Kreuz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.971021,
+          51.9288555
+        ]
+      },
+      "id": "way/24231930"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31965395",
+        "leisure": "playground",
+        "name": "Wichernstraße",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9675103,
+          51.9290886
+        ]
+      },
+      "id": "way/31965395"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31965490",
+        "leisure": "park",
+        "name": "Park am alten Bahnhof",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9726294,
+          51.9249836
+        ]
+      },
+      "id": "way/31965490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/50884182",
+        "historic": "yes",
+        "leisure": "park",
+        "name": "Thingplatz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9350723,
+          51.9265548
+        ]
+      },
+      "id": "way/50884182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/85524323",
+        "leisure": "playground",
+        "name": "Im Kühl",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9664762,
+          51.9304148
+        ]
+      },
+      "id": "way/85524323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/85524324",
+        "leisure": "playground",
+        "name": "Hagebuttenweg",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9588599,
+          51.9258004
+        ]
+      },
+      "id": "way/85524324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/90446690",
+        "addr:city": "Warendorf",
+        "addr:country": "DE",
+        "addr:housenumber": "2",
+        "addr:postcode": "48231",
+        "addr:street": "Stiftsbleiche",
+        "addr:suburb": "Freckenhorst",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "lunch": "yes",
+        "max_age": "6",
+        "min_age": "1",
+        "name": "St. Magdalena",
+        "opening_hours": "Mo-Fr 07:00-17:00; Sa,Su off",
+        "operator": "Kath. Kirchgemeinde St. Bonifatius und St. Lambertus",
+        "operator:type": "religious",
+        "website": "https://kita-st-magdalena-freckenhorst.de/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9677098,
+          51.9195886
+        ]
+      },
+      "id": "way/90446690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92873812",
+        "leisure": "garden",
+        "name": "Kreuzgang",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9685783,
+          51.9206186
+        ]
+      },
+      "id": "way/92873812"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92874365",
+        "leisure": "playground",
+        "name": "Bernhard-Schulte-Straße",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9737104,
+          51.9245886
+        ]
+      },
+      "id": "way/92874365"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/93123070",
+        "leisure": "playground",
+        "playground:theme": "playground",
+        "surface": "sand",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9614887,
+          51.9271283
+        ]
+      },
+      "id": "way/93123070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/93639966",
+        "leisure": "playground",
+        "name": "Heinr.-Tenhumberg-Straße",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9692911,
+          51.9123307
+        ]
+      },
+      "id": "way/93639966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/95707251",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9598461,
+          51.9236482
+        ]
+      },
+      "id": "way/95707251"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/96137357",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9613282,
+          51.9151514
+        ]
+      },
+      "id": "way/96137357"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/96451035",
+        "leisure": "playground",
+        "name": "Negerdorf",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9548438,
+          51.922426
+        ]
+      },
+      "id": "way/96451035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/186653178",
+        "leisure": "playground",
+        "name": "Abt-Höckelmann-Weg",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9686264,
+          51.9156101
+        ]
+      },
+      "id": "way/186653178"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/262372647",
+        "addr:city": "Warendorf",
+        "addr:housenumber": "6a",
+        "addr:postcode": "48231",
+        "addr:street": "Industriestraße",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Stiftsapotheke",
+        "website": "https://www.stiftsapotheke-freckenhorst.de/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9648626,
+          51.9212866
+        ]
+      },
+      "id": "node/262372647"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/262372648",
+        "amenity": "pharmacy",
+        "contact:email": "kreuz-apotheke-waf@t-online.de",
+        "contact:phone": "+49 2581 4206",
+        "contact:website": "http://www.kreuz-apotheke-warendorf.de",
+        "healthcare": "pharmacy",
+        "name": "Kreuzapotheke",
+        "opening_hours": "Mo-Fr 08:30-12:30, 14:30-18:30; We 08:30-12:30, 15:00-18:30; Sa 09:00-13:00",
+        "operator": "Sabine Vettin",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9678839,
+          51.9222195
+        ]
+      },
+      "id": "node/262372648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/465468122",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9519155,
+          51.9176549
+        ]
+      },
+      "id": "way/465468122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/465493032",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.927066,
+          51.9202968
+        ]
+      },
+      "id": "way/465493032"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/465493034",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9265882,
+          51.920339
+        ]
+      },
+      "id": "way/465493034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/465693327",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9275618,
+          51.9049177
+        ]
+      },
+      "id": "way/465693327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/497300811",
+        "amenity": "kindergarten",
+        "name": "Naturkindergarten Freckenhorst",
+        "website": "https://naturkiga-waf.de/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9745842,
+          51.9257532
+        ]
+      },
+      "id": "node/497300811"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/573302400",
+        "leisure": "playground",
+        "name": "Berliner Straße",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9636596,
+          51.9127684
+        ]
+      },
+      "id": "way/573302400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/680966868",
+        "landuse": "village_green",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.968796,
+          51.9159839
+        ]
+      },
+      "id": "way/680966868"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/778629561",
+        "amenity": "school",
+        "contact:website": "https://everwordschule.de/",
+        "name": "Everwordgrundschule Freckenhorst",
+        "school": "primary",
+        "school:DE": "Grundschule",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9703411,
+          51.9179118
+        ]
+      },
+      "id": "way/778629561"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/780564492",
+        "amenity": "kindergarten",
+        "contact:website": "https://kita-st-josef-freckenhorst.de/",
+        "name": "Kindergarten St. Josef",
+        "wheelchair": "limited",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9666168,
+          51.9259991
+        ]
+      },
+      "id": "way/780564492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/876116659",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9522362,
+          51.9196869
+        ]
+      },
+      "id": "way/876116659"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/880700657",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9689255,
+          51.923388
+        ]
+      },
+      "id": "way/880700657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/883284953",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9620204,
+          51.9217077
+        ]
+      },
+      "id": "way/883284953"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1111860319",
+        "landuse": "village_green",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9596758,
+          51.9220466
+        ]
+      },
+      "id": "way/1111860319"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1111860321",
+        "landuse": "village_green",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9595021,
+          51.9240287
+        ]
+      },
+      "id": "way/1111860321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1111860322",
+        "landuse": "village_green",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9626698,
+          51.921975
+        ]
+      },
+      "id": "way/1111860322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1111860323",
+        "landuse": "village_green",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9617529,
+          51.9231183
+        ]
+      },
+      "id": "way/1111860323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1816883043",
+        "addr:city": "Warendorf",
+        "addr:country": "DE",
+        "addr:housenumber": "22",
+        "addr:postcode": "48231",
+        "addr:street": "Everswinkeler Straße",
+        "addr:suburb": "Freckenhorst",
+        "name": "Penny",
+        "opening_hours": "Mo- Sa 07:00-22:00",
+        "shop": "supermarket",
+        "website": "https://www.penny.de/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9623699,
+          51.9211989
+        ]
+      },
+      "id": "node/1816883043"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1816891307",
+        "addr:city": "Warendorf",
+        "addr:country": "DE",
+        "addr:housenumber": "18 a-b",
+        "addr:postcode": "48231",
+        "addr:street": "Everswinkeler Straße",
+        "addr:suburb": "Freckenhorst",
+        "brand": "Edeka",
+        "brand:wikidata": "Q701755",
+        "brand:wikipedia": "de:Edeka",
+        "name": "Edeka Hanewinkel",
+        "shop": "supermarket",
+        "website": "https://www.edeka.de/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9633411,
+          51.9208775
+        ]
+      },
+      "id": "node/1816891307"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1816892855",
+        "addr:city": "Warendorf",
+        "addr:country": "DE",
+        "addr:housenumber": "18 a-b",
+        "addr:postcode": "48231",
+        "addr:street": "Everswinkeler Straße",
+        "addr:suburb": "Freckenhorst",
+        "name": "Hosselmann",
+        "shop": "bakery",
+        "website": "https://www.hosselmann.de/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9632816,
+          51.9210104
+        ]
+      },
+      "id": "node/1816892855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1841718758",
+        "leisure": "playground",
+        "name": "Am Brüggenbach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9598701,
+          51.9236272
+        ]
+      },
+      "id": "node/1841718758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2192089511",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Römerweg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14624:0:2",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0047918,
+          51.8985599
+        ]
+      },
+      "id": "node/2192089511"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2192089512",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Römerweg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14624:0:1",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0046979,
+          51.8988777
+        ]
+      },
+      "id": "node/2192089512"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3209682970",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hagenkötter",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:19044:0:1",
+        "shelter": "no",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A19044&mode=direct&useRealtime=1",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9151463,
+          51.9246037
+        ]
+      },
+      "id": "node/3209682970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3209682971",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hagenkötter",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:19044:0:2",
+        "shelter": "no",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A19044&mode=direct&useRealtime=1",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9153817,
+          51.9246689
+        ]
+      },
+      "id": "node/3209682971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3209683161",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Therling",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14523:0:1",
+        "shelter": "yes",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14523&mode=direct&useRealtime=1",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9313876,
+          51.9223162
+        ]
+      },
+      "id": "node/3209683161"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3209683162",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Therling",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14523:0:2",
+        "shelter": "yes",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14523&mode=direct&useRealtime=1",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9310176,
+          51.9224985
+        ]
+      },
+      "id": "node/3209683162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3522988911",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Berliner Straße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30245:0:2",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9610476,
+          51.9168823
+        ]
+      },
+      "id": "node/3522988911"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3522988912",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Berliner Straße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30245:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9616907,
+          51.917424
+        ]
+      },
+      "id": "node/3522988912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3522988913",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Gronhorst",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30246:0:2",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9405034,
+          51.8989901
+        ]
+      },
+      "id": "node/3522988913"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3522988915",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Gronhorst",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:30246:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9405483,
+          51.8991921
+        ]
+      },
+      "id": "node/3522988915"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3522988920",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lembeck",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:64971:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9486876,
+          51.9063953
+        ]
+      },
+      "id": "node/3522988920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3522988921",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lembeck",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:64971:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9489667,
+          51.9064428
+        ]
+      },
+      "id": "node/3522988921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526392773",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Altenheim",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14529:0:2",
+        "shelter": "no",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14529&mode=direct&useRealtime=1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9714148,
+          51.9232357
+        ]
+      },
+      "id": "node/3526392773"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526392774",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Altenheim",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14529:0:1",
+        "shelter": "no",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14529&mode=direct&useRealtime=1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9717502,
+          51.9235394
+        ]
+      },
+      "id": "node/3526392774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526392777",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Landvolkshochschule",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14530:0:2",
+        "shelter": "yes",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14530&mode=direct&useRealtime=1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9721331,
+          51.925761
+        ]
+      },
+      "id": "node/3526392777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526392778",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Landvolkshochschule",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14530:0:1",
+        "shelter": "yes",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14530&mode=direct&useRealtime=1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9722286,
+          51.9263365
+        ]
+      },
+      "id": "node/3526392778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526392780",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mitte",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14528:0:1",
+        "shelter": "yes",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14528&mode=direct&useRealtime=1",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9664286,
+          51.920721
+        ]
+      },
+      "id": "node/3526392780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526392781",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mitte",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14528:0:2",
+        "shelter": "yes",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14528&mode=direct&useRealtime=1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9663179,
+          51.921372
+        ]
+      },
+      "id": "node/3526392781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526393196",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Westkirchener Straße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14626:0:2",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9686931,
+          51.9163359
+        ]
+      },
+      "id": "node/3526393196"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526393197",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Westkirchener Straße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14626:0:1",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9685439,
+          51.9168911
+        ]
+      },
+      "id": "node/3526393197"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526437655",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Brückenstraße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14539:0:1",
+        "shelter": "no",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14539&mode=direct&useRealtime=1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9597176,
+          51.9208415
+        ]
+      },
+      "id": "node/3526437655"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526437658",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Brückenstraße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14539:0:2",
+        "shelter": "no",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14539&mode=direct&useRealtime=1",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.958487,
+          51.9210757
+        ]
+      },
+      "id": "node/3526437658"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526437661",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Rathaus",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14527:0:1",
+        "shelter": "yes",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14527&mode=direct&useRealtime=1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9640755,
+          51.92032
+        ]
+      },
+      "id": "node/3526437661"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526437663",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Rathaus",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14527:0:2",
+        "shelter": "yes",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14527&mode=direct&useRealtime=1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9645968,
+          51.9203673
+        ]
+      },
+      "id": "node/3526437663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526437664",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Weidbrake",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14524:0:1",
+        "shelter": "yes",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14524&mode=direct&useRealtime=1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.954508,
+          51.9214143
+        ]
+      },
+      "id": "node/3526437664"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3526437665",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Weidbrake",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14524:0:2",
+        "shelter": "yes",
+        "website": "https://westfalenfahrplan.de/std3/XSLT_DM_REQUEST?language=de&session_ID=0&stopService=timeTable&type_dm=stop&name_dm=de%3A05570%3A14524&mode=direct&useRealtime=1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9543013,
+          51.9215455
+        ]
+      },
+      "id": "node/3526437665"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4069490362",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Jöster",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14625:0:2",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9896789,
+          51.9027803
+        ]
+      },
+      "id": "node/4069490362"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4069490363",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Jöster",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14625:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.989231,
+          51.9032359
+        ]
+      },
+      "id": "node/4069490363"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7029853494",
+        "addr:city": "Warendorf",
+        "addr:housenumber": "5",
+        "addr:postcode": "48231",
+        "addr:street": "Industriestraße",
+        "brand": "Aldi Nord",
+        "brand:wikidata": "Q41171373",
+        "brand:wikipedia": "en:Aldi",
+        "name": "Aldi",
+        "opening_hours": "Mo-Sa  07:00-20:00",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9638097,
+          51.9217755
+        ]
+      },
+      "id": "node/7029853494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7029869600",
+        "addr:city": "Warendorf",
+        "addr:country": "DE",
+        "addr:housenumber": "9",
+        "addr:postcode": "48231",
+        "addr:street": "Industriestraße",
+        "brand": "Rossmann",
+        "brand:wikidata": "Q316004",
+        "brand:wikipedia": "de:Dirk Rossmann GmbH",
+        "contact:phone": "+49 2581 7896332",
+        "contact:website": "https://www.rossmann.de",
+        "name": "Rossmann",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-20:00; Su off; PH off",
+        "operator": "Dirk Rossmann GmbH",
+        "ref:shop:num": "1954",
+        "ref:vatin": "DE115055186",
+        "shop": "chemist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9641852,
+          51.9220782
+        ]
+      },
+      "id": "node/7029869600"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7033820336",
+        "addr:city": "Warendorf",
+        "addr:housenumber": "39",
+        "addr:postcode": "48231",
+        "addr:street": "Warendorfer Straße",
+        "name": "Bäckerei Averhoff",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9669154,
+          51.9221387
+        ]
+      },
+      "id": "node/7033820336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8191454514",
+        "leisure": "playground",
+        "name": "Hagebuttenweg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9593008,
+          51.9258558
+        ]
+      },
+      "id": "node/8191454514"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8936331011",
+        "access": "yes",
+        "fee": "no",
+        "garden:type": "community",
+        "leisure": "garden",
+        "name": "Apfelgarten für alle Generationen",
+        "operator": "Heimatverein Freckenhorst",
+        "operator:type": "public"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.9625491,
+          51.9190014
+        ]
+      },
+      "id": "node/8936331011"
+    }
+  ]
+}

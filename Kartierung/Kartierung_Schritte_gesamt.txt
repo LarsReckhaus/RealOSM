@@ -1,0 +1,1149 @@
+Schritte:
+[0] Vorbereitung		-> Datenbank + QGIS-Dateien											| DB + QGIS
+-- LOOP (je Gebiet):
+[1] Kartierungsgebiet 		-> Gebiet einzeichnen + Offline OSM-Karte (für Gebiet)								| QGIS
+[2] OSM-Download		-> Overpass-Abfrage (für Ort des Gebiets)									| overpass turbo
+[3] Aufbereitung OSM-Download	-> Klassifizierung & Zuschneidung OSM-Download in Aufbereitungs-Tabelle [OSM-Version]				| QGIS + DB
+[4] Mapping-GeoPackage		-> Umwandlung OSM-Version in angepasstes Mapping-GeoPackage [1/3 OSM-Import]					| DB + QGIS
+[5] Pre-Mapping			-> Ergänzung OSM-Punkte mithilfe verschiedener Internetquellen (v.a Google Maps) [2/3 Pre-Mapping]		| QGIS + Internet (Google Maps)
+[6] Kartierung			-> Kontrolle Pre-Mapping in Realität (POIs überprüfen & hinzufügen) [3/3 Field] --> [Kartierungs-Version]	| QGIS + PC / Handy + QField
+--
+
+
+
+[0] Vorbereitung
+
+	[0.1] GeoDB aufsetzen [DB]
+
+		[0.1.1] Server "BA" erstellen  -- BA = Bachelorarbeit
+
+		- Browser -> Servers -> Register -> Server...:
+			- General:
+				- Name: BA
+			- Connection:
+				- Host name/adress: localhost
+				- Port: 5433
+				- Maintenance database: postgres
+				- Username: postgres
+
+
+		[0.1.2] DB "realosm" erstellen  -- realosm = Realität vs. OSM
+
+		- Query Tool (postgres/postgres@BA):  -- (postgres/postgres@BA) = (DB/user@Server)
+			create database realosm;
+
+
+		[0.1.3] PostGIS aktivieren
+		
+		- Query Tool (realosm/postgres@BA):
+			create extension postgis;
+
+
+	[0.2] Trigger-Funktionen [DB]  -- für alle Tabellen in Schema nutzbar zur Erstellung von Triggern
+	
+		- Query Tool (realosm/postgres@BA):
+			create function trigger_last_edit()  -- damit sich bei jeder Aktualisierung (Edit) last_edit-Zeit updatet
+				returns trigger as $$
+				begin
+					new.last_edit = current_timestamp;
+					return new;
+				end;
+				$$ language plpgsql;
+
+			create function trigger_cid()  -- damit sich cid nicht unabsichtlich ändern lässt (non editable) -> sonst wäre Vergleich mit Kartierung nicht möglich / falsch
+				returns trigger as $$
+				begin
+					raise 'error: cid is non-editable';
+				end;
+				$$ language plpgsql;
+
+
+	[0.3] DB-Verbindung in QGIS [QGIS]
+
+		- Datenquellenverwaltung -> PostgreSQL -> Verbindungen -> Neu:
+			- Verbindungsinformationen:
+				- Name: realosm
+				- Host: localhost
+				- Port: 5432
+				- Datenbank: realosm
+			- Authentifizierung -> Basic:
+				- Benutzername: postgres -> Speichern
+				- Passwort: **** -> Speichern
+			- Optionen:
+				- Geometrietyp von Spalten ohne Einschränkung nicht feststellen (GEOMETRY)  -- wichtig, damit Tabelle auch ohne Einträge (Datensätze) sichtbar & als Layer hinzufügbar
+				- Nur im schema 'public' nachsehen
+
+
+	[0.4] QGIS-Erweiterungen [QGIS]
+		
+		[0.4.1] QMetaTiles  -- für Offline OSM-Karte
+
+		- Erweiterungen -> Erweiterungen verwalten und installieren -> Alle -> Suche: "QMetaTiles":
+			- "QMetaTiles" auswählen -> Erweiterung installieren
+
+
+		[0.4.2] QuickMapServices  -- für Öpnvkarte
+		- Erweiterungen -> Erweiterungen verwalten und installieren -> Alle -> Suche: "QuickMapServices":
+			- "QuickMapServices" auswählen -> Erweiterung installieren
+
+
+	 [0.5] Projektdatei - "Desktop" [QGIS]
+
+		[0.5.1] "Desktop"
+
+		- Projektdatei "Desktop" anlegen
+
+
+		[0.5.2] OSM-Hintergrundkarte
+
+		- Datenquellenverwaltung -> Browser:
+			- XYZ Tiles: OpenStreetMap (-> durch Doppelklick zur Karte hinzufügen)
+
+		- Layereigenschaften:
+			- Transparenz:
+				- Globale Deckkraft: 50,0 %
+			- Quelle -> Layerquelle:
+				- Maximale Zoomstufe: 19  -- damit alle Beschriftungen sichtbar (bei Zoomstufe 18 nur manche, nicht alle)
+
+
+		[0.5.3] OSM Offline-Karte
+		- Layer -> Gruppe hinzufügen: "Offline-OSM"  -- zum "Sammeln" der Offline-OSM-Karten aller Gebiete
+
+
+		[0.5.4] Öpnvkarte  -- benötigt für Pre-Mapping
+
+		- Web -> QuickMapServices -> OSM -> Öpnvkarte
+
+		- Layereigenschaften -> Transparenz:
+			- Globale Deckkraft: 50,0 %
+
+
+		[0.5.5] "areas"  -- Kartierungsgebiete (gpkg)
+
+		- Neuer GeoPackage-Layer:
+			- Datenbank: "areas"
+			- Tabellenname: "areas"
+			- Geometrietyp:
+				- Polygon
+				- EPSG:25832 - ETRS89 / UTM zone 32N
+			- Neues Feld [Name, Typ, Maximallänge] -> Zur Feldliste hinzufügen:
+				- aid, Integer (32 bit), -  -- aid = Area-ID
+				- name, Text (string), -
+				- shortname, Text (string), -  -- Kürzel, z.B. "HD-Süd" statt "Heidelberg-Süd"
+				- structure, Text (string), 10  -- Siedlungsstrukturkategorie, z.B. "Kleinstadt"
+				- region, Text (string), 3
+				- comment, Text (string), -  -- um bei Kartierung Auffälliges zu Gebiet eintragen zu können (falls nötig)
+				- last_edit, Datum & Zeit, -
+				[- Geometriefeld "geom" automatisch erstellt]
+			- Fortgeschrittene Optionen:
+				- Objektkennungsspalte: aid
+
+		- Layereigenschaften:
+			- Attributformular -> Fields:
+				- name:
+					- Restriktionen: Nicht Null, Eindeutig, Beschränkung erzwingen
+				- shortname:
+					- Restriktionen: Nicht Null, Eindeutig, Beschränkung erzwingen
+				- type:
+					- Bedienelementtyp -> Wertabbildung:
+						- Daten aus CSV-Datei laden: "areas_structures.csv"
+					- Restriktionen: Nicht Null
+				- region:
+					- Bedienelementtyp -> Wertabbildung:
+						- Daten aus CSV-Datei laden: "areas_regions.csv"
+					- Restriktionen: Nicht Null
+				- last_edit:
+					- Allgemein: "Änderbar" deaktivieren
+					- Bedienelementtyp -> Datum/Zeit:
+						- Feldformat -> ISO-Datum/Zeit
+						- Bedienelementanzeige 
+							- Benutzerdefiniert: yyyy-MM-dd HH:mm:ss  -- d.h. ohne Zeitzone (+t am Ende weglassen)
+							- "Kalender" & "Nullwerte erlauben" abwählen		
+					- Vorgaben:
+						- Vorgabewert -> now()
+						- Vorgabewert bei Aktualisierung anwenden
+			- Symbolisierung -> Einzelsymbol -> Füllung - Einfache Füllung:
+				- Füllstil: Keine Füllung
+				- Strichfarbe: orange
+				- Strichbreite: 1mm
+			- Stil [unten links (egal welches Menü)] -> Speichere Stil:
+				- Stil speichern: Als QGIS-QML-Layerstildatei
+				- Datei: "areas_style"
+				[- Kategorien: alle ausgewählt lassen!]
+			- Stil -> Speichere Stil:
+				- Stil speichern: In Datenbank (GeoPackage)
+				- Stilname: "areas_style"
+				- Als Vorgabestil für diesen Layer verwenden -> Anhaken!
+
+
+		[0.5.6] "tracking"  -- Trackingdatei (gpkg)
+
+		- Neuer GeoPackage-Layer:
+			- Datenbank: "tracking"
+			- Tabellenname: "tracking_TEMPLATE"
+			- Geometrietyp:
+				- Linie
+				- M-Werte einschließen
+				- EPSG:25832 - ETRS89 / UTM zone 32N
+			- Neues Feld [Name, Typ, Maximallänge] -> Zur Feldliste hinzufügen:
+				- aid, Integer (32 bit), -  -- Foreign Key (referenziert die ID des Kartierungsgebiets)
+				- starttime, Datum & Zeit, -
+				- endtime, Datum & Zeit, -
+				[- Primärschlüsselfeld "fid" automatisch erstellt]
+				[- Geometriefeld "geom" automatisch erstellt]
+			- Fortgeschrittene Optionen:
+				[- Objektkennungsspalte: fid -> so lassen!]
+
+		- Layereigenschaften:
+			- Attributformular -> Fields:
+				- aid: 
+					- Allgemein: "Änderbar" deaktivieren
+					- Bedienelementtyp -> Wertbeziehung:
+						- Layer: areas
+						- Schlüsselspalte: aid
+						- Wertspalte: aid
+						- Beschreibungsspalte: name
+						- Nach Wert sortieren
+					- Restriktionen: Nicht Null, Nicht-Leerbeschränkung erzwingen
+				- starttime:
+					- Allgemein: "Änderbar" deaktivieren
+					- Bedienelementtyp -> Datum/Zeit:
+						- Feldformat -> ISO-Datum/Zeit
+						- Bedienelementanzeige:
+							- Benutzerdefiniert: yyyy-MM-dd HH:mm:ss
+							- "Kalender" & "Nullwerte erlauben" abwählen
+					- Vorgaben: Vorgabewert -> now()
+				- endtime:
+					- Allgemein: "Änderbar" deaktivieren
+					- Bedienelementtyp -> Datum/Zeit:
+						- Feldformat -> ISO-Datum/Zeit
+						- Bedienelementanzeige:
+							- Benutzerdefiniert: yyyy-MM-dd HH:mm:ss
+							- "Kalender" & "Nullwerte erlauben" abwählen
+					- Vorgaben:
+						- Vorgabewert -> now()
+						- Vorgabewert bei Aktualisierung anwenden
+			- Symbolisierung -> Einzelsymbol -> Linie - Einfache Linie:
+				- Farbe: pink-violett
+				- Strichbreite: 0,3mm
+			- Stil -> Speichere Stil:
+				- Stil speichern: Als QGIS-QML-Layerstildatei
+				- Datei: "tracking_TEMPLATE_style"
+				[- Kategorien: alle ausgewählt lassen!]
+			- Stil -> Speichere Stil:
+				- Stil speichern: In Datenbank (GeoPackage)
+				- Stilname: "tracking_TEMPLATE_style"
+				- Als Vorgabestil für diesen Layer verwenden -> Anhaken!
+
+		- Datenquellenverwaltung -> GeoPackage:
+			- Verbindungen -> Neu: "tracking.gpkg" -> Verbinden
+
+		- Layeransicht -> Layer "tracking_TEMPLATE" auswählen -> Layer/Gruppe löschen
+
+		- Allgemeines GeoPackage "tracking" wieder in QGIS reinladen (drag&dropen):
+			- Hinzufügende Elemente wählen:
+				- Alle wählen
+				- Layer zu einer Gruppe hinzufügen
+
+
+		[0.5.7] "mapping"  -- Kartierungsdatei (gpkg)
+
+		- Neuer GeoPackage-Layer:
+			- Neuer GeoPackage-Layer:
+				- Datenbank: "mapping"
+				- Tabellenname: "mapping_TEMPLATE"
+				- Geometrietyp:
+					- Punkt
+					- EPSG:25832 - ETRS89 / UTM zone 32N
+				- Neues Feld [Name, Typ, Maximallänge] -> Zur Feldliste hinzufügen:
+					- cid, Integer (32 bit), -  -- cid = Comparison-ID (für Vergleich OSM vs. Kartierung)
+					- fieldcheck, Boolean, -
+					- type, Text (string), 11
+					- subtype, Text (string), -
+					- name, Text (string), -
+					- street, Text (string), -
+					- housenumber, Text (string), -
+					- comment, Text (string), -
+					- uuid, Text (string), -  -- uuid = Universally Unique Identifier
+					- aid, Integer (32 bit), -  -- Foreign Key
+					- source, Text (string), 6
+					- maptime, Datum & Zeit, -
+					- last_edit, Datum & Zeit, -
+					[- Geometriefeld "geom" automatisch erstellt]
+				- Fortgeschrittene Optionen:
+					- Objektkennungsspalte: cid
+
+		- Layereigenschaften:
+			- Attributformular -> Fields:
+				- cid:
+					- Allgemein: "Änderbar" deaktivieren  -- dadurch kann Feld nicht unabsichtlich geändert werden (bei automatisch generiertem Feld ist Änderung nicht notwendig bzw. sogar nicht gewünscht & sollte daher verhindert werden)
+					- Vorgaben:
+						- Vorgabewert: case when maximum("cid") is null then 1 when "cid" is null then maximum("cid")+1 else "cid" end
+						- Vorgabewert bei Aktualisierung anwenden  -- Aktualisierung muss aktiviert werden (da Felder ["cid"] verwendet; sonst Fehlermeldung), wird aber durch Case-Ausdruck ausgesetzt; dadurch aber auch fortlaufende Sequenz ohne "Lücken" (wie bei fid), falls feature direkt nach Erstellen gelöscht (trotzdem Lücken, falls "altes" feature gelöscht, welches nicht die neueste (maximale) ID hat -> d.h. IDs nicht komplett neu vergeben, wenn ein feature gelöscht)
+				- fieldcheck:
+					- Restriktionen: Nicht Null, Nicht-Leerbeschränkung erzwingen
+					- Vorgaben: Vorgabewert -> false
+				- type:
+					- Bedienelementtyp -> Wertabbildung:
+						- Daten aus CSV-Datei laden: "mapping_types.csv"
+					- Restriktionen: Nicht Null, Nicht-Leerbeschränkung erzwingen
+				- subtype:
+					- Bedienelementtyp -> Wertabbildung:
+						- Daten aus CSV-Datei laden: "mapping_subtypes.csv"
+				- uuid:
+					- Allgemein: "Änderbar" deaktivieren
+					- Restriktionen: Nicht Null, Nicht-Leerbeschränkung erzwingen, Eindeutig, Beschränkung erzwingen
+					- Vorgaben: Vorgabewert ->  uuid('WithoutBraces')
+				- aid:
+					- Allgemein: "Änderbar" deaktivieren
+					- Bedienelementtyp -> Wertbeziehung:
+						- Layer: areas
+						- Schlüsselspalte: aid
+						- Wertspalte: aid
+						- Beschreibungsspalte: name
+						- Nach Wert sortieren
+					- Restriktionen: Nicht Null, Nicht-Leerbeschränkung erzwingen
+				- source:
+					- Allgemein: "Änderbar" deaktivieren
+					- Bedienelementtyp -> Wertabbildung:
+						- Daten aus CSV-Datei laden: "mapping_sources.csv"
+					- Restriktionen: Nicht Null, Nicht-Leerbeschränkung erzwingen
+					- Vorgaben: Vorgabewert -> 'premap'
+				- maptime:
+					- Allgemein: "Änderbar" deaktivieren
+					- Bedienelementtyp -> Datum/Zeit:
+						- Feldformat -> ISO-Datum/Zeit
+						- Bedienelementanzeige:
+							- Benutzerdefiniert: yyyy-MM-dd HH:mm:ss
+							- "Kalender" & "Nullwerte erlauben" abwählen
+					- Vorgaben: Vorgabewert -> now()
+				- last_edit:
+					- Allgemein: "Änderbar" deaktivieren
+					- Bedienelementtyp -> Datum/Zeit:
+						- Feldformat -> ISO-Datum/Zeit
+						- Bedienelementanzeige:
+							- Benutzerdefiniert: yyyy-MM-dd HH:mm:ss
+							- "Kalender" & "Nullwerte erlauben" abwählen
+					- Vorgaben: 
+						- Vorgabewert -> now()
+						- Vorgabewert bei Aktualisierung anwenden
+			- Symbolisierung -> Kategorisiert:
+				- Wert: type
+				- Hinzufügen [Wert|Legende]: 
+					- Apotheke|Apotheke
+					- Bäckerei|Bäckerei
+					- Bus|Bushaltestelle
+					- Drogerie|Drogerie
+					- Grün|Park / Grünanlage
+					- Grundschule|Grundschule
+					- Hausarzt|Hausarzt
+					- Kita|Kita
+					- Straßenbahn|Straßenbahnhaltestelle
+					- Spielplatz|Spielplatz
+					- Supermarkt|Supermarkt
+				- Symbol:
+					- Apotheke:
+						- Markierung:
+							- Größe: 5,00000
+						- Markierung -> Einfache Markierung:
+							- Symbollayertyp: SVG-Markierung
+							- Füllfarbe -> Datendefinierte Übersteuerung [Menü-Icon] -> Bearbeiten:
+								- Ausdruck: case when "fieldcheck" = false then color_rgb(227, 26, 28) when "fieldcheck" = true then color_rgb(51, 160, 44) end  -- d.h. Farbe 'rot', wenn POI noch überprüft werden muss (fieldcheck=false) & Farbe 'grün', wenn POI gechecket (fieldcheck=true)
+							- SVG-Browser -> SVG-Gruppen -> Anw.-symbole -> services: 
+								- SVG-Bilder -> ...pharmacy,dispensing=yes.svg
+					- Bäckerei:
+						- Markierung:
+							- Größe: 5,00000
+						- Markierung -> Einfache Markierung:
+							- Symbollayertyp: SVG-Markierung
+							- Füllfarbe -> Datendefinierte Übersteuerung -> Bearbeiten:
+								- Ausdruck: case when "fieldcheck" = false then color_rgb(227, 26, 28) when "fieldcheck" = true then color_rgb(51, 160, 44) end
+							- SVG-Browser -> SVG-Gruppen -> Anw.-symbole -> shopping: 
+								- SVG-Bilder -> ...bakery.svg
+					- Bus:
+						- Markierung:
+							- Größe: 5,00000
+						- Markierung -> Einfache Markierung:
+							- Symbollayertyp: SVG-Markierung
+							- Füllfarbe -> Datendefinierte Übersteuerung -> Bearbeiten:
+								- Ausdruck: case when "fieldcheck" = false then color_rgb(227, 26, 28) when "fieldcheck" = true then color_rgb(51, 160, 44) end
+							- SVG-Browser -> SVG-Gruppen -> Anw.-symbole -> transport: 
+								- SVG-Bilder -> ...bus_stop.svg
+					- Drogerie:
+						- Markierung:
+							- Größe: 5,00000
+						- Markierung -> Einfache Markierung:
+							- Symbollayertyp: SVG-Markierung
+							- Füllfarbe -> Datendefinierte Übersteuerung [Menü-Icon] -> Bearbeiten:
+								- Ausdruck: case when "fieldcheck" = false then color_rgb(227, 26, 28) when "fieldcheck" = true then color_rgb(51, 160, 44) end
+							- SVG-Browser -> SVG-Gruppen -> Anw.-symbole -> shopping: 
+								- SVG-Bilder -> ...convenience.svg
+					- Grün:
+						- Markierung:
+							- Größe: 5,00000
+						- Markierung -> Einfache Markierung:
+							- Symbollayertyp: SVG-Markierung
+							- Füllfarbe -> Datendefinierte Übersteuerung -> Bearbeiten:
+								- Ausdruck: case when "fieldcheck" = false then color_rgb(227, 26, 28) when "fieldcheck" = true then color_rgb(51, 160, 44) end
+							- SVG-Browser -> SVG-Gruppen -> Anw.-symbole -> symbol: 
+								- SVG-Bilder -> ...deciduous.svg
+					- Grundschule:
+						- Markierung:
+							- Größe: 5,00000
+						- Markierung -> Einfache Markierung:
+							- Symbollayertyp: SVG-Markierung
+							- Füllfarbe -> Datendefinierte Übersteuerung [Menü-Icon] -> Bearbeiten:
+								- Ausdruck: case when "fieldcheck" = false then color_rgb(227, 26, 28) when "fieldcheck" = true then color_rgb(51, 160, 44) end
+							- SVG-Browser -> SVG-Gruppen -> Anw.-symbole -> symbol: 
+								- SVG-Bilder -> ...school.svg
+					- Hausarzt:
+						- Markierung:
+							- Größe: 5,00000
+						- Markierung -> Einfache Markierung:
+							- Symbollayertyp: SVG-Markierung
+							- Füllfarbe -> Datendefinierte Übersteuerung -> Bearbeiten:
+								- Ausdruck: case when "fieldcheck" = false then color_rgb(227, 26, 28) when "fieldcheck" = true then color_rgb(51, 160, 44) end
+							- SVG-Browser -> SVG-Gruppen -> Anw.-symbole -> health: 
+								- SVG-Bilder -> ...doctors.svg
+					- Kita:
+						- Markierung:
+							- Größe: 5,00000
+						- Markierung -> Einfache Markierung:
+							- Symbollayertyp: SVG-Markierung
+							- Füllfarbe -> Datendefinierte Übersteuerung [Menü-Icon] -> Bearbeiten:
+								- Ausdruck: case when "fieldcheck" = false then color_rgb(227, 26, 28) when "fieldcheck" = true then color_rgb(51, 160, 44) end
+							- SVG-Browser -> SVG-Gruppen -> Anw.-symbole -> symbol: 
+								- SVG-Bilder -> ...nursery.svg
+					- Straßenbahn:
+						- Markierung:
+							- Größe: 5,00000
+						- Markierung -> Einfache Markierung:
+							- Symbollayertyp: SVG-Markierung
+							- Füllfarbe -> Datendefinierte Übersteuerung -> Bearbeiten:
+								- Ausdruck: case when "fieldcheck" = false then color_rgb(227, 26, 28) when "fieldcheck" = true then color_rgb(51, 160, 44) end
+							- SVG-Browser -> SVG-Gruppen -> Anw.-symbole -> transport: 
+								- SVG-Bilder -> ...tram_stop.svg
+					- Spielplatz:
+						- Markierung:
+							- Größe: 5,00000
+						- Markierung -> Einfache Markierung:
+							- Symbollayertyp: SVG-Markierung
+							- Füllfarbe -> Datendefinierte Übersteuerung [Menü-Icon] -> Bearbeiten:
+								- Ausdruck: case when "fieldcheck" = false then color_rgb(227, 26, 28) when "fieldcheck" = true then color_rgb(51, 160, 44) end
+							- SVG-Browser -> SVG-Gruppen -> Anw.-symbole -> sport: 
+								- SVG-Bilder -> ...playground.svg
+					- Supermarkt:
+						- Markierung:
+							- Größe: 5,00000
+						- Markierung -> Einfache Markierung:
+							- Symbollayertyp: SVG-Markierung
+							- Füllfarbe -> Datendefinierte Übersteuerung -> Bearbeiten:
+								- Ausdruck: case when "fieldcheck" = false then color_rgb(227, 26, 28) when "fieldcheck" = true then color_rgb(51, 160, 44) end
+							- SVG-Browser -> SVG-Gruppen -> Anw.-symbole -> shopping: 
+								- SVG-Bilder -> ...supermarket.svg
+			- Stil -> Speichere Stil:
+				- Stil speichern: Als QGIS-QML-Layerstildatei
+				- Datei: "mapping_TEMPLATE_style"
+				[- Kategorien: alle ausgewählt lassen!]
+			- Stil -> Speichere Stil:
+				- Stil speichern: In Datenbank (GeoPackage)
+				- Stilname: "mapping_TEMPLATE_style"
+				- Als Vorgabestil für diesen Layer verwenden -> Anhaken!
+
+		- Datenquellenverwaltung -> GeoPackage:
+			- Verbindungen -> Neu: "mapping.gpkg" -> Verbinden
+
+		- Layeransicht -> Layer "mapping_TEMPLATE" auswählen -> Layer/Gruppe löschen
+
+		- Allgemeines GeoPackage "mapping" wieder in QGIS reinladen (drag&dropen):
+			- Hinzufügende Elemente wählen:
+				- Alle wählen
+				- Layer zu einer Gruppe hinzufügen
+
+
+	[0.6] Projektdatei "Field" [QGIS]
+
+		[0.6.1] "Field"
+
+		- Projektdatei "Field" anlegen
+
+
+		[0.6.2] OSM-Hintergrundkarte
+
+		- Datenquellenverwaltung -> Browser:
+			- XYZ Tiles: OpenStreetMap (-> durch Doppelklick zur Karte hinzufügen)
+
+		- Layereigenschaften -> Transparenz:
+			- Globale Deckkraft: 30,0 %
+
+
+
+-- LOOP [1-6] --
+
+[1] Kartierungsgebiet [QGIS - "Desktop"]
+
+	[1.1] Gebietsgrenzen
+
+		- Layeransicht -> Layer "areas" auswählen -> Bearbeitungsstatus umschalten -> Polygonobjekt hinzufügen:
+			- Kartierungsgebiet einzeichnen -> Objektattribute:
+				- name -> Langform: "<Ort>[-<Ortsteil / Himmelsrichtung>]"  -- z.B. "Heidelberg-Weststadt"
+				- shortname -> "<Abk. Ort>[-<Abk. Ortsteil / Himmelsrichtung>]"  -- z.B. "HD-WS"
+				- type -> Passendes auswählen  -- falls nötig: Typ-Charakterisierung bei Kartierung anpassen  
+				- region -> Passendes auswählen                                                            
+				- comment -> freilassen
+		
+
+	[1.2] Offline OSM-Karte
+
+		[1.2.1] Begrenzung exportieren (aus areas-Layer; in extra Datei)  -- nötig, damit als Extent bei QMetaTiles-Plugin wählbar (da nur ganze Layer wählbar)
+
+		- Objekte nach Wert wählen:
+			- aid = <areas.aid>  -- <areas.aid> = aid des Kartierungsgebiets
+		
+		- Layeransicht -> "areas" -> Export -> Gewählte Objekte speichern als:
+			- Format: GeoPackage
+			- Dateiname: "area_<areas.aid>_<areas.shortname>"  -- <areas.shortname> = Abkürzung des Kartierungsgebiets
+			- Layername: "area_<areas.aid>_<areas.shortname>"
+			- KBS: EPSG:25832 - ETRS89 / UTM zone 32N
+			- Layeroptionen:
+				- FID: aid
+		
+		- Objektauswahl aller Layer aufheben
+
+
+		[1.2.2] Offline Gebietskarte
+
+		- Alle Layer ausblenden bis auf "OpenStreetMap" (Hintergrundkarte)  -- (!) wichtig, sonst wird Geometrie der aktiven Layer (Gebietsabgrenzung) auf Offline-Karte "eingebrannt" & falls OSM-Hintergrundkarte nicht aktiv, bei Offline-Karte auch nicht vorhanden
+		
+		- Erweiterungen -> QMetaTiles -> QMetaTiles:
+			- Output -> File: "osm-offline_<areas.aid>_<areas.shortname>.mbtiles"  -- (!) wichtig: mbtiles als Dateityp wählen
+			- Extent -> Layer extent: "area_<areas.aid>_<areas.shortname>"
+		
+		- Erstellte Datei in QGIS reinladen (wird nicht automatisch hinzugefügt) & zu Gruppe "Offline-OSM" hinzufügen (durch Drag & Drop)
+
+
+		[1.2.3] Begrenzung entfernen  -- wird nicht weiter benötigt, da in areas als ein Datensatz vorhanden
+
+		- Layeransicht -> Layer "area_<areas.aid>_<areas.shortname>" auswählen -> Layer/Gruppe löschen
+
+		- Zugrundeliegende Datei "area_<areas.aid>_<areas.shortname>.gpkg" löschen
+
+
+	[1.3] Trackingtabelle
+
+		- Datenbank -> DB-Verwaltung:
+			- Datenanbieter: GeoPackage -> "tracking.gpkg" auswählen
+			- Layer/Datei importieren:
+				- Eingabe: tracking_TEMPLATE
+				- Ausgabetabelle -> Tabelle: "tracking_<areas.aid>_<areas.shortname>"
+
+		- Layeransicht -> GeoPackage-Gruppe "tracking" auswählen -> Layer/Gruppe löschen
+
+		- Geupdatetes GeoPackage [mit neuem Layer "tracking_<areas.aid>_<areas.shortname>"] aus Dateiexplorer wieder in QGIS reinladen (drag&dropen):
+			- Hinzufügende Elemente wählen:
+				- Alle wählen
+				- Layer zu einer Gruppe hinzufügen
+
+		- Neuer Layer "tracking_<areas.aid>_<areas.shortname>" -> Layereigenschaften:
+			- Stil -> Lade Stil:
+				- Stil laden -> Aus Datenbank laden
+				- Andere Stile in der Datenbank: "tracking_TEMPLATE_style" -> Stil laden
+			- Attributformular -> Fields [Ändern!]:
+				- aid: 
+					- Vorgaben: Vorgabewert -> <areas.aid>
+			- Stil -> Als Vorgabe speichern:
+				- Vorgabestil speichern in: Datenquellen-Datenbank
+
+
+
+[2] OSM-Download [overpass turbo]
+
+	[2.1] Overpass-Download
+
+		- Abfrage ausführen:  -- alle möglichen key-value-Paare für gesamten Ort des Kartierungsgebiets herunterladen & später in DB filtern (klassifizieren + zuschneiden)
+			{{geocodeArea:<Kartierungsort>}}->.a;  -- <Kartierungsort> = z.B. Heidelberg
+			(
+			// Apotheke:
+			nwr[amenity=pharmacy](area.a);
+
+			// Bäckerei:
+			nwr[shop=bakery](area.a);
+
+			// Bushaltestelle:
+			nwr[highway=bus_stop](area.a);
+			nwr[public_transport=platform][bus=yes](area.a);
+			nwr[highway=platform][bus=yes](area.a);
+
+			// Drogerie:
+			nwr[shop=chemist](area.a);
+
+			// Grünanlage / Park:
+			nwr[leisure=park][access!=private][access!=customers](area.a);
+			nwr[landuse=recreation_ground][access!=private](area.a);
+			nwr[leisure=recreation_ground][access!=private](area.a);
+			nwr[landuse=village_green][access!=private](area.a);
+			nwr[leisure=garden][access!=private][access!=customers][access!=permissive]["garden:type"!=residential]["garden:type"!=private][landuse!=residential](area.a);
+
+			// Grundschule:
+			nwr[amenity=school]["isced:level"=1](area.a);
+			nwr[school=elementary](area.a);
+			nwr[school=primary](area.a);
+			nwr["school:de"~"Grundschule",i](area.a);
+			nwr["school:DE"~"Grundschule",i](area.a);
+			nwr[amenity=school][name~"Grundschule",i](area.a);
+
+			// Hausarzt:
+			nwr[amenity=doctors]["healthcare:speciality"=general](area.a);
+			nwr[healthcare=doctor]["healthcare:speciality"=general](area.a);
+			nwr[amenity=clinic]["healthcare:speciality"=general](area.a);
+			nwr[healthcare=clinic]["healthcare:speciality"=general](area.a);
+
+			// Kita:
+			nwr[amenity=kindergarten][after_school!=yes](area.a);
+			nwr[amenity=childcare][after_school!=yes](area.a);
+			nwr[nursery=yes](area.a);
+			nwr[preschool=yes](area.a);
+
+			// Straßenbahnhaltestelle:
+			nwr[railway=tram_stop](area.a);	
+
+			// Spielplatz:
+			nwr[leisure=playground][access!=private][access!=customers][access!=permissive][indoor!=yes](area.a);
+
+			// Supermarkt:
+			nwr[shop=supermarket](area.a);
+			nwr[shop=health_food][brand~"Alnatura",i](area.a);
+			nwr[shop=health_food][name~"Alnatura",i](area.a);
+			nwr[shop=health_food][brand~"Denn.*s",i](area.a);
+			nwr[shop=health_food][name~"Denn.*s",i](area.a);
+			nwr[shop=health_food][brand~"Bio.*Company",i](area.a);
+			nwr[shop=health_food][name~"Bio.*Company",i](area.a);
+			nwr[shop=health_food][brand~"basic",i](area.a);
+			nwr[shop=health_food][name~"basic",i](area.a);
+			nwr[shop=health_food][brand~"Ebl.*Naturkost",i](area.a);
+			nwr[shop=health_food][name~"Ebl.*Naturkost",i](area.a);
+			nwr[shop=health_food][brand~"SuperBioMarkt",i](area.a);
+			nwr[shop=health_food][name~"SuperBioMarkt",i](area.a);
+			nwr[shop=health_food][brand~"LPG.*Biomarkt",i](area.a);
+			nwr[shop=health_food][name~"LPG.*Biomarkt",i](area.a);
+			nwr[shop=health_food][brand~"Vollcorner",i](area.a);
+			nwr[shop=health_food][name~"Vollcorner",i](area.a);
+			nwr[shop=health_food][brand~"Aleco",i](area.a);
+			nwr[shop=health_food][name~"Aleco",i](area.a);
+			nwr[shop=health_food][brand~"Naturgut",i](area.a);
+			nwr[shop=health_food][name~"Naturgut",i](area.a);
+			nwr[shop=health_food][brand~"Erdkorn",i](area.a);
+			nwr[shop=health_food][name~"Erdkorn",i](area.a);
+			nwr[shop=health_food][brand~"Vorwerk.*Podemus",i](area.a);
+			nwr[shop=health_food][name~"Vorwerk.*Podemus",i](area.a);
+			nwr[shop=health_food][brand~"Erdi",i](area.a);
+			nwr[shop=health_food][name~"Erdi",i](area.a);
+			nwr[shop=health_food][brand~"Füllhorn",i](area.a);
+			nwr[shop=health_food][name~"Füllhorn",i](area.a);
+			nwr[shop=health_food][brand~"Fuellhorn",i](area.a);
+			nwr[shop=health_food][name~"Fuellhorn",i](area.a);
+			nwr[shop=health_food][brand~"Landmann.*s",i](area.a);
+			nwr[shop=health_food][name~"Landmann.*s",i](area.a);
+			nwr[shop=health_food][brand~"Naturkind",i](area.a);
+			nwr[shop=health_food][name~"Naturkind",i](area.a);
+			nwr[shop=health_food][brand~"pro.*bio.*MARKT",i](area.a);
+			nwr[shop=health_food][name~"pro.*bio.*MARKT",i](area.a);
+			nwr[shop=health_food][brand~"TEMMA",i](area.a);
+			nwr[shop=health_food][name~"TEMMA",i](area.a);
+			nwr[shop=health_food][brand~"bioladen*",i](area.a);
+			nwr[shop=health_food][name~"bioladen*",i](area.a);
+			);
+			out center;
+
+		- Export -> Daten -> GeoJSON: download ("osm-download_<areas.aid>_<areas.shortname>")
+
+
+
+[3] Aufbereitung OSM-Download
+
+	[3.1] DB-Import [QGIS - "Desktop"]
+
+		[3.1.1] QGIS-Import -> OSM-Download
+
+		- Heruntergeladenes GeoJSON ("osm-download_<areas.aid>_<areas.shortname>") aus Dateiexplorer in QGIS reinladen (drag&dropen)  -- falls Geometrieauswahlfeld erscheint, nur Punkte wählen, da die wenigen Linien-Geometrien [falls überhaupt vorhanden] Fehler sind (da "out center"!)
+
+		
+		[3.1.2] DB-Import vorbereiten -> areas-Tabelle löschen
+		
+		- Query Tool (realosm/postgres@BA):  -- areas-Tabelle löschen (falls schon mit altem Stand vorhanden)
+			drop table if exists areas;
+
+
+		[3.1.3] DB-Import -> OSM-Download + areas
+
+		- Datenbank -> DB-Verwaltung:
+			- Datenanbieter: PostGIS -> "realosm" auswählen:
+				- Layer/Datei importieren:
+					- Eingabe: "osm-download_<areas.aid>_<areas.shortname>"
+					- Ausgabetabelle:
+						- Schema: public
+						- Tabelle: "osm-download_<areas.aid>_<areas.shortname>"
+				- Layer/Datei importieren:		
+					- Eingabe: "areas"  -- nötig für späteren "Zuschnitt" (räumliche Selektion) der OSM-Download-Daten auf Kartierungsgebiet bei Insert in Aufbereitungs-Tabelle
+					- Ausgabetabelle:
+						- Schema: public
+						- Tabelle: "areas"
+					- Optionen:
+						- Primärschlüssel: aid
+
+
+		[3.1.4] OSM-Download entfernen  -- wird nicht weiter in QGIS-Projekt benötigt
+		
+		- Layeransicht -> Layer "osm-download_<areas.aid>_<areas.shortname>" auswählen -> Layer/Gruppe löschen
+
+
+	[3.2] OSM-Aufbereitung [DB]
+		
+		[3.2.1] OSM-Aufbereitungs-Tabelle
+
+		- Query Tool (realosm/postgres@BA):  -- Aufbereitungs-Tabelle erstellen
+			create table "osm_<areas.aid>_<areas.shortname>"
+			(
+			type varchar(11) not null,
+			subtype varchar,
+	 		name varchar,
+			street varchar,
+	 		housenumber varchar,
+	 		comment varchar,
+	 		cid serial not null unique,
+			osm_id varchar unique,
+	 		uuid uuid primary key default gen_random_uuid(),
+	 		aid int not null default <areas.aid>,
+	 		source varchar(6) not null default 'osm',
+	 		importtime timestamp(0) default current_timestamp,
+	 		last_edit timestamp(0) default current_timestamp,  -- aktualisieren mit Trigger (s.u.)
+			geom geometry
+			);
+
+			create trigger last_edit  -- Trigger zur Aktualisierung last_edit-Zeit bei Änderung (gilt nur für Tabelle "osm_<areas.aid>_<areas.shortname>")
+				before update on "osm_<areas.aid>_<areas.shortname>"
+				for each row
+				execute function trigger_last_edit();
+	
+			create trigger cid  -- Änderbarkeit cid deaktivieren
+				before update of cid on "osm_<areas.aid>_<areas.shortname>"
+				for each row
+				execute function trigger_cid();
+
+
+		[3.2.2] Dummy-Spalten -> OSM-Download-Tabelle (für Insert)  -- nötig für case when-Ausdruck (bei type) bei Insert, da alle genannten Spalten vorhanden sein müssen, sonst Fehlermeldung "Spalte existiert nicht"
+		
+		- Query Tool (realosm/postgres@BA):
+			alter table "osm-download_<areas.aid>_<areas.shortname>"
+			add column if not exists amenity varchar,  -- falls Spalte noch nicht existent -> Spalte mit null-Werten hinzugefügt
+			add column if not exists shop varchar,
+			add column if not exists highway varchar,
+			add column if not exists public_transport varchar,
+			add column if not exists bus varchar,
+			add column if not exists leisure varchar,
+			add column if not exists landuse varchar,
+			add column if not exists access varchar,
+			add column if not exists "garden:type" varchar,
+			add column if not exists "isced:level" varchar,
+			add column if not exists school varchar,
+			add column if not exists "school:de" varchar,
+			add column if not exists "school:DE" varchar,
+			add column if not exists name varchar,
+			add column if not exists "healthcare:speciality" varchar,
+			add column if not exists healthcare varchar,
+			add column if not exists after_school varchar,
+			add column if not exists nursery varchar,
+			add column if not exists preschool varchar,
+			add column if not exists railway varchar,
+			add column if not exists indoor varchar,
+			add column if not exists brand varchar,
+			add column if not exists name varchar,
+			add column if not exists "addr:street" varchar,
+			add column if not exists "addr:housenumber" varchar,
+			add column if not exists description varchar,
+			add column if not exists note varchar;
+
+
+		[3.2.3] Insert in OSM-Aufbereitungs-Tabelle (mit Klassifizierung & Zuschneidung)
+
+		- Query Tool (realosm/postgres@BA):
+			insert into "osm_<areas.aid>_<areas.shortname>" (type, subtype, name, street, housenumber, comment, osm_id, geom)
+			select
+				case -- type -> (Typ-)Klassifizierung
+					when amenity='pharmacy'
+						then 'Apotheke'
+					when shop='bakery'
+						then 'Bäckerei'
+					when highway='bus_stop' or (highway='platform' or public_transport='platform') and bus='yes'
+						then 'Bus'
+					when shop='chemist'
+						then 'Drogerie'
+					when leisure in ('park', 'recreation_ground', 'garden') or landuse in ('recreation_ground', 'village_green')
+						then 'Grün'
+					when amenity='school' or school in ('elementary', 'primary') or "school:de"~*'Grundschule' or "school:DE"~*'Grundschule' 
+						then 'Grundschule'
+					when amenity in ('doctors', 'clinic') or healthcare in ('doctor', 'clinic')
+						then 'Hausarzt'
+					when amenity in ('kindergarten', 'childcare') or nursery='yes' or preschool='yes'
+						then 'Kita'
+					when railway='tram_stop'
+						then 'Straßenbahn'
+					when leisure='playground'
+						then 'Spielplatz'
+					when shop='supermarket' or shop='health_food'
+						then 'Supermarkt'
+				end,
+				case -- subtype
+					-- Drogerie
+					when shop='chemist' and (brand~*'Budnikowsky' or name~*'Budnikowsky' or brand~*'Budni' or name~*'Budni')
+						then 'Budni'
+					when shop='chemist' and (brand~*'dm' or name~*'dm')
+						then 'dm'
+					when shop='chemist' and (brand~*'DroNova' or name~*'DroNova')
+						then 'DroNova'
+					when shop='chemist' and (brand~*'Müller' or name~*'Müller' or brand~*'Mueller' or name~*'Mueller')
+						then 'Müller'
+					when shop='chemist' and (brand~*'Rossmann' or name~*'Rossmann')
+						then 'Rossmann'
+	
+					-- Supermarkt
+					when shop='supermarket' and (brand~*'akzenta' or name~*'akzenta')
+						then 'akzenta'
+					when shop='supermarket' and (brand~*'AEZ' or name~*'AEZ')
+						then 'AEZ'
+					when shop='supermarket' and (brand~*'ALDI.*Nord' or name~*'ALDI.*Nord') 
+						then 'ALDI Nord'
+					when shop='supermarket' and (brand~*'ALDI.*Süd' or name~*'ALDI.*Süd' or brand~*'ALDI.*Sued' or name~*'ALDI.*Sued') 
+						then 'ALDI Süd'
+					when (shop='supermarket' or shop='health_food') and (brand~*'ALECO' or name~*'ALECO')
+						then 'ALECO'
+					when (shop='supermarket' or shop='health_food') and (brand~*'Alnatura' or name~*'Alnatura')
+						then 'Alnatura'
+					when (shop='supermarket' or shop='health_food') and (brand~*'Basic' or name~*'Basic')
+						then 'Basic'
+					when shop='supermarket' and (brand~*'beki.*frischmarkt' or name~*'beki.*frischmarkt')
+						then 'beki frischmarkt'
+					when (shop='supermarket' or shop='health_food') and (brand~*'BIO.*COMPANY' or name~*'BIO.*COMPANY')
+						then 'BIO COMPANY'
+					when (shop='supermarket' or shop='health_food') and (brand~*'bioladen*' or name~*'bioladen*')
+						then 'bioladen*'
+					when shop='supermarket' and (brand~*'Bonus.*Markt' or name~*'Bonus.*Markt')
+						then 'Bonus-Markt'
+					when shop='supermarket' and (brand~*'Calle' or name~*'Calle')
+						then 'Calle'
+					when shop='supermarket' and (brand~*'CAP' or name~*'CAP')
+						then 'CAP'
+					when shop='supermarket' and (brand~*'CITTI' or name~*'CITTI')
+						then 'CITTI'
+					when shop='supermarket' and (brand~*'Combi' or name~*'Combi')
+						then 'Combi'
+					when (shop='supermarket' or shop='health_food') and (brand~*'denn.*s' or name~*'denn.*s')
+						then 'denn''s'
+					when shop='supermarket' and (brand~*'diska' or name~*'diska')
+						then 'diska'
+					when (shop='supermarket' or shop='health_food') and (brand~*'ebl.*naturkost' or name~*'ebl.*naturkost')
+						then 'ebl-naturkost'
+					when shop='supermarket' and (brand~*'EDEKA' or name~*'EDEKA')
+						then 'EDEKA'
+					when (shop='supermarket' or shop='health_food') and (brand~*'Erdi' or name~*'Erdi')
+						then 'Erdi'
+					when (shop='supermarket' or shop='health_food') and (brand~*'Erdkorn' or name~*'Erdkorn')
+						then 'Erdkorn'
+					when shop='supermarket' and (brand~*'Elli-Markt' or name~*'Elli-Markt')
+						then 'Elli-Markt'
+					when shop='supermarket' and (brand~*'famila' or name~*'famila')
+						then 'famila'
+					when shop='supermarket' and (brand~*'Feneberg' or name~*'Feneberg')
+						then 'Feneberg'
+					when shop='supermarket' and (brand~*'Fleggaard' or name~*'Fleggaard')
+						then 'Fleggaard'
+					when (shop='supermarket' or shop='health_food') and (brand~*'Füllhorn' or name~*'Füllhorn' or brand~*'Fuellhorn' or name~*'Fuellhorn')
+						then 'Füllhorn'
+					when shop='supermarket' and (brand~*'GLOBUS' or name~*'GLOBUS')
+						then 'GLOBUS'
+					when shop='supermarket' and (brand~*'go.*asia' or name~*'go.*asia')
+						then 'go asia'
+					when shop='supermarket' and (brand~*'HIT' or name~*'HIT')
+						then 'HIT'
+					when shop='supermarket' and (brand~*'Ihre.*Kette' or name~*'Ihre.*Kette')
+						then 'Ihre Kette'
+					when shop='supermarket' and (brand~*'Ihr.*Kaufmann' or name~*'Ihr.*Kaufmann')
+						then 'ik Ihr Kaufmann'
+					when shop='supermarket' and (brand~*'inkoop' or name~*'inkoop')
+						then 'inkoop'
+					when shop='supermarket' and (brand~*'K.*K' or name~*'K.*K')
+						then 'K+K'
+					when shop='supermarket' and (brand~*'Kaufland' or name~*'Kaufland')
+						then 'Kaufland'
+					when shop='supermarket' and (brand~*'Konsum' or name~*'Konsum')
+						then 'Konsum'
+					when (shop='supermarket' or shop='health_food') and (brand~*'Landmann.*s' or name~*'Landmann.*s')
+						then 'Landmann''s'
+					when shop='supermarket' and (brand~*'Landmarkt' or name~*'Landmarkt')
+						then 'Landmarkt'
+					when shop='supermarket' and (brand~*'Lidl' or name~*'Lidl')
+						then 'Lidl'
+					when (shop='supermarket' or shop='health_food') and (brand~*'LPG.*BioMarkt' or name~*'LPG.*BioMarkt')
+						then 'LPG BioMarkt'
+					when shop='supermarket' and (brand~*'MARKANT' or name~*'MARKANT')
+						then 'MARKANT'
+					when shop='supermarket' and (brand~*'Marktkauf' or name~*'Marktkauf')
+						then 'Marktkauf'
+					when shop='supermarket' and (brand~*'MERE' or name~*'MERE')
+						then 'MERE'
+					when shop='supermarket' and (brand~*'Mix.*Markt' or name~*'Mix.*Markt')
+						then 'Mix Markt'
+					when shop='supermarket' and (brand~*'multi' or name~*'multi')
+						then 'multi'
+					when shop='supermarket' and (brand~*'nah.*frisch' or name~*'nah.*frisch')
+						then 'nah&frisch'
+					when shop='supermarket' and (brand~*'nah.*gut' or name~*'nah.*gut')
+						then 'nah & gut'
+					when shop='supermarket' and (brand~*'nahkauf' or name~*'nahkauf')
+						then 'nahkauf'
+					when (shop='supermarket' or shop='health_food') and (brand~*'NATURKIND' or name~*'NATURKIND')
+						then 'NATURKIND'
+					when (shop='supermarket' or shop='health_food') and (brand~*'Naturgut' or name~*'Naturgut')
+						then 'Naturgut'
+					when shop='supermarket' and (brand~*'Netto.*Marken.*Discount' or brand~*'Netto.*City' or name~*'Netto.*Marken.*Discount' or name~*'Netto.*City')
+						then 'Netto Marken-Discount'
+					when shop='supermarket' and (brand ilike 'NETTO' or name ilike 'NETTO')
+						then 'Netto Dansk'
+					when shop='supermarket' and (brand~*'NORMA' or name~*'NORMA')
+						then 'NORMA'
+					when shop='supermarket' and (brand~*'^NP' or name~*'^NP')
+						then 'NP'
+					when shop='supermarket' and (brand~*'PENNY' or name~*'PENNY')
+						then 'PENNY'
+					when shop='supermarket' and (brand~*'Prima.*Markt' or name~*'Prima.*Markt')
+						then 'Prima Markt'
+					when (shop='supermarket' or shop='health_food') and (brand~*'pro.*bio.*MARKT' or name~*'pro.*bio.*MARKT')
+						then 'pro bio.MARKT'
+					when shop='supermarket' and (brand~*'real' or name~*'real')
+						then 'real'
+					when shop='supermarket' and (brand~*'REWE' or name~*'REWE')
+						then 'REWE'
+					when (shop='supermarket' or shop='health_food') and (brand~*'SuperBioMarkt' or name~*'SuperBioMarkt')
+						then 'SuperBioMarkt'
+					when shop='supermarket' and (brand~*'tegut' or name~*'tegut')
+						then 'tegut...'
+					when (shop='supermarket' or shop='health_food') and (brand~*'TEMMA' or name~*'TEMMA')
+						then 'TEMMA'
+					when shop='supermarket' and (brand~*'V.*MARKT' or name~*'V.*MARKT')
+						then 'V-MARKT'
+					when shop='supermarket' and (brand~*'Veganz' or name~*'Veganz')
+						then 'Veganz'
+					when (shop='supermarket' or shop='health_food') and (brand~*'VollCorner' or name~*'VollCorner')
+						then 'VollCorner'
+					when (shop='supermarket' or shop='health_food') and (brand~*'Vorwerk.*Podemus' or name~*'Vorwerk.*Podemus')
+						then 'Vorwerk Podemus'
+					when shop='supermarket' and (brand~*'WASGAU' or name~*'WASGAU')
+						then 'WASGAU'
+					when shop='supermarket' and (brand~*'WEZ' or name~*'WEZ')
+						then 'WEZ'
+				end,
+				name, -- name
+				"addr:street", -- street
+				"addr:housenumber", -- housenumber
+				case -- comment
+					when description is not null and note is null
+						then description
+					when description is null and note is null
+						then note
+					when description is not null and note is not null
+						then description ||'; '|| note  -- zusammenfügen, falls beide Kommentarspalten vorhanden (mit ';' Texte voneinander trennen)
+				end,
+				id, -- osm_id
+				st_transform(geom, 25832)  --geom -> Projektion ändern: 4326 (OSM) zu 25832 (wie bei Kartierung)
+			from "osm-download_<areas.aid>_<areas.shortname>"
+			where st_within (st_transform(geom, 25832), (select geom from areas where aid=<areas.aid>));  -- "Zuschneiden" auf Kartierungsgebiete
+
+
+
+[4] Mapping-GeoPackage
+
+	[4.1] Mapping-Tabelle [DB]
+
+		- Query Tool (realosm/postgres@BA):
+		create table "mapping_<areas.aid>_<areas.shortname>"  -- einige constraints nur sicherheitshalber eingestellt, da Tabelle längere Zeit in DB verbleibt (als Backup, falls etwas bei Kartierung schief läuft); bei Export in gpkg nicht übernommen, da durch Stil von Template überschrieben
+		(
+		fieldcheck bool not null default 'false',
+	 	type varchar(11) not null,
+		subtype varchar,
+	 	name varchar,
+	 	street varchar,
+	 	housenumber varchar,
+	 	comment varchar,
+	 	cid serial not null unique,
+	 	uuid uuid primary key,
+	 	aid int not null,
+	 	source varchar(6) not null default 'osmimp',  -- statt 'osm' damit direkte Differenzierung möglich, ob Datensatz zu osm-Tabelle ('osm') oder mapping-Tabelle ('osmimp') gehört
+	 	maptime timestamp(0) default current_timestamp,
+	 	last_edit timestamp(0) default current_timestamp,  -- aktualisieren mit Trigger
+	 	geom geometry
+	 	);
+	
+		create trigger last_edit  -- Trigger eig. nicht nötig, da keine Änderungen in DB vorgenommen, erst wenn in QGIS als gpkg exportiert; sicherheitshalber aber installiert
+			before update on "mapping_<areas.aid>_<areas.shortname>"
+			for each row
+			execute function trigger_last_edit();
+
+		create trigger cid  -- Trigger eig. auch nicht nötig (aus gleichem Grund)
+			before update of cid on "mapping_<areas.aid>_<areas.shortname>"
+			for each row
+			execute function trigger_cid();
+
+
+	[4.2] Insert in Mapping-Tabelle [DB]
+
+		- Query Tool (realosm/postgres@BA):
+			insert into "mapping_<areas.aid>_<areas.shortname>" (type, subtype, name, street, housenumber, comment, cid, uuid, aid, geom)
+			select
+				type,
+				subtype,
+				name,
+				street,
+				housenumber,
+				comment,
+				cid,
+				uuid, 
+				aid,		
+				geom
+			from "osm_<areas.aid>_<areas.shortname>";
+	
+
+	[4.3] QGIS-Import [QGIS - "Desktop"]
+
+		- Datenquellenverwaltung -> PostgreSQL -> Verbindungen: "realosm" -> Verbinden:
+			- "mapping_<areas.aid>_<areas.shortname>":
+				- Räuml. Typ: Point
+				- SRID: 25832
+			- "mapping_<areas.aid>_<areas.shortname>" auswählen -> Hinzufügen
+
+
+	[4.4] Export als GeoPackage [QGIS - "Desktop"]
+
+		- Layeransicht -> "mapping_<areas.aid>_<areas.shortname>" -> Export -> Objekte speichern als:
+			- Format: GeoPackage
+			- Dateiname: "mapping"  -- vorbereitetes gpkg nutzen & DB-Tabelle als weiteren Layer (Tabelle) hinzufügen
+			- Layername: "mapping_<areas.aid>_<areas.shortname>"
+			- KBS: EPSG:25832 - ETRS89 / UTM zone 32N
+			- Layeroptionen:
+				[- FID: fid -> so lassen!]
+
+
+	[4.5] Template-Stil [QGIS - "Desktop"]
+
+		- Neuer Layer "mapping_<areas.aid>_<areas.shortname>" -> Layereigenschaften:
+			- Stil -> Lade Stil:
+				- Stil laden -> Aus Datenbank laden
+				- Andere Stile in der Datenbank: "mapping_TEMPLATE_style" -> Stil laden
+			- Attributformular -> Fields [Ändern!]:
+				- aid: 
+					- Vorgaben: Vorgabewert -> <areas.aid>
+			- Stil -> Als Vorgabe speichern:
+				- Vorgabestil speichern in: Datenquellen-Datenbank
+	
+
+	[4.6] Layeransicht "aufräumen"
+		
+		- Layeransicht -> Layer "mapping_1_HD-WS" (gpkg) auswählen -> Layer/Gruppe löschen
+
+		- Layeransicht -> Layer "mapping_1_HD-WS" (DB) auswählen -> Layer/Gruppe löschen
+		
+		- Layeransicht -> Gruppe "mapping" auswählen -> Layer/Gruppe löschen
+
+		- Allgemeines GeoPackage "mapping" wieder in QGIS reinladen (drag&dropen):
+			- Hinzufügende Elemente wählen:
+				- Alle wählen
+				- Layer zu einer Gruppe hinzufügen
+
+
+
+[5] Pre-Mapping
+
+	[5.1] POI-Recherche [QGIS - "Desktop" + Internet]  -- POI-Quellen: Google Maps, ÖPNVKarte + bwegt Fahrplanauskunft (Haltestellen), 116117.de (Hausärzte), Städtewebsites (Grundschulen & Kitas)
+
+		- Layeransicht -> Kartierungsgebiet "mapping_<areas.aid>_<areas.shortname>" auswählen -> Bearbeitungsstatus umschalten -> Punktobjekt hinzufügen:
+			- POIs einzeichnen & Objektattribute hinzufügen
+
+			-- nach POI-Typen getrennt recherchieren (feste Reihenfolge)
+
+
+	[5.2] Default-Einstellungen "mapping" anpassen [QGIS - "Desktop"] -- nach abgeschlossener POI-Recherche für Feldkartierung ändern -> wichtig, sonst fehlerhafte automatische Attributierung bei Feldkartierung!
+
+		- Layer "mapping_<areas.aid>_<areas.shortname>" -> Layereigenschaften:
+			- Attributformular -> Fields [Ändern!]:
+				- fieldcheck:
+					- Vorgaben: Vorgabewert -> true
+				- source:
+					- Vorgaben: Vorgabewert -> 'field'
+			- Stil -> Als Vorgabe speichern:
+				- Vorgabestil speichern in: Datenquellen-Datenbank
+
+
+
+[6] Kartierung
+
+	[6.1] Handy-Export
+
+		[6.1.1] Field-Projekt [QGIS - "Field"]
+
+		- Benötigte Geodaten in QGIS reinladen (per Drag & Drop):  -- Reihenfolge Layer relevant (OSM unten, Tracking oben -> umgedreht zur Reinladefolge), da in QField nicht änderbar!
+			- Offline OSM-Karte ["osm-offline_<areas.aid>_<areas.shortname>.mbtiles"]
+			- Gebietsbegrenzungen ["areas"]
+			- Kartierungsdatei ["mapping_<areas.aid>_<areas.shortname>"]
+			- Trackingdatei ["tracking_<areas.aid>_<areas.shortname>"]
+
+			-- wenn mehrere Gebiete kartiert, Dateien jew. gruppiert reinladen
+
+		- Offline OSM-Karte -> Layereigenschaften -> Transparenz:
+			- Globale Deckkraft: 30,0 %
+
+
+		[6.1.2] Handy-Verbindung [PC / Handy]
+
+		- QGIS-Projekt "Field" + alle enthaltenen Dateien (Layer) auf Handy ziehen -> alle Dateien in gleichem Verzeichnis wie Projekt abspeichern:  -- wichtig: alle für Field-Projektdatei bentötigten Dateien müssen auf Handy in gleicher Pfadstruktur (Ordner & Unterordner) wie auf PC abgespeichert werden, damit relativer Pfad auch auf Handy übereinstimmt!
+			- Dateien: "Field" + Offline OSM-Karte(n), Gebietsbegrenzungen, Kartierungsdatei(en), Trackingdatei(en)
+			- Speicherort: /storage/emulated/0/BA-Kartierung
+
+
+	[6.2] Feldkartierung [QField - "Field"]
+
+		[6.2.1] "Field" öffnen
+
+		- Öffne Lokale Daten -> /storage/emulated/0 -> BA-Kartierung -> Projects:
+			- "Field" auswählen
+
+		(- Falls Layer nicht aktiv: Layereigenschaften [lang drücken] -> Auf Karte anzeigen -> anhaken!)
+
+
+		[6.2.2] Tracking starten
+
+		- Layeransicht -> Layereigenschaften "tracking_<areas.aid>_<areas.shortname>" öffnen -> Tracking einrichten:
+			- Active time constraint -> Minimum time [sec]: 30
+			- Active distance constraint -> Minimum distance [m]: 15
+			- Record when both active constraints are met -> aktivieren!
+			- Measure (M) value attached to vertices: Elapsed time (seconds since start of tracking)
+			-> Tracking starten (-> Tracking aktivieren)
+
+
+		[6.2.3] Kartierung  -- alle bestehenden Objekte überprüfen [fieldcheck auf wahr -> alle Symbole grün] + alle Straßen des Kartierungsgebiet auf Suche nach neuen Objekten ablaufen
+
+		- Layeransicht -> Digitalisierungsmodus aktivieren [Stift oben rechts] -> Kartenansicht  -- nötig, um Änderungen vorzunehmen
+
+		- Bestehendes Objekt (aus OSM-Import / Pre-Mapping) überprüfen:
+			- Objektsymbol anklicken -> Objekt auswählen -> Attribute + Lage mit Realität abgleichen:
+				- Attribute ändern / ergänzen: Editiermodus aktivieren [A mit Stift; 2. von rechts oben] -> Atrribute ändern (immer nach Überprüfung: fieldcheck auf wahr) -> Änderungen speichern
+				- Lage ändern: Knotenwerkzeug aktivieren [Linie mit Stift; 3. von rechts oben] {zum Aktivieren oft nötig 2x auf 3-Punkte-Icon / Knoten-Icon unten rechts zu klicken} -> Neue Position mit Koordinatenkreuz wählen -> Änderungen speichern
+
+		- Neues Objekt hinzufügen:
+			- Zu Position mit Koordinatenkreuz navigieren -> Objekt hinzufügen [Grünes Koordinatenkreuz unten rechts] -> Attribute eingeben -> Änderungen speichern
+
+
+	[6.3] PC-Import [Handy / PC]
+
+		- QGIS-Projekt "Field" + alle enthaltenen Dateien (Layer) auf PC ziehen -> Bestehende Dateien überschreiben (Kopieren und ersetzen):
+			- Dateien: "Field" + Offline OSM-Karte(n), Gebietsbegrenzungen, Kartierungsdatei(en), Trackingdatei(en)
+
+-- LOOP-Ende --

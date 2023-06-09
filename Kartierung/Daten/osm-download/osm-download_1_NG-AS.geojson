@@ -1,0 +1,3127 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-03-11T11:24:54Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24688866",
+        "fee": "no",
+        "leisure": "park",
+        "name": "Menzerpark",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8016202,
+          49.3929637
+        ]
+      },
+      "id": "way/24688866"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24692737",
+        "access": "yes",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8055213,
+          49.3862966
+        ]
+      },
+      "id": "way/24692737"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24717422",
+        "access": "yes",
+        "leisure": "playground",
+        "name": "Generationengarten",
+        "website": "http://wiesenbacher-tal.de/index.php",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8034872,
+          49.3799645
+        ]
+      },
+      "id": "way/24717422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24717427",
+        "access": "yes",
+        "leisure": "playground",
+        "wheelchair": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8047303,
+          49.3820649
+        ]
+      },
+      "id": "way/24717427"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/25048479",
+        "leisure": "playground",
+        "name": "Ziegelhütte-Leinpfad",
+        "opening_hours": "08:00-13:00,15:00-20:00",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7868205,
+          49.3949849
+        ]
+      },
+      "id": "way/25048479"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/25057688",
+        "access": "yes",
+        "leisure": "playground",
+        "name": "Reichensteinstraße 40",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7999969,
+          49.3861541
+        ]
+      },
+      "id": "way/25057688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/25099700",
+        "access": "yes",
+        "leisure": "playground",
+        "name": "Menzerpark Dilsberger Straße",
+        "opening_hours": "08:00-13:00,15:00-20:00",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8017484,
+          49.3934316
+        ]
+      },
+      "id": "way/25099700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/28286151",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8421526,
+          49.3920096
+        ]
+      },
+      "id": "way/28286151"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/37612601",
+        "addr:city": "Neckargemünd",
+        "addr:housenumber": "26",
+        "addr:postcode": "69151",
+        "addr:street": "Schwimmbadstraße",
+        "landuse": "recreation_ground",
+        "leisure": "water_park",
+        "name": "Terrassen-Freischwimmbad",
+        "sport": "swimming",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8102196,
+          49.3936527
+        ]
+      },
+      "id": "way/37612601"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/39597648",
+        "landuse": "village_green",
+        "name": "Burggarten",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8374913,
+          49.3980984
+        ]
+      },
+      "id": "way/39597648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/47083957",
+        "leisure": "playground",
+        "name": "Unterer Eulenscheich 21",
+        "note": "\"Unterer\" mit einem \"r\" am Ende steht wirklich so auf dem Schild.",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7657578,
+          49.3766081
+        ]
+      },
+      "id": "way/47083957"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/47160657",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "8",
+        "addr:postcode": "69151",
+        "addr:street": "Schulstraße",
+        "amenity": "school",
+        "building": "yes",
+        "name": "Grundschule Waldhilsbach",
+        "source:geometry": "HiRes aerial imagery",
+        "start_date": "1912",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7717394,
+          49.3738647
+        ]
+      },
+      "id": "way/47160657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/59110627",
+        "access": "yes",
+        "leisure": "playground",
+        "name": "Mühlgasse 18",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7980903,
+          49.3915442
+        ]
+      },
+      "id": "way/59110627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/87216591",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "18",
+        "addr:postcode": "69151",
+        "addr:street": "Am Kalkbrunnen",
+        "building": "supermarket",
+        "name": "Penny",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "shop": "supermarket",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8009907,
+          49.3799972
+        ]
+      },
+      "id": "way/87216591"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/87320865",
+        "leisure": "playground",
+        "name": "Schulstraße 26",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.772774,
+          49.3755417
+        ]
+      },
+      "id": "way/87320865"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/87321992",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "25",
+        "addr:postcode": "69151",
+        "addr:street": "Neckarsteinacher Straße",
+        "brand": "ALDI Süd",
+        "brand:wikidata": "Q41171672",
+        "brand:wikipedia": "en:Aldi",
+        "building": "supermarket",
+        "name": "ALDI Süd",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "shop": "supermarket",
+        "source": "Bing 2012",
+        "wheelchair": "limited",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8020514,
+          49.3968906
+        ]
+      },
+      "id": "way/87321992"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/88108122",
+        "addr:city": "Neckargemünd",
+        "addr:housenumber": "1",
+        "addr:postcode": "69151",
+        "addr:street": "Am Feuertor",
+        "amenity": "kindergarten",
+        "name": "Städtischer Kindergarten / Am Feuertor",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7996425,
+          49.3945217
+        ]
+      },
+      "id": "way/88108122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/88119696",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "18",
+        "addr:postcode": "69151",
+        "addr:street": "Eichendorffstraße",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "email": "kitawiesenbachertal@neckargemuend.de",
+        "isced:level": "0",
+        "name": "Kindertagesstätte Wiesenbacher Tal",
+        "operator": "Stadt Neckargemünd",
+        "phone": "+49 6223 72202",
+        "website": "https://www.neckargemuend.de/start/erleben/kindergaerten_+kindertagesstaetten.html",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8054276,
+          49.3842997
+        ]
+      },
+      "id": "way/88119696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/100422560",
+        "amenity": "kindergarten",
+        "name": "Städtischer Kindergarten Waldhilsbach",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7719906,
+          49.3723487
+        ]
+      },
+      "id": "way/100422560"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/123450906",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7992871,
+          49.3929552
+        ]
+      },
+      "id": "way/123450906"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/123592659",
+        "leisure": "playground",
+        "wheelchair": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.804203,
+          49.3916552
+        ]
+      },
+      "id": "way/123592659"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/124114162",
+        "addr:housenumber": "16",
+        "addr:street": "Banngartenstraße",
+        "amenity": "school",
+        "name": "Grundschule Neckargemünd",
+        "school": "primary",
+        "source:geometry": "HiRes aerial imagery",
+        "website": "https://www.gs-neckargemuend.de/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.793585,
+          49.3929808
+        ]
+      },
+      "id": "way/124114162"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/124143845",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7939725,
+          49.3926371
+        ]
+      },
+      "id": "way/124143845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/124283504",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7843331,
+          49.3917012
+        ]
+      },
+      "id": "way/124283504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/126245221",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8389281,
+          49.3973293
+        ]
+      },
+      "id": "way/126245221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/126247076",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "13",
+        "addr:postcode": "69151",
+        "addr:street": "Jakob-Bernhard-Straße",
+        "addr:suburb": "Dilsberg",
+        "amenity": "school",
+        "building": "yes",
+        "name": "Grundschule Dilsberg-Mückenloch",
+        "source": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8419085,
+          49.3894834
+        ]
+      },
+      "id": "way/126247076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/144480085",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7767019,
+          49.3927366
+        ]
+      },
+      "id": "way/144480085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/167703916",
+        "barrier": "fence",
+        "leisure": "garden",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7623773,
+          49.3736099
+        ]
+      },
+      "id": "way/167703916"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/167703933",
+        "barrier": "fence",
+        "leisure": "garden",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7660873,
+          49.3727778
+        ]
+      },
+      "id": "way/167703933"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/167703938",
+        "leisure": "garden",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7656814,
+          49.3727386
+        ]
+      },
+      "id": "way/167703938"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/179156832",
+        "leisure": "playground",
+        "ref": "Kraichgaustraße 1/1",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8043726,
+          49.3998778
+        ]
+      },
+      "id": "way/179156832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/192012502",
+        "alt_name": "dm",
+        "building": "yes",
+        "name": "dm-drogerie markt",
+        "shop": "supermarket",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8082038,
+          49.3955837
+        ]
+      },
+      "id": "way/192012502"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/192012578",
+        "building": "supermarket",
+        "name": "Lidl",
+        "shop": "supermarket",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8070106,
+          49.3958388
+        ]
+      },
+      "id": "way/192012578"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/192057908",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "2",
+        "addr:postcode": "69151",
+        "addr:street": "Güterbahnhofstraße",
+        "brand": "Netto Marken-Discount",
+        "brand:wikidata": "Q879858",
+        "building": "supermarket",
+        "description": "Eröffnung: 20.11.2012, 7:00",
+        "drink": "yes",
+        "name": "Netto Marken-Discount",
+        "opening_hours": "Mo-Sa 07:00-21:00",
+        "shop": "supermarket",
+        "source:geometry": "Bing 2012",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7901619,
+          49.3938495
+        ]
+      },
+      "id": "way/192057908"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/219968462",
+        "amenity": "kindergarten",
+        "name": "Sankt Angela",
+        "source:geometry": "HiRes aerial imagery",
+        "website": "http://www.kath-kiga-dilsberg.de",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8384208,
+          49.3966664
+        ]
+      },
+      "id": "way/219968462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/219968524",
+        "leisure": "playground",
+        "name": "Dilsbergerhof am Friedhof",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8399756,
+          49.3805916
+        ]
+      },
+      "id": "way/219968524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/248226037",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "38a",
+        "addr:postcode": "69151",
+        "addr:street": "Josef-Werner-Straße",
+        "amenity": "kindergarten",
+        "name": "Rumpelstilzchen",
+        "website": "https://kiga-rumpelstilzchen.de/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7934686,
+          49.3837693
+        ]
+      },
+      "id": "way/248226037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268243221",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Eichendorffstraße",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8032566,
+          49.3850294
+        ]
+      },
+      "id": "node/268243221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268243222",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Friedrich-Ebert-Straße",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8036616,
+          49.3883175
+        ]
+      },
+      "id": "node/268243222"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268243223",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Friedrich-Ebert-Straße",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8035574,
+          49.3886702
+        ]
+      },
+      "id": "node/268243223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268243224",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Dreikreuzweg",
+        "note": "754",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:2988:0:RiN",
+        "ref:IFOPT:description": "RiN Stadttor/Schulzentrum",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8027922,
+          49.3847133
+        ]
+      },
+      "id": "node/268243224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268243225",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Dreikreuzweg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:2988:0:RiS",
+        "ref:IFOPT:description": "RiS Herrenweg/Er.-Kä.-Schule/Wiesenbach",
+        "route_ref": "35;754",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8024878,
+          49.3841804
+        ]
+      },
+      "id": "node/268243225"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268403541",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bildungszentrum",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:3001",
+        "shelter": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8058693,
+          49.384092
+        ]
+      },
+      "id": "node/268403541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268403542",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Herrenweg",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8033663,
+          49.3811255
+        ]
+      },
+      "id": "node/268403542"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268403543",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "bus_stop",
+        "name": "Stadttor",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:3003:0:2",
+        "route_ref": "35;754;755",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8014312,
+          49.3920995
+        ]
+      },
+      "id": "node/268403543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268403544",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Stadttor",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:3003:0:RiS",
+        "ref:IFOPT:description": "RiS Dreikreuzw./Fr.-Eb.-Str-/Er.-Kä.-Sch",
+        "route_ref": "35;754;755",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8010332,
+          49.3916117
+        ]
+      },
+      "id": "node/268403544"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271220034",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "bus_stop",
+        "name": "Eisenbahnbrücke",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:2990",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8038371,
+          49.3929675
+        ]
+      },
+      "id": "node/271220034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/272616426",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "45",
+        "addr:postcode": "69151",
+        "addr:street": "Wiesenbacher Straße",
+        "name": "Südstadtbäckerei",
+        "opening_hours": "Mo,Tu,Th,Fr 06:00-17:00; We,Sa 06:00-12:00",
+        "shop": "bakery",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8038183,
+          49.3887946
+        ]
+      },
+      "id": "node/272616426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/272616429",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "37",
+        "addr:postcode": "69151",
+        "addr:street": "Wiesenbacher Straße",
+        "amenity": "pharmacy",
+        "contact:email": "medikamente@paracelsus-apotheke-neckargemuend.de",
+        "contact:fax": "+49 6223 1215",
+        "contact:phone": "+49 6223 3300",
+        "dispensing": "yes",
+        "name": "Paracelsus Apotheke",
+        "opening_hours": "Mo-Fr 08:30-13:00,15:00-18:00; Sa 08:30-12:30",
+        "website": "https://www.paracelsus-apotheke-neckargemuend.com/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8038312,
+          49.3891365
+        ]
+      },
+      "id": "node/272616429"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/272616431",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "36",
+        "addr:postcode": "69151",
+        "addr:street": "Wiesenbacher Straße",
+        "description": "Naturkost und Naturwaren",
+        "email": "mail@kornblume-ngd.de",
+        "name": "Kornblume Neckargemünd",
+        "opening_hours": "Mo-Fr 09:00-18:30;Sa 09:00-13:00",
+        "organic": "only",
+        "phone": "+49 6223 72777",
+        "shop": "supermarket",
+        "website": "https://kornblume-ngd.de",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8032139,
+          49.3881581
+        ]
+      },
+      "id": "node/272616431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278842941",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kleingemünd Saarstraße",
+        "network": "VRN",
+        "public_transport": "platform",
+        "source:position": "HiRes aerial imagery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8071173,
+          49.4005371
+        ]
+      },
+      "id": "node/278842941"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278842962",
+        "bus": "yes",
+        "bus_lines": "735",
+        "highway": "bus_stop",
+        "name": "Kleingemünd Peter-Schnellbach-Straße",
+        "network": "VRN",
+        "public_transport": "platform",
+        "source:position": "HiRes aerial imagery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8042543,
+          49.4022562
+        ]
+      },
+      "id": "node/278842962"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278842967",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kleingemünd Felsenberg",
+        "network": "VRN",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7993214,
+          49.3991932
+        ]
+      },
+      "id": "node/278842967"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278845973",
+        "bench": "no",
+        "bin": "no",
+        "highway": "bus_stop",
+        "name": "Eisenbahnbrücke",
+        "note": "752;753",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:2990",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8035583,
+          49.3931794
+        ]
+      },
+      "id": "node/278845973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/279007755",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kleingemünd Im Schulzengarten",
+        "network": "VRN",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8031637,
+          49.3987928
+        ]
+      },
+      "id": "node/279007755"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/279007756",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kleingemünd Abzweigung B 37",
+        "network": "VRN",
+        "public_transport": "platform",
+        "source": "HiRes aerial imagery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8011435,
+          49.3975314
+        ]
+      },
+      "id": "node/279007756"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295443",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Kümmelbacher Hof",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7766975,
+          49.3931563
+        ]
+      },
+      "id": "node/280295443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295445",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Kümmelbacher Hof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "route_ref": "35;735;752;754;755",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7767629,
+          49.3928969
+        ]
+      },
+      "id": "node/280295445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295447",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Melacpass",
+        "network": "VRN",
+        "public_transport": "platform",
+        "route_ref": "35;735;752;754;755",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7817837,
+          49.3927757
+        ]
+      },
+      "id": "node/280295447"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295450",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Melacpass",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "route_ref": "35;735;752;754;755",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7815392,
+          49.3929247
+        ]
+      },
+      "id": "node/280295450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295452",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Bahnhof",
+        "public_transport": "platform",
+        "ref": "B",
+        "ref:IFOPT": "de:08226:2986:2",
+        "route_ref": "35;735;1061",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7873575,
+          49.3940277
+        ]
+      },
+      "id": "node/280295452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295455",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Bahnhof",
+        "public_transport": "platform",
+        "ref": "A",
+        "ref:IFOPT": "de:08226:2986:2",
+        "route_ref": "35;735;752;753;754;755",
+        "shelter": "no",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.787194,
+          49.3941438
+        ]
+      },
+      "id": "node/280295455"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295457",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Schützenhausbrücke",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:3000:1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7907584,
+          49.3944416
+        ]
+      },
+      "id": "node/280295457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295460",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Schützenhausbrücke",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:3000:1",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7917336,
+          49.3946048
+        ]
+      },
+      "id": "node/280295460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295463",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Hanfmarkt",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:2995:0:RiO",
+        "ref:IFOPT:description": "RiO Altes Rathaus/Stadttor/Eisenbahnbr.",
+        "route_ref": "35;752;753;754",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7968465,
+          49.3947892
+        ]
+      },
+      "id": "node/280295463"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295465",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Hanfmarkt",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:2995:0:RiW",
+        "ref:IFOPT:description": "RiW Bahnhof/Schützenhausbr./Ende aus RiO",
+        "route_ref": "35;752;753;754",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.796626,
+          49.394819
+        ]
+      },
+      "id": "node/280295465"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295467",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Altes Rathaus",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:2985:0:1",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7994561,
+          49.3932212
+        ]
+      },
+      "id": "node/280295467"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280295470",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Letzter Heller",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8007601,
+          49.39382
+        ]
+      },
+      "id": "node/280295470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/283617954",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "10",
+        "addr:postcode": "69151",
+        "addr:street": "Marktplatz",
+        "amenity": "pharmacy",
+        "contact:phone": "+49 6223 3919",
+        "name": "Markt-Apotheke"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7992032,
+          49.3940152
+        ]
+      },
+      "id": "node/283617954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/283617964",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "3",
+        "addr:postcode": "69151",
+        "addr:street": "Bahnhofstraße",
+        "contact:facebook": "https://www.facebook.com/pages/Bckerei-Cafe-Hnnerkopf/271180656278425",
+        "name": "Hünnerkopf",
+        "shop": "bakery",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7956677,
+          49.3945937
+        ]
+      },
+      "id": "node/283617964"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/288055791",
+        "bench": "no",
+        "bus": "yes",
+        "bus_lines": "755",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Walkmühle",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7880731,
+          49.3816717
+        ]
+      },
+      "id": "node/288055791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/288055800",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Neckargemünd Friedhof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7962673,
+          49.3915941
+        ]
+      },
+      "id": "node/288055800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/289745767",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Waldhilsbach, Ortsausgang",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "source:position": "HiRes aerial imagery",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7726287,
+          49.371388
+        ]
+      },
+      "id": "node/289745767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/289745770",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Waldhilsbach, Ortseingang",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "HiRes aerial imagery",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7732361,
+          49.3713115
+        ]
+      },
+      "id": "node/289745770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/303603799",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Rainbach Abzweig Brunnenacker",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "uic_name": "Rainbach Abzw. Brunnenacker, Neckargemünd",
+        "uic_ref": "509122"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.83157,
+          49.3961061
+        ]
+      },
+      "id": "node/303603799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/306006001",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kleingemünd Ort",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "route_ref": "735;753",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "uic_name": "Kleingemünd Ort, Neckargemünd",
+        "uic_ref": "507547"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7993876,
+          49.3969869
+        ]
+      },
+      "id": "node/306006001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/307398969",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:postcode": "69151",
+        "addr:street": "Bahnhofstraße",
+        "amenity": "pharmacy",
+        "name": "Brücken-Apotheke",
+        "opening_hours": "Mo-Fr 08:30-13:00, 15:00-18:30; Sa 09:00-13:00; PH off",
+        "website": "https://www.bruecken-apo.info/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7918808,
+          49.3946761
+        ]
+      },
+      "id": "node/307398969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/310630970",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "bus_lines": "752",
+        "highway": "bus_stop",
+        "name": "Dilsberg Neuhof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8411711,
+          49.3921162
+        ]
+      },
+      "id": "node/310630970"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/310630973",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "bus_lines": "752",
+        "highway": "bus_stop",
+        "name": "Dilsberg Neuhof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8413446,
+          49.392124
+        ]
+      },
+      "id": "node/310630973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316111633",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Neckargemünd Neckarbrücke",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:3000:2",
+        "shelter": "yes",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7946427,
+          49.3954454
+        ]
+      },
+      "id": "node/316111633"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316113643",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kleingemünd Schwimmbad",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8086152,
+          49.3952104
+        ]
+      },
+      "id": "node/316113643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/316113646",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kleingemünd Schwimmbad",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "Bing 2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8075688,
+          49.3954247
+        ]
+      },
+      "id": "node/316113646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/323260254",
+        "bench": "yes",
+        "description": "Hochbord vorhanden",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Bahnhof",
+        "public_transport": "platform",
+        "railway:ref:DBAG": "RNM B",
+        "ref:IFOPT": "de:08226:2986:3",
+        "route_ref": "752;753;754;755",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7880863,
+          49.3941158
+        ]
+      },
+      "id": "node/323260254"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/323260260",
+        "bench": "no",
+        "bin": "no",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Neckargemünd Neckarbrücke",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:08226:3000:2",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7940927,
+          49.3951916
+        ]
+      },
+      "id": "node/323260260"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/324070879",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Rainbach",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8231611,
+          49.395819
+        ]
+      },
+      "id": "node/324070879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/324070882",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Rainbach",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8232518,
+          49.3953002
+        ]
+      },
+      "id": "node/324070882"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/337098016",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "9",
+        "addr:quarter": "Kleingemünd",
+        "addr:street": "Kurpfalzstraße",
+        "amenity": "kindergarten",
+        "name": "Evangelische Kindertagesstätte Kleingemünd",
+        "source:geometry": "Bing 2012",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8047293,
+          49.3975578
+        ]
+      },
+      "id": "way/337098016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/339235529",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kleiingemünd Ort",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "route_ref": "735;753",
+        "shelter": "yes",
+        "uic_name": "Kleingemünd Ort, Neckargemünd",
+        "uic_ref": "507547"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7984315,
+          49.3973769
+        ]
+      },
+      "id": "node/339235529"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/381275299",
+        "bus": "yes",
+        "bus_lines": "735;753",
+        "highway": "bus_stop",
+        "name": "Kleingemünd Im Brühl",
+        "network": "VRN",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8032151,
+          49.4005266
+        ]
+      },
+      "id": "node/381275299"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/391813740",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8051695,
+          49.3977702
+        ]
+      },
+      "id": "way/391813740"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/406624821",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8002925,
+          49.3777447
+        ]
+      },
+      "id": "way/406624821"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/406624822",
+        "leisure": "park",
+        "name": "Interkultureller Garten",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8003141,
+          49.3777174
+        ]
+      },
+      "id": "way/406624822"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/574087295",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Waldhilsbach, Rössel",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7693206,
+          49.3741246
+        ]
+      },
+      "id": "node/574087295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/574087296",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Waldhilsbach, Rössel",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7694854,
+          49.3740993
+        ]
+      },
+      "id": "node/574087296"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/574087297",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Waldhilsbach, Eulenscheich",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "HiRes aerial imagery",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7660574,
+          49.3766529
+        ]
+      },
+      "id": "node/574087297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/574168165",
+        "bench": "no",
+        "bus": "yes",
+        "bus_lines": "755",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Walkmühle",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7878127,
+          49.3816305
+        ]
+      },
+      "id": "node/574168165"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/574168173",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Neckargemünd Friedhof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.796514,
+          49.3915384
+        ]
+      },
+      "id": "node/574168173"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/600363262",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "25",
+        "addr:postcode": "69151",
+        "addr:street": "Heidelberger Straße",
+        "name": "Holzofenbäckerei Emert",
+        "opening_hours": "Tu-Fr 06:30-13:00; Sa 06:30-12:00",
+        "shop": "bakery",
+        "website": "https://holzofenbäckerei-emert.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7695962,
+          49.3737153
+        ]
+      },
+      "id": "node/600363262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/600363265",
+        "addr:city": "Neckargemünd",
+        "addr:housenumber": "28",
+        "addr:postcode": "69151",
+        "addr:street": "Heidelberger Straße",
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "healthcare:speciality": "general",
+        "name": "Heike Pavlik - Dr. Anita Meier-Frick",
+        "old_name": "Praxis Dr. Mander",
+        "website": "https://www.hausarztpraxis-pavlik.de/waldhilsbach/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7706023,
+          49.37306
+        ]
+      },
+      "id": "node/600363265"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/692800289",
+        "access": "yes",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7706042,
+          49.3781094
+        ]
+      },
+      "id": "way/692800289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/712595745",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8801213,
+          49.4146863
+        ]
+      },
+      "id": "way/712595745"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/712595746",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8799087,
+          49.4145937
+        ]
+      },
+      "id": "way/712595746"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/712595763",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8795247,
+          49.4143555
+        ]
+      },
+      "id": "way/712595763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/746760940",
+        "bench": "no",
+        "bus": "yes",
+        "bus_lines": "755",
+        "check_date:shelter": "2021-05-02",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Sportplatz",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7940745,
+          49.3867878
+        ]
+      },
+      "id": "node/746760940"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/746761026",
+        "bench": "no",
+        "bus": "yes",
+        "bus_lines": "755",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Sportplatz",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.794571,
+          49.3873812
+        ]
+      },
+      "id": "node/746761026"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/763491411",
+        "bench": "no",
+        "bus": "yes",
+        "bus_lines": "752;753",
+        "highway": "bus_stop",
+        "name": "Dilsberg Langenzeller Straße",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.84089,
+          49.3911348
+        ]
+      },
+      "id": "node/763491411"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/765395445",
+        "amenity": "kindergarten",
+        "name": "Waldkindergarten Waldhilsbach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7739056,
+          49.3745005
+        ]
+      },
+      "id": "node/765395445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/768874878",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "bus_lines": "752;753",
+        "highway": "bus_stop",
+        "name": "Neckargemünd Faßfabrik",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8114564,
+          49.3913584
+        ]
+      },
+      "id": "node/768874878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/768874888",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "bus_lines": "752;753",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Neckargemünd Faßfabrik",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8111871,
+          49.3915203
+        ]
+      },
+      "id": "node/768874888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/802509061",
+        "addr:housenumber": "29",
+        "addr:street": "Neckarsteinacher Straße",
+        "brand": "REWE",
+        "brand:wikidata": "Q16968817",
+        "brand:wikipedia": "de:Rewe (Markt)",
+        "building": "supermarket",
+        "name": "REWE",
+        "opening_hours": "Mo-Sa 07:00-22:00",
+        "shop": "supermarket",
+        "source": "local knowledge;survey",
+        "website": "https://www.rewe.de/marktseite/neckargemuend/840036/rewe-markt-neckarsteinacher-str-29/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8055794,
+          49.3963567
+        ]
+      },
+      "id": "way/802509061"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/823566336",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mückenloch, Neckarhäuser Straße",
+        "network": "VRN",
+        "operator": "BRN",
+        "public_transport": "platform",
+        "route_ref": "752;753",
+        "source:position": "HiRes aerial imagery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8549822,
+          49.3886642
+        ]
+      },
+      "id": "node/823566336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/823566368",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mückenloch, Neckarhäuserhofstraße",
+        "network": "VRN",
+        "operator": "BRN",
+        "public_transport": "platform",
+        "route_ref": "752;753",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8536486,
+          49.3891529
+        ]
+      },
+      "id": "node/823566368"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/865607273",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8555613,
+          49.3876996
+        ]
+      },
+      "id": "way/865607273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/905133994",
+        "addr:housenumber": "2",
+        "addr:street": "Karl-Landsteiner-Straße",
+        "brand": "EDEKA",
+        "brand:wikidata": "Q701755",
+        "brand:wikipedia": "de:Edeka",
+        "building": "retail",
+        "fixme": "Position und Größe geschätzt",
+        "name": "EDEKA Arlt",
+        "opening_hours": "Mo-Sa 07:00-21:00",
+        "operator": "EDEKA Südwest",
+        "operator:wikidata": "Q1283188",
+        "phone": "+49 6223 967320",
+        "shop": "supermarket",
+        "source:addr": "survey",
+        "start_date": "2021-07-07",
+        "website": "https://www.edeka.de/eh/südwest/edeka-arlt-karl-landsteiner-straße-2/index.jsp",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7966739,
+          49.3906131
+        ]
+      },
+      "id": "way/905133994"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1080639744",
+        "addr:city": "Neckargemünd",
+        "addr:country": "DE",
+        "addr:housenumber": "12",
+        "addr:postcode": "69151",
+        "addr:street": "Im Brühl",
+        "amenity": "kindergarten",
+        "name": "Evangelischer Kindergarten Kleingemünd",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8001922,
+          49.3995075
+        ]
+      },
+      "id": "node/1080639744"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1136310863",
+        "access": "yes",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8057763,
+          49.3862562
+        ]
+      },
+      "id": "way/1136310863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1991423133",
+        "amenity": "kindergarten",
+        "name": "Kindergarten"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8596921,
+          49.3879887
+        ]
+      },
+      "id": "node/1991423133"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2085230548",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Abzweigung B 37",
+        "network": "VRN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8012162,
+          49.3974481
+        ]
+      },
+      "id": "node/2085230548"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2131311564",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Dilsberg Abzw. Mückenloch",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source": "Bing 2012",
+        "tactile_paving": "no",
+        "uic_name": "Abzw. Mückenloch, Neckargemünd-Dilsberg",
+        "uic_ref": "505883"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8409752,
+          49.3956106
+        ]
+      },
+      "id": "node/2131311564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2131311571",
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "Dilsberg Blumenstrich",
+        "network": "VRN",
+        "public_transport": "platform",
+        "source": "Bing 2012",
+        "uic_ref": "505884"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8381074,
+          49.3866471
+        ]
+      },
+      "id": "node/2131311571"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2131311594",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Dilsberg Abzw. Mückenloch",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8406761,
+          49.3955753
+        ]
+      },
+      "id": "node/2131311594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2290964116",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Dilsbergerhof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "source:position": "HiRes aerial imagery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8383913,
+          49.3798037
+        ]
+      },
+      "id": "node/2290964116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2290965513",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Dilsberg Vor dem Tor",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "source:position": "HiRes aerial imagery",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.836847,
+          49.3977179
+        ]
+      },
+      "id": "node/2290965513"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2334043198",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mückenloch, Friedhof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "source:position": "HiRes aerial imagery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8607989,
+          49.3912545
+        ]
+      },
+      "id": "node/2334043198"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2334051853",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mückenloch, Ortsmitte",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "HiRes aerial imagery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8582076,
+          49.3886145
+        ]
+      },
+      "id": "node/2334051853"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2334051854",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mückenloch, Ortsmitte",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "HiRes aerial imagery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8585599,
+          49.3889219
+        ]
+      },
+      "id": "node/2334051854"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2450636695",
+        "description": "im REWE",
+        "name": "Frick",
+        "opening_hours": "Mo-Sa 07:00-22:00; Su 08:00-11:00",
+        "shop": "bakery",
+        "website": "https://www.stadtbaeckerei-frick.de",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8052617,
+          49.3965376
+        ]
+      },
+      "id": "node/2450636695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2526031798",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schulzentrum, Neckargemünd",
+        "network": "VRN",
+        "note": "748",
+        "source:position": "Bing 2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8030985,
+          49.3915931
+        ]
+      },
+      "id": "node/2526031798"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2526031799",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schulzentrum, Neckargemünd",
+        "network": "VRN",
+        "note": "748",
+        "source:position": "Bing 2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8029644,
+          49.3917657
+        ]
+      },
+      "id": "node/2526031799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2526031800",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schulzentrum, Neckargemünd",
+        "network": "VRN",
+        "note": "748",
+        "source:position": "Bing 2012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8028366,
+          49.3919333
+        ]
+      },
+      "id": "node/2526031800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2675939016",
+        "bench": "no",
+        "highway": "bus_stop",
+        "name": "Schwimmbadstraße",
+        "ref:IFOPT": "de:08226:3011",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8055099,
+          49.3940858
+        ]
+      },
+      "id": "node/2675939016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2908338190",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Rainbach Abzweig Brunnenacker",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "uic_name": "Rainbach Abzw. Brunnenacker, Neckargemünd",
+        "uic_ref": "509122"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8319475,
+          49.3962165
+        ]
+      },
+      "id": "node/2908338190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4671052338",
+        "addr:housenumber": "16",
+        "addr:street": "Banngartenstraße",
+        "amenity": "kindergarten",
+        "name": "Rappelkiste",
+        "website": "http://www.kinderkrippe-rappelkiste.de/unsere-rappelkistenh%C3%A4user/neckargem%C3%BCnd/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7930482,
+          49.3930794
+        ]
+      },
+      "id": "node/4671052338"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4735971625",
+        "addr:city": "Neckargemünd",
+        "addr:housenumber": "37",
+        "addr:postcode": "69151",
+        "addr:street": "Wiesenbacher Straße",
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "healthcare:speciality": "general",
+        "name": "Hausarzt Pavlik",
+        "phone": "+4962232682"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8039225,
+          49.3891948
+        ]
+      },
+      "id": "node/4735971625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4938957024",
+        "addr:housenumber": "5",
+        "addr:street": "Gaiberger Straße",
+        "amenity": "kindergarten",
+        "name": "Wurzelzwerge Waldhilsbach",
+        "website": "http://www.wurzelzwerge-waldhilsbach.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.771208,
+          49.3721677
+        ]
+      },
+      "id": "node/4938957024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5654212361",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kleingemünd Kindergarten",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "source:position": "Bing 2012",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8040989,
+          49.3979703
+        ]
+      },
+      "id": "node/5654212361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6322764800",
+        "bench": "no",
+        "bin": "no",
+        "highway": "bus_stop",
+        "name": "Grund- und Hauptschule",
+        "note": "VRN Bus 736 und VRN Bus 746",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7911417,
+          49.393661
+        ]
+      },
+      "id": "node/6322764800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6322764801",
+        "description": "Das Spielen auf dem Schulhof ist für Kinder bis 14 Jahre erlaubt von Montag bis Freitag 14.30 bis 18.30",
+        "leisure": "playground",
+        "max_age": "14",
+        "opening_hours": "Mo-Fr 14:30-18:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7938904,
+          49.3930807
+        ]
+      },
+      "id": "node/6322764801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6862980417",
+        "addr:city": "Neckargemünd",
+        "addr:housenumber": "75",
+        "addr:postcode": "69151",
+        "addr:street": "Hauptstraße",
+        "name": "Pafümerie Werner",
+        "opening_hours": "Mo-Fr 09:00-18:30;Sa 08:45-13:00",
+        "shop": "chemist",
+        "website": "https://www.werner-godel.de/in-ihrer-naehe/neckargemuend/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7967264,
+          49.3946761
+        ]
+      },
+      "id": "node/6862980417"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7322852424",
+        "amenity": "kindergarten",
+        "name": "Waldzwerge",
+        "website": "https://www.waldzwerge-neckargemuend.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8040646,
+          49.3762432
+        ]
+      },
+      "id": "node/7322852424"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7663407240",
+        "highway": "bus_stop",
+        "name": "Dilsberg Blumenstrich",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8381988,
+          49.38654
+        ]
+      },
+      "id": "node/7663407240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7663407241",
+        "highway": "bus_stop",
+        "name": "Dilsberg Langenzeller Straße",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8408206,
+          49.391192
+        ]
+      },
+      "id": "node/7663407241"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9010103659",
+        "bench": "no",
+        "bin": "no",
+        "description": "Bus 752, 753",
+        "highway": "bus_stop",
+        "name": "Langenzeller Straße, Neckargemünd-Dilsberg",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8413689,
+          49.3917997
+        ]
+      },
+      "id": "node/9010103659"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9010114302",
+        "name": "Conny's Lädchen",
+        "opening_hours": "Mo-Sa 06:00-13:00; Tu,Th,Fr 15:00-18:00; PH off",
+        "shop": "supermarket"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8576198,
+          49.3882045
+        ]
+      },
+      "id": "node/9010114302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9010114304",
+        "name": "Holzofenbäckerei Emert",
+        "shop": "bakery",
+        "website": "https://www.holzofenbäckerei-emert.de"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8414313,
+          49.3932876
+        ]
+      },
+      "id": "node/9010114304"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9073350722",
+        "amenity": "kindergarten",
+        "denomination": "catholic",
+        "name": "St. Ulrich",
+        "religion": "christian"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7988681,
+          49.3934468
+        ]
+      },
+      "id": "node/9073350722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10647555155",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Erich-Kästner-Schule",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.8035398,
+          49.3816174
+        ]
+      },
+      "id": "node/10647555155"
+    }
+  ]
+}

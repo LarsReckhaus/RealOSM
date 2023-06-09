@@ -1,0 +1,4178 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-03-20T11:43:08Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "relation/14712709",
+        "amenity": "kindergarten",
+        "name": "Kita Kohkamp",
+        "operator": "Outlaw gGmbH",
+        "operator:type": "private_non_profit",
+        "type": "multipolygon",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7397678,
+          51.8656395
+        ]
+      },
+      "id": "relation/14712709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/48714367",
+        "addr:city": "Sendenhorst",
+        "addr:country": "DE",
+        "addr:housenumber": "26",
+        "addr:postcode": "48324",
+        "addr:street": "Osttor",
+        "brand": "EDEKA",
+        "brand:wikidata": "Q701755",
+        "brand:wikipedia": "de:Edeka",
+        "building": "retail",
+        "name": "EDEKA",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "shop": "supermarket",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8341316,
+          51.843434
+        ]
+      },
+      "id": "way/48714367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/48714465",
+        "addr:city": "Sendenhorst",
+        "addr:country": "DE",
+        "addr:housenumber": "24",
+        "addr:postcode": "48324",
+        "addr:street": "Osttor",
+        "brand": "ALDI Nord",
+        "brand:wikidata": "Q41171373",
+        "brand:wikipedia": "en:Aldi",
+        "building": "retail",
+        "name": "ALDI Nord",
+        "opening_hours": "Mo-Sa 07:00-21:00; Su,PH off",
+        "shop": "supermarket",
+        "website": "https://www.aldi-nord.de/tools/filialen-und-oeffnungszeiten/nordrhein-westfalen/sendenhorst/osttor-24.html",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8334186,
+          51.8435661
+        ]
+      },
+      "id": "way/48714465"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/48739272",
+        "landuse": "village_green",
+        "leisure": "common",
+        "name": "Teigelkampwiese",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8325635,
+          51.8412324
+        ]
+      },
+      "id": "way/48739272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/49014849",
+        "landuse": "village_green",
+        "leisure": "common",
+        "name": "Lambertiplatz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8317602,
+          51.8429155
+        ]
+      },
+      "id": "way/49014849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/49184343",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8306079,
+          51.8429138
+        ]
+      },
+      "id": "way/49184343"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/50897549",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8298785,
+          51.8341659
+        ]
+      },
+      "id": "way/50897549"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/54242170",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8165197,
+          51.8486076
+        ]
+      },
+      "id": "way/54242170"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/54244446",
+        "leisure": "playground",
+        "name": "Geisterholz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8199008,
+          51.8356026
+        ]
+      },
+      "id": "way/54244446"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/243590853",
+        "addr:city": "Sendenhorst",
+        "addr:country": "DE",
+        "addr:housenumber": "10",
+        "addr:postcode": "48324",
+        "addr:street": "Hoetmarer Straße",
+        "brand": "Lidl",
+        "brand:wikidata": "Q151954",
+        "brand:wikipedia": "en:Lidl",
+        "building": "retail",
+        "name": "Lidl",
+        "opening_hours": "Mo-Sa 07:00-21:00",
+        "operator": "Lidl Vertriebs-GmbH & Co. KG (Westerkappeln)",
+        "shop": "supermarket",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8361173,
+          51.8456039
+        ]
+      },
+      "id": "way/243590853"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/262462641",
+        "addr:city": "Sendenhorst",
+        "addr:country": "DE",
+        "addr:housenumber": "39",
+        "addr:postcode": "48324",
+        "addr:street": "Nordtor",
+        "brand": "K+K",
+        "brand:wikidata": "Q1718009",
+        "brand:wikipedia": "de:K+K Klaas & Kock",
+        "building": "yes",
+        "name": "K&K",
+        "opening_hours": "Mo-Sa 08:00-22:00",
+        "shop": "supermarket",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8228538,
+          51.8484644
+        ]
+      },
+      "id": "way/262462641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/283782446",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8734087,
+          51.8166466
+        ]
+      },
+      "id": "way/283782446"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/283782448",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8722297,
+          51.8164044
+        ]
+      },
+      "id": "way/283782448"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/314623871",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7345015,
+          51.8680477
+        ]
+      },
+      "id": "way/314623871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/314879699",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7171531,
+          51.8832661
+        ]
+      },
+      "id": "way/314879699"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/314879700",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7182804,
+          51.8834043
+        ]
+      },
+      "id": "way/314879700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/314996702",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7142952,
+          51.8801755
+        ]
+      },
+      "id": "way/314996702"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/314996704",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7138837,
+          51.8804524
+        ]
+      },
+      "id": "way/314996704"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/315183982",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.71066,
+          51.8783962
+        ]
+      },
+      "id": "way/315183982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/315186831",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7120478,
+          51.8752004
+        ]
+      },
+      "id": "way/315186831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/315349234",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7224151,
+          51.8801364
+        ]
+      },
+      "id": "way/315349234"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/318598252",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7138213,
+          51.8674568
+        ]
+      },
+      "id": "way/318598252"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/319069925",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7320187,
+          51.8893987
+        ]
+      },
+      "id": "way/319069925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/319069926",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7316175,
+          51.8892667
+        ]
+      },
+      "id": "way/319069926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/319069927",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7313242,
+          51.8894
+        ]
+      },
+      "id": "way/319069927"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/319624528",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7107206,
+          51.8975202
+        ]
+      },
+      "id": "way/319624528"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/319624529",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7113681,
+          51.8972117
+        ]
+      },
+      "id": "way/319624529"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320221466",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7088695,
+          51.8909862
+        ]
+      },
+      "id": "way/320221466"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320734634",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7082567,
+          51.8894894
+        ]
+      },
+      "id": "way/320734634"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/378921122",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8562038,
+          51.8348436
+        ]
+      },
+      "id": "way/378921122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/379625033",
+        "addr:city": "Sendenhorst",
+        "addr:country": "DE",
+        "addr:housenumber": "1",
+        "addr:postcode": "48324",
+        "addr:street": "Jahnstraße",
+        "amenity": "kindergarten",
+        "contact:website": "http://www.kindergruppe-sendenhorst.de/kitastoppelhopser/",
+        "name": "KiTa Stoppelhopser",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8191827,
+          51.8461077
+        ]
+      },
+      "id": "way/379625033"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/383222867",
+        "addr:city": "Sendenhorst",
+        "addr:country": "DE",
+        "addr:housenumber": "6",
+        "addr:postcode": "48324",
+        "addr:street": "Kardinal-von-Galen-Straße",
+        "amenity": "school",
+        "name": "Kardinal-von-Galen-Grundschule",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8242534,
+          51.8419095
+        ]
+      },
+      "id": "way/383222867"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/383222870",
+        "addr:city": "Sendenhorst",
+        "addr:country": "DE",
+        "addr:housenumber": "2",
+        "addr:postcode": "48324",
+        "addr:street": "Overbergstraße",
+        "amenity": "kindergarten",
+        "name": "Kath. Kindergarten St. Michael",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8242445,
+          51.8412107
+        ]
+      },
+      "id": "way/383222870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/383396749",
+        "addr:city": "Sendenhorst",
+        "addr:country": "DE",
+        "addr:housenumber": "1",
+        "addr:postcode": "48324",
+        "addr:street": "Kirchbergstraße",
+        "amenity": "kindergarten",
+        "contact:website": "http://www.kindergruppe-sendenhorst.de/montessori/",
+        "name": "Familienzentrum Maria Montessori",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8285902,
+          51.8503136
+        ]
+      },
+      "id": "way/383396749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/383408063",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8371761,
+          51.8460018
+        ]
+      },
+      "id": "way/383408063"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/383433093",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7379742,
+          51.8702718
+        ]
+      },
+      "id": "way/383433093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/383448261",
+        "addr:city": "Sendenhorst",
+        "addr:country": "DE",
+        "addr:housenumber": "6",
+        "addr:postcode": "48324",
+        "addr:street": "Teckelschlaut",
+        "amenity": "kindergarten",
+        "name": "Kindergarten St. Ludgerus",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.734585,
+          51.8674714
+        ]
+      },
+      "id": "way/383448261"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/390371058",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7709921,
+          51.8435068
+        ]
+      },
+      "id": "way/390371058"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/461308745",
+        "leisure": "playground",
+        "name": "Spielplatz Echterbrock",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8319564,
+          51.8477793
+        ]
+      },
+      "id": "way/461308745"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/541006763",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Krankenhaus",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14546:0:2",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8207543,
+          51.8434203
+        ]
+      },
+      "id": "node/541006763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/627039004",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7317377,
+          51.8648345
+        ]
+      },
+      "id": "way/627039004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/627039011",
+        "amenity": "kindergarten",
+        "name": "KiTa Biberburg",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7382414,
+          51.8628829
+        ]
+      },
+      "id": "way/627039011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/627039012",
+        "dog": "no",
+        "leisure": "playground",
+        "max_age": "13",
+        "name": "Spielplatz Süd II",
+        "operator": "Stadt Sendenhorst",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7381576,
+          51.863213
+        ]
+      },
+      "id": "way/627039012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/627039023",
+        "contact:phone": "+49 151 15012971",
+        "dog": "no",
+        "leisure": "playground",
+        "max_age": "13",
+        "name": "Spielplatz Langen Esch",
+        "operator": "Stadt Sendenhorst",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7363921,
+          51.8609967
+        ]
+      },
+      "id": "way/627039023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/639281913",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hagenholt",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14549:0:1",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8256245,
+          51.8351348
+        ]
+      },
+      "id": "node/639281913"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/639480335",
+        "landuse": "village_green",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7354811,
+          51.8984116
+        ]
+      },
+      "id": "way/639480335"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/652051109",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.825366,
+          51.8479203
+        ]
+      },
+      "id": "way/652051109"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/659613512",
+        "name": "Gunnemann",
+        "shop": "chemist",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8272431,
+          51.8443922
+        ]
+      },
+      "id": "node/659613512"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/884068498",
+        "landuse": "village_green",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8241039,
+          51.8380085
+        ]
+      },
+      "id": "way/884068498"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/884068499",
+        "landuse": "village_green",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8245712,
+          51.8381047
+        ]
+      },
+      "id": "way/884068499"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/884068500",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8241366,
+          51.8374578
+        ]
+      },
+      "id": "way/884068500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/884068503",
+        "landuse": "village_green",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8243931,
+          51.8372941
+        ]
+      },
+      "id": "way/884068503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/884068512",
+        "leisure": "playground",
+        "max_age": "13",
+        "name": "Spielplatz Auf dem Garrath",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8223781,
+          51.8351575
+        ]
+      },
+      "id": "way/884068512"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/948593598",
+        "area": "yes",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "platform",
+        "name": "Peters",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14637:0:1",
+        "shelter": "no",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7770845,
+          51.8337526
+        ]
+      },
+      "id": "way/948593598"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/948593599",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "platform",
+        "name": "Peters",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14637:0:2",
+        "shelter": "no",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7768087,
+          51.8337205
+        ]
+      },
+      "id": "way/948593599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/961984631",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7331599,
+          51.8702818
+        ]
+      },
+      "id": "way/961984631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/975476304",
+        "amenity": "kindergarten",
+        "email": "kita.stjohannes-sendenhorst@bistum-muenster.de",
+        "name": "Kita St. Johannes",
+        "operator": "Kath. Kirchengemeinde St. Martinus und Ludgerus",
+        "operator:type": "religious",
+        "phone": "+49 2526 937207",
+        "website": "https://www.st-martinus-und-ludgerus.de/kirchen-einrichtungen/kita-st-johannes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8323507,
+          51.8409522
+        ]
+      },
+      "id": "way/975476304"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/975476321",
+        "amenity": "kindergarten",
+        "email": "kita.stmarien-sendenhorst@bistum-muenster.de",
+        "name": "Kita St. Marien",
+        "operator": "Kath. Kirchengemeinde St. Martinus und Ludgerus",
+        "operator:type": "religious",
+        "phone": "+49 2526 821",
+        "website": "https://www.st-martinus-und-ludgerus.de/kirchen-einrichtungen/kita-st-marien",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8313201,
+          51.8450894
+        ]
+      },
+      "id": "way/975476321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/975476324",
+        "leisure": "playground",
+        "max_age": "13",
+        "name": "Spielplatz Alte Stadt",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8320906,
+          51.8453541
+        ]
+      },
+      "id": "way/975476324"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/975476329",
+        "leisure": "playground",
+        "max_age": "13",
+        "name": "Spielplatz Ostenpromenade",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.829747,
+          51.8460194
+        ]
+      },
+      "id": "way/975476329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/975476361",
+        "leisure": "playground",
+        "max_age": "13",
+        "name": "Spielplatz Auf dem Bült",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.822558,
+          51.8478027
+        ]
+      },
+      "id": "way/975476361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/975977505",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8286694,
+          51.8386936
+        ]
+      },
+      "id": "way/975977505"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/976017415",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7164805,
+          51.882934
+        ]
+      },
+      "id": "way/976017415"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1047665570",
+        "leisure": "garden",
+        "name": "Bauerngarten",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8423911,
+          51.8361381
+        ]
+      },
+      "id": "way/1047665570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1047668151",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8399434,
+          51.8388149
+        ]
+      },
+      "id": "way/1047668151"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1054036419",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.825788,
+          51.8440779
+        ]
+      },
+      "id": "way/1054036419"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1082490768",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7406546,
+          51.86502
+        ]
+      },
+      "id": "way/1082490768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1082490770",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7414124,
+          51.8645198
+        ]
+      },
+      "id": "way/1082490770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1119760582",
+        "addr:city": "Sendenhorst",
+        "brand": "nah und gut",
+        "brand:wikidata": "Q701755",
+        "brand:wikipedia": "de:Edeka",
+        "name": "nah und gut",
+        "opening_hours": "Mo-Sa 06:00-22:00",
+        "operator": "Olgemöller",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7331195,
+          51.8686642
+        ]
+      },
+      "id": "node/1119760582"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1119760608",
+        "name": "Essmann",
+        "opening_hours": "Mo-Sa 06:00-20:00;Su 08:00-12:00",
+        "shop": "bakery",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7331144,
+          51.8685064
+        ]
+      },
+      "id": "node/1119760608"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449310213",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Rathaus",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14555:0:1",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8285287,
+          51.8442038
+        ]
+      },
+      "id": "node/1449310213"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449310214",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Rathaus",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14555:0:2",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8283189,
+          51.8443939
+        ]
+      },
+      "id": "node/1449310214"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449310217",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Südendamm",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14548:0:2",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8288288,
+          51.8406358
+        ]
+      },
+      "id": "node/1449310217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449310218",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Südendamm",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14548:0:1",
+        "shelter": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8287498,
+          51.8408056
+        ]
+      },
+      "id": "node/1449310218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449310219",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Waldmutter",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14559:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8583684,
+          51.8351266
+        ]
+      },
+      "id": "node/1449310219"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449310220",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Waldmutter",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14559:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.85769,
+          51.8356839
+        ]
+      },
+      "id": "node/1449310220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449441020",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "A",
+        "name": "Realschule",
+        "public_transport": "platform",
+        "ref": "A",
+        "ref:IFOPT": "de:05570:14638:0:A",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8196196,
+          51.8447532
+        ]
+      },
+      "id": "node/1449441020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449441021",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "B",
+        "name": "Realschule",
+        "public_transport": "platform",
+        "ref": "B",
+        "ref:IFOPT": "de:05570:14638:0:B",
+        "shelter": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8196861,
+          51.845245
+        ]
+      },
+      "id": "node/1449441021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449441022",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "C",
+        "name": "Realschule",
+        "public_transport": "platform",
+        "ref": "C",
+        "ref:IFOPT": "de:05570:14638:0:C",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.819558,
+          51.8452459
+        ]
+      },
+      "id": "node/1449441022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1449441023",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "D",
+        "name": "Realschule",
+        "public_transport": "platform",
+        "ref": "D",
+        "ref:IFOPT": "de:05570:14638:0:D",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8197426,
+          51.8459438
+        ]
+      },
+      "id": "node/1449441023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2212115664",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Krankenhaus",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14546:0:1",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8200931,
+          51.8432394
+        ]
+      },
+      "id": "node/2212115664"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2212115666",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Molkerei",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14541:0:2",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7358163,
+          51.8713903
+        ]
+      },
+      "id": "node/2212115666"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2212115667",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Molkerei",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14541:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7357731,
+          51.8716424
+        ]
+      },
+      "id": "node/2212115667"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2212115668",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Osttor",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14557:0:1",
+        "shelter": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8402056,
+          51.8420269
+        ]
+      },
+      "id": "node/2212115668"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2212115706",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Teckelschlaut",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14542:0:1",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7349084,
+          51.8683025
+        ]
+      },
+      "id": "node/2212115706"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2212115716",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Teckelschlaut",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14542:0:2",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7350225,
+          51.8683809
+        ]
+      },
+      "id": "node/2212115716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2212115723",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wolbecker Straße 41",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:61380:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7335387,
+          51.8794811
+        ]
+      },
+      "id": "node/2212115723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2212115726",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wolbecker Straße 41",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:61380:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7336147,
+          51.8795961
+        ]
+      },
+      "id": "node/2212115726"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2291035390",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Herkulesweg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14558:0:2",
+        "shelter": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8430684,
+          51.841154
+        ]
+      },
+      "id": "node/2291035390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2291035391",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Herkulesweg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14558:0:1",
+        "shelter": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8444791,
+          51.8405017
+        ]
+      },
+      "id": "node/2291035391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2291035760",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Osttor",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14557:0:2",
+        "shelter": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8402372,
+          51.8421707
+        ]
+      },
+      "id": "node/2291035760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2644037302",
+        "addr:city": "Sendenhorst",
+        "addr:country": "DE",
+        "addr:housenumber": "15",
+        "addr:postcode": "48324",
+        "addr:street": "Kirchstraße",
+        "name": "Kiepenkerl",
+        "opening_hours": "Mo-Fr 06:00-18:00; Sa 06:00-13:00; Su 08:00-12:30,14:00-17:00",
+        "phone": "+49 2526 1328",
+        "shop": "bakery",
+        "website": "https://baeckerei-kiepenkerl.de/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.827487,
+          51.8445986
+        ]
+      },
+      "id": "node/2644037302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3089264893",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hagenholt",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14549:0:2",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8260246,
+          51.8361829
+        ]
+      },
+      "id": "node/3089264893"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3092029339",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Peters",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05570:14637:0:1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7770091,
+          51.8338498
+        ]
+      },
+      "id": "node/3092029339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3274899605",
+        "addr:city": "Sendenhorst",
+        "addr:country": "DE",
+        "addr:housenumber": "4",
+        "addr:postcode": "48324",
+        "addr:street": "Kirchstraße",
+        "amenity": "pharmacy",
+        "contact:phone": "+49 2526 1326",
+        "healthcare": "pharmacy",
+        "name": "Adler-Apotheke",
+        "opening_hours": "Mo-Fr 08:30-13:00,14:30-18:30; We 08:30-13:00,14:30-18:00; Sa 08:30-13:00",
+        "operator": "Manfred Schänzer",
+        "website": "http://www.adler-apotheke-sendenhorst.de/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8284221,
+          51.8437254
+        ]
+      },
+      "id": "node/3274899605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3368458194",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Alter Münsterweg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:28949:0:1",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8753489,
+          51.8151421
+        ]
+      },
+      "id": "node/3368458194"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3373629860",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Kampen",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:60935:0:1",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8791758,
+          51.802823
+        ]
+      },
+      "id": "node/3373629860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3373629862",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Kampen",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:60935:0:2",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8793799,
+          51.8027838
+        ]
+      },
+      "id": "node/3373629862"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3443238532",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Telges/Kerkmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14714:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8281056,
+          51.8096835
+        ]
+      },
+      "id": "node/3443238532"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3443238534",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Telges/Kerkmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14714:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8283481,
+          51.8096417
+        ]
+      },
+      "id": "node/3443238534"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3468031351",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bartmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14715:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8242623,
+          51.825932
+        ]
+      },
+      "id": "node/3468031351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3468031352",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bartmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14715:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8244526,
+          51.8259815
+        ]
+      },
+      "id": "node/3468031352"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3468125755",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Montessorischule",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14824:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8333779,
+          51.8404816
+        ]
+      },
+      "id": "node/3468125755"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3469996638",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hoetmarer Straße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14252:0:2",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8351562,
+          51.8446442
+        ]
+      },
+      "id": "node/3469996638"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3469996639",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hoetmarer Straße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14252:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8347381,
+          51.8449639
+        ]
+      },
+      "id": "node/3469996639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3469996641",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Telgter Straße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14639:0:2",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.826192,
+          51.8497255
+        ]
+      },
+      "id": "node/3469996641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3469996642",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Telgter Straße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14639:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8263543,
+          51.850093
+        ]
+      },
+      "id": "node/3469996642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3470089393",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bleiche",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14835:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8250933,
+          51.8479356
+        ]
+      },
+      "id": "node/3470089393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3470089394",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bleiche",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14835:0:2",
+        "shelter": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8248024,
+          51.8483516
+        ]
+      },
+      "id": "node/3470089394"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3470089395",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kantstraße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14640:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8264565,
+          51.8519696
+        ]
+      },
+      "id": "node/3470089395"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3470089396",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kantstraße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14640:0:2",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8263059,
+          51.8521707
+        ]
+      },
+      "id": "node/3470089396"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3470124297",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Krankenhaus",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14546:0:3",
+        "shelter": "no",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8221214,
+          51.8438751
+        ]
+      },
+      "id": "node/3470124297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3471771615",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lambertiplatz",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14547:0:1",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8320725,
+          51.8431868
+        ]
+      },
+      "id": "node/3471771615"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3471771617",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lambertiplatz",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14547:0:2",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.831817,
+          51.8434876
+        ]
+      },
+      "id": "node/3471771617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3476365890",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Arens",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:60955:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8777572,
+          51.8294132
+        ]
+      },
+      "id": "node/3476365890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3476365892",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Arens",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:60955:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8776083,
+          51.8296299
+        ]
+      },
+      "id": "node/3476365892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3476370593",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hardt 17",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:60906:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8702993,
+          51.8325133
+        ]
+      },
+      "id": "node/3476370593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3476370594",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hardt 17",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:60906:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.870365,
+          51.8326279
+        ]
+      },
+      "id": "node/3476370594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890402835",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Reiterhof",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14545:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7839503,
+          51.8555
+        ]
+      },
+      "id": "node/3890402835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890402836",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Reiterhof",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14545:0:2",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7829845,
+          51.8558821
+        ]
+      },
+      "id": "node/3890402836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890413213",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lüring",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14543:0:1",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7540867,
+          51.8575309
+        ]
+      },
+      "id": "node/3890413213"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890413215",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lüring",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14543:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7540842,
+          51.8576225
+        ]
+      },
+      "id": "node/3890413215"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890418760",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bruns",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14556:0:1",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7641938,
+          51.8571754
+        ]
+      },
+      "id": "node/3890418760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890418762",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bruns",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14556:0:2",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7640726,
+          51.8572928
+        ]
+      },
+      "id": "node/3890418762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890418765",
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Sägewerk",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14544:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7723351,
+          51.8565785
+        ]
+      },
+      "id": "node/3890418765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890418767",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Sägewerk",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14544:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7712803,
+          51.8566811
+        ]
+      },
+      "id": "node/3890418767"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890449441",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schwalbenweg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:21862:0:1",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7362797,
+          51.8660003
+        ]
+      },
+      "id": "node/3890449441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890449442",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schwalbenweg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:21862:0:2",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7361563,
+          51.8661027
+        ]
+      },
+      "id": "node/3890449442"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890538949",
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bergstraße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:21863:0:2",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7336469,
+          51.8670398
+        ]
+      },
+      "id": "node/3890538949"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890538950",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bergstraße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:21863:0:1",
+        "shelter": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7329884,
+          51.8675035
+        ]
+      },
+      "id": "node/3890538950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890599922",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Adolfshöhe",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14554:0:1",
+        "shelter": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7289293,
+          51.868653
+        ]
+      },
+      "id": "node/3890599922"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890599923",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Adolfshöhe",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14554:0:2",
+        "shelter": "yes",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7293442,
+          51.8690542
+        ]
+      },
+      "id": "node/3890599923"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890710770",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lammerding",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14552:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7179444,
+          51.8838523
+        ]
+      },
+      "id": "node/3890710770"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890710771",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lammerding",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14552:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.717523,
+          51.8839934
+        ]
+      },
+      "id": "node/3890710771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890710773",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Stegemann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14553:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7223294,
+          51.8805014
+        ]
+      },
+      "id": "node/3890710773"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890710774",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Stegemann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14553:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7223984,
+          51.880592
+        ]
+      },
+      "id": "node/3890710774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890755500",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Borgert",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14551:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7091431,
+          51.8892034
+        ]
+      },
+      "id": "node/3890755500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890755501",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Borgert",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14551:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7091559,
+          51.8893879
+        ]
+      },
+      "id": "node/3890755501"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890755502",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lütke-Lengerich",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:62025:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6985692,
+          51.8962493
+        ]
+      },
+      "id": "node/3890755502"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890755504",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Lütke-Lengerich",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:62025:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6987047,
+          51.8963363
+        ]
+      },
+      "id": "node/3890755504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890755509",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schulze Dernebockholt",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14820:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7014096,
+          51.8913517
+        ]
+      },
+      "id": "node/3890755509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890755510",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Vogelsang",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14550:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6968974,
+          51.9023349
+        ]
+      },
+      "id": "node/3890755510"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3890755512",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Vogelsang",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14550:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6970121,
+          51.902443
+        ]
+      },
+      "id": "node/3890755512"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892156760",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Berl",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14540:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7325034,
+          51.8891451
+        ]
+      },
+      "id": "node/3892156760"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892156761",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Berl",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14540:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.732656,
+          51.8892187
+        ]
+      },
+      "id": "node/3892156761"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892223416",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bils",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14825:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7385114,
+          51.8689736
+        ]
+      },
+      "id": "node/3892223416"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892223418",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bils",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14825:0:2",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7380428,
+          51.8691183
+        ]
+      },
+      "id": "node/3892223418"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892223420",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Haves",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14826:0:1",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7476901,
+          51.8719483
+        ]
+      },
+      "id": "node/3892223420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892223421",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Haves",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14826:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7475632,
+          51.8719568
+        ]
+      },
+      "id": "node/3892223421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892238146",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hennenberg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14827:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7507311,
+          51.8770059
+        ]
+      },
+      "id": "node/3892238146"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892238148",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hennenberg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14827:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7506178,
+          51.8770345
+        ]
+      },
+      "id": "node/3892238148"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892275210",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Haselon",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14828:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.755216,
+          51.8832909
+        ]
+      },
+      "id": "node/3892275210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892275212",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Haselon",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14828:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7551718,
+          51.8834263
+        ]
+      },
+      "id": "node/3892275212"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892275213",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hesselmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:64710:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7532975,
+          51.879538
+        ]
+      },
+      "id": "node/3892275213"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892275214",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hesselmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:64710:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7534998,
+          51.8796286
+        ]
+      },
+      "id": "node/3892275214"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892275217",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Jücker",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14829:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7563937,
+          51.8854221
+        ]
+      },
+      "id": "node/3892275217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892275218",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Jücker",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14829:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7566718,
+          51.8856361
+        ]
+      },
+      "id": "node/3892275218"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892275219",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Naber",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14830:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7566531,
+          51.8910443
+        ]
+      },
+      "id": "node/3892275219"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3892275221",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Naber",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14830:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7567559,
+          51.8910928
+        ]
+      },
+      "id": "node/3892275221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3893904361",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Boeckmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:13109:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7642219,
+          51.8943177
+        ]
+      },
+      "id": "node/3893904361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3893904363",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Boeckmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:13109:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7639704,
+          51.8944955
+        ]
+      },
+      "id": "node/3893904363"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3893904364",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wessel",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14831:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7579018,
+          51.8955154
+        ]
+      },
+      "id": "node/3893904364"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3893904366",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wessel",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14831:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7576906,
+          51.8956487
+        ]
+      },
+      "id": "node/3893904366"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3893904367",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "West 26/27",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:60956:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7614557,
+          51.8948602
+        ]
+      },
+      "id": "node/3893904367"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3893904369",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "West 26/27",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:60956:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7613266,
+          51.8949815
+        ]
+      },
+      "id": "node/3893904369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3896970385",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Birkenallee",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14823:0:1",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7330429,
+          51.8635112
+        ]
+      },
+      "id": "node/3896970385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3896970386",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Grundschule",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:63795:0:1",
+        "shelter": "no",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7325447,
+          51.8662062
+        ]
+      },
+      "id": "node/3896970386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3896970387",
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Langen Esch",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:63933:0:1",
+        "shelter": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.736114,
+          51.8589257
+        ]
+      },
+      "id": "node/3896970387"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3896970389",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "departures_board": "no",
+        "highway": "bus_stop",
+        "name": "Langen Esch",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:63933:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7358034,
+          51.8590472
+        ]
+      },
+      "id": "node/3896970389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898591488",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Beer",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14832:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7825319,
+          51.890749
+        ]
+      },
+      "id": "node/3898591488"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898591490",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Beer",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14832:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.782197,
+          51.8908378
+        ]
+      },
+      "id": "node/3898591490"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898591491",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Holling",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14836:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7865439,
+          51.8909498
+        ]
+      },
+      "id": "node/3898591491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898591493",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Holling",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14836:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7866333,
+          51.8910436
+        ]
+      },
+      "id": "node/3898591493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898610270",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Dünnewald",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:65148:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.811154,
+          51.8665997
+        ]
+      },
+      "id": "node/3898610270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898610271",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Dünnewald",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:65148:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8109054,
+          51.8671402
+        ]
+      },
+      "id": "node/3898610271"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898610272",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Feldmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14837:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8083022,
+          51.8787178
+        ]
+      },
+      "id": "node/3898610272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898610274",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Feldmann",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14837:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8083651,
+          51.878793
+        ]
+      },
+      "id": "node/3898610274"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898610278",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Sandfort",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:12386:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8117589,
+          51.8606439
+        ]
+      },
+      "id": "node/3898610278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898610280",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Sandfort",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:12386:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8118688,
+          51.860845
+        ]
+      },
+      "id": "node/3898610280"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898610281",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Werring",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14834:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8088764,
+          51.8722103
+        ]
+      },
+      "id": "node/3898610281"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3898610283",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Werring",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:14834:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8089133,
+          51.8724608
+        ]
+      },
+      "id": "node/3898610283"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3914415339",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Brock 6/19",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:60911:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.783243,
+          51.8375598
+        ]
+      },
+      "id": "node/3914415339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3914415340",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Brock 6/19",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:60911:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7833624,
+          51.8375004
+        ]
+      },
+      "id": "node/3914415340"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3914415344",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Peters",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05570:14637:0:2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7768732,
+          51.8336253
+        ]
+      },
+      "id": "node/3914415344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4004557018",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Abzweig zur Kapelle",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:10012:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8650677,
+          51.8629782
+        ]
+      },
+      "id": "node/4004557018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4004557019",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Abzweig zur Kapelle",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:10012:0:1",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8646813,
+          51.8630116
+        ]
+      },
+      "id": "node/4004557019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4005318187",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Bockholt",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:11227:0:2",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8260865,
+          51.8764979
+        ]
+      },
+      "id": "node/4005318187"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8895648959",
+        "email": "Info@suses-baedchen.de",
+        "name": "Suses Bädchen",
+        "opening_hours": "Tu-Fr 09:30-13:00,15:00-18:00; Sa 09:30-13:00; Su,Mo off",
+        "shop": "chemist",
+        "website": "https://www.suses-baedchen.de/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7348263,
+          51.8687801
+        ]
+      },
+      "id": "node/8895648959"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8898578582",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "email": "info@engel-apotheke-albersloh.de",
+        "fax": "+49 2535 953130",
+        "name": "Engel Apotheke",
+        "opening_hours": "Mo,Tu,Th,Fr 08:00-13:00,15:00-18:30; We 08:00-13:00; Sa 08:30-13:00",
+        "operator": "Michael Kerkhoff",
+        "phone": "+49 2535 280",
+        "website": "http://www.engel-apotheke-albersloh.de/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7328823,
+          51.8672974
+        ]
+      },
+      "id": "node/8898578582"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9027000149",
+        "amenity": "pharmacy",
+        "name": "Lamberti Apotheke",
+        "opening_hours": "Mo-Fr 08:30-12:45,14:45-18:15; Sa 08:30-12:45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8314039,
+          51.8437207
+        ]
+      },
+      "id": "node/9027000149"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9632614925",
+        "bus": "yes",
+        "fixme": "genaue Position?",
+        "highway": "bus_stop",
+        "name": "Uhlenbrock",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05570:63931",
+        "ref_name": "Sendenhorst, Albersloh, Uhlenbrock"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7159724,
+          51.8587405
+        ]
+      },
+      "id": "node/9632614925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9632614926",
+        "bus": "yes",
+        "fixme": "genaue Position?",
+        "highway": "bus_stop",
+        "name": "Buxtrup",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05570:63068",
+        "ref_name": "Albersloh, Buxtrup"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7036101,
+          51.8523814
+        ]
+      },
+      "id": "node/9632614926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9633804406",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8579906,
+          51.8350206
+        ]
+      },
+      "id": "node/9633804406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9686344041",
+        "name": "Ihr Platz",
+        "opening_hours": "Mo-Fr 08:00-18:30; Sa 08:00-16:00",
+        "shop": "chemist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8262179,
+          51.8438371
+        ]
+      },
+      "id": "node/9686344041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9687677574",
+        "name": "Abelmann",
+        "opening_hours": "Mo,Sa 06:00-13:00; Tu-Fr 06:00-18:00; Su 08:00-11:30",
+        "shop": "bakery",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7325632,
+          51.8667955
+        ]
+      },
+      "id": "node/9687677574"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10600603296",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Elmenhorst 6",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:68739:0:2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.825844,
+          51.8698988
+        ]
+      },
+      "id": "node/10600603296"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10600603298",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Elmenhorst 6",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05570:68739:0:1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.8256759,
+          51.8698022
+        ]
+      },
+      "id": "node/10600603298"
+    }
+  ]
+}

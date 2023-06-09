@@ -1,0 +1,1197 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-03-28T07:47:46Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/27870711",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6793314,
+          49.4532073
+        ]
+      },
+      "id": "way/27870711"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/27872815",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6790748,
+          49.4473806
+        ]
+      },
+      "id": "way/27872815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/28526907",
+        "landuse": "village_green",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6722461,
+          49.4507417
+        ]
+      },
+      "id": "way/28526907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35836668",
+        "addr:city": "Dossenheim",
+        "addr:country": "DE",
+        "addr:housenumber": "11",
+        "addr:postcode": "69221",
+        "addr:street": "Lessingstraße",
+        "amenity": "school",
+        "building": "school",
+        "building:levels": "4",
+        "name": "Kurpfalz Grundschule",
+        "wheelchair": "limited",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6709363,
+          49.4445082
+        ]
+      },
+      "id": "way/35836668"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/137318191",
+        "addr:city": "Dossenheim",
+        "addr:country": "DE",
+        "addr:housenumber": "13",
+        "addr:postcode": "69221",
+        "addr:street": "Lessingstraße",
+        "amenity": "childcare",
+        "building": "yes",
+        "name": "Evangelische Kindertagesstätte \"Arche Noah\"",
+        "phone": "+49 6221 86855-0",
+        "website": "https://www.ev-kirchengemeinde-dossenheim.de/tageseinrichtungen-fuer-kinder/evang-kita-arche-noah/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6705662,
+          49.4449871
+        ]
+      },
+      "id": "way/137318191"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/161446208",
+        "addr:city": "Dossenheim",
+        "addr:housenumber": "19",
+        "addr:postcode": "69221",
+        "addr:street": "Gewerbestraße",
+        "brand": "Kaufland",
+        "brand:wikidata": "Q685967",
+        "brand:wikipedia": "en:Kaufland",
+        "building": "commercial",
+        "internet_access": "customers",
+        "internet_access:fee": "no",
+        "internet_access:type": "wlan",
+        "name": "Kaufland",
+        "opening_hours": "Mo-Sa 07:00-22:00",
+        "operator": "Kaufland Warenhandel GmbH & Co. KG",
+        "shop": "supermarket",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6646653,
+          49.4541931
+        ]
+      },
+      "id": "way/161446208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/161446227",
+        "addr:housenumber": "1",
+        "addr:street": "Gewerbestraße",
+        "building": "yes",
+        "name": "dm-drogerie markt",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "phone": "+49 6221 8673317",
+        "shop": "chemist",
+        "website": "https://www.dm.de/de_homepage/268/filialfinder.html?view=asMarketfinder",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6658765,
+          49.4551719
+        ]
+      },
+      "id": "way/161446227"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/232734986",
+        "access": "yes",
+        "leisure": "playground",
+        "wheelchair": "limited",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6753416,
+          49.4545727
+        ]
+      },
+      "id": "way/232734986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/232858785",
+        "access": "yes",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.665576,
+          49.4519471
+        ]
+      },
+      "id": "way/232858785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/232867112",
+        "access": "yes",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6647639,
+          49.4496671
+        ]
+      },
+      "id": "way/232867112"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/232927261",
+        "addr:city": "Dossenheim",
+        "addr:housenumber": "10",
+        "addr:postcode": "69221",
+        "addr:street": "Ortsstraße",
+        "amenity": "childcare",
+        "building": "yes",
+        "email": "info@kiga-schwabenheimerhof.de",
+        "leisure": "playground",
+        "name": "Kindergarten Schwabenheimerhof",
+        "phone": "+49 6221 860165",
+        "website": "www.kiga-schwabenheimerhof.de",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6277092,
+          49.4453032
+        ]
+      },
+      "id": "way/232927261"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269506847",
+        "access": "yes",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6664263,
+          49.4452983
+        ]
+      },
+      "id": "node/269506847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271334428",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schauenburg Straße 43/45",
+        "network": "VRN",
+        "public_transport": "stop_position",
+        "uic_ref": "505922",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6773476,
+          49.4550345
+        ]
+      },
+      "id": "node/271334428"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/272051601",
+        "access": "yes",
+        "leisure": "playground",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6667437,
+          49.450366
+        ]
+      },
+      "id": "node/272051601"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/283105610",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "email": "info@helmin-apotheke.de",
+        "fax": "+49 6221 876666",
+        "healthcare": "pharmacy",
+        "name": "Helmina",
+        "opening_hours": "Mo-Fr 08:00-13:00,14:00-19:00; Sa 08:30-13:00",
+        "operator": "Wolfgang Beck",
+        "phone": "+49 6221 87660",
+        "website": "https://www.helmin-apotheke.de/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6703025,
+          49.4496351
+        ]
+      },
+      "id": "node/283105610"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/305980105",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Gassenweg \"Neuer Friedhof\"",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "uic_ref": "506288",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6718825,
+          49.4534462
+        ]
+      },
+      "id": "node/305980105"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/305980134",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Parkplatz Gassenweg/Schriesheimer Straße",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "uic_ref": "505916",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6758767,
+          49.4538374
+        ]
+      },
+      "id": "node/305980134"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/306009950",
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Goldener Hirsch",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "uic_ref": "507809"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6780143,
+          49.4514784
+        ]
+      },
+      "id": "node/306009950"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/306119929",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6772672,
+          49.4464358
+        ]
+      },
+      "id": "node/306119929"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/306126749",
+        "leisure": "playground",
+        "max_age": "14",
+        "surface": "sand,_wood_chips"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6736328,
+          49.447119
+        ]
+      },
+      "id": "node/306126749"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/309716105",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schwabenheimer Hof, Ortsstraße",
+        "network": "VRN",
+        "operator": "Gemeindetaxi",
+        "uic_ref": "520161"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6286278,
+          49.4455881
+        ]
+      },
+      "id": "node/309716105"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/311338987",
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Neubaugebiet West 2 \"Kaufland\"",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "uic_ref": "507807",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6655031,
+          49.4545053
+        ]
+      },
+      "id": "node/311338987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/312751763",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Parkplatz Rathaus",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6721521,
+          49.4506543
+        ]
+      },
+      "id": "node/312751763"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/312753670",
+        "addr:city": "Dossenheim",
+        "addr:country": "DE",
+        "addr:housenumber": "2",
+        "addr:postcode": "69221",
+        "addr:street": "Bahnhofstraße",
+        "amenity": "cafe",
+        "name": "Bäckerei Riegler",
+        "opening_hours": "Mo-Fr 06:00-18:30; Sa 06:00-13:00; Su 07:30-11:30",
+        "phone": "+49 6221 861593",
+        "shop": "bakery",
+        "website": "https://baeckerei-riegler.de/fachgeschaefte/standorte/dossenheim/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6717018,
+          49.450224
+        ]
+      },
+      "id": "node/312753670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/313315458",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Taxiplatz OEG Bahnhof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "uic_ref": "508076",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6692948,
+          49.4490639
+        ]
+      },
+      "id": "node/313315458"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/313356943",
+        "amenity": "cafe",
+        "name": "Grimminger",
+        "note": "ebenerdiger Zugang über Cafe",
+        "opening_hours": "Mo-Fr 06:00-18:00; Sa 06:00-13:00; Su 07:00-17:00",
+        "shop": "bakery",
+        "website": "https://www.grimminger.de/familienbaeckerei/filialen.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6732239,
+          49.4510262
+        ]
+      },
+      "id": "node/313356943"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/313357025",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Schulstraße",
+        "network": "VRN",
+        "public_transport": "platform",
+        "uic_ref": "505923",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6782534,
+          49.448598
+        ]
+      },
+      "id": "node/313357025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/315512877",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Volksbank Am Petrus",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "uic_ref": "505912",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6738448,
+          49.4463795
+        ]
+      },
+      "id": "node/315512877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/315512899",
+        "addr:city": "Dossenheim",
+        "addr:housenumber": "1-3",
+        "addr:postcode": "69221",
+        "addr:street": "Ringstraße",
+        "amenity": "pharmacy",
+        "contact:email": "apotheke-am-petrus@gmx.de",
+        "contact:fax": "+49 6221 8681195",
+        "contact:phone": "+49 6221 861666",
+        "contact:website": "https://apotheke-am-petrus.de",
+        "name": "Apotheke am Petrus",
+        "opening_hours": "Mo-Fr 08:30-13:00, 14:30-19:00; Sa 08:30-13:00",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6741903,
+          49.4461268
+        ]
+      },
+      "id": "node/315512899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/315512904",
+        "name": "…nah und gut Keller",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "operator": "Edeka",
+        "shop": "supermarket",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6744553,
+          49.4460294
+        ]
+      },
+      "id": "node/315512904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/338497675",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hallenbad",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6720843,
+          49.4438
+        ]
+      },
+      "id": "node/338497675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/338497685",
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Haus Stephanus",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6676161,
+          49.4469236
+        ]
+      },
+      "id": "node/338497685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/338497688",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Kirchstraße/Schlüsselweg",
+        "network": "VRN",
+        "public_transport": "platform",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6744522,
+          49.4486305
+        ]
+      },
+      "id": "node/338497688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/338497691",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Brunnen Mühltalbrücke",
+        "network": "VRN",
+        "public_transport": "stop_position",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6815602,
+          49.4502926
+        ]
+      },
+      "id": "node/338497691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/338497694",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Parkplatz am Waldfrieden",
+        "network": "VRN",
+        "public_transport": "platform",
+        "shelter": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6873559,
+          49.4506528
+        ]
+      },
+      "id": "node/338497694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/350890418",
+        "area": "yes",
+        "landuse": "recreation_ground",
+        "name": "BMX-Gelände",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6719732,
+          49.4413883
+        ]
+      },
+      "id": "way/350890418"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/403344538",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Osmiastraße 8",
+        "network": "VRN",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6700882,
+          49.4501465
+        ]
+      },
+      "id": "node/403344538"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/405695104",
+        "access": "yes",
+        "leisure": "playground",
+        "source:geometry": "HiRes aerial imagery",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6884759,
+          49.4482603
+        ]
+      },
+      "id": "way/405695104"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/423490493",
+        "addr:housenumber": "36",
+        "addr:postcode": "69221",
+        "addr:street": "Anne-Frank-Straße",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "email": "dossenheim@mehrgenerationenkrippe.de",
+        "name": "Kinderkrippe Dreikäsehoch",
+        "opening_hours": "Mo-Fr 07:00-18:00",
+        "operator": "Dreikäsehoch Kinderbetreuungs-GmbH",
+        "operator:type": "private",
+        "phone": "+49 6221 8749810",
+        "website": "https://www.xn--kita-dreiksehoch-4nb.de/einrichtungen/krippe-dossenheim/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6666726,
+          49.4532629
+        ]
+      },
+      "id": "way/423490493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/484726840",
+        "access": "yes",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6662149,
+          49.4569999
+        ]
+      },
+      "id": "way/484726840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/492724405",
+        "amenity": "kindergarten",
+        "denomination": "catholic",
+        "name": "Sankt Augustinus",
+        "religion": "christian",
+        "short_name": "St. Augustinus",
+        "website": "http://www.kathkigadossenheim.de",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.676791,
+          49.450184
+        ]
+      },
+      "id": "way/492724405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/618883139",
+        "addr:city": "Dossenheim",
+        "addr:country": "DE",
+        "addr:housenumber": "15",
+        "addr:postcode": "69221",
+        "addr:street": "Heidelberger Straße",
+        "name": "Sommer",
+        "shop": "bakery",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6762133,
+          49.4500011
+        ]
+      },
+      "id": "node/618883139"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/631586701",
+        "contact:facebook": "https://www.facebook.com/nah-und-gut-Weismehl-237330426288293/",
+        "name": "nah und gut Weismehl",
+        "opening_hours": "Mo-Fr 08:00-19:00;Sa 08:00-14:00",
+        "phone": "+49 6221 866993",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6717738,
+          49.4499812
+        ]
+      },
+      "id": "node/631586701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1575534764",
+        "access": "yes",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.66564,
+          49.4469479
+        ]
+      },
+      "id": "node/1575534764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1734078034",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Oberer/Unterer Burggarten",
+        "network": "VRN",
+        "public_transport": "platform",
+        "source": "node id: 313320660, history",
+        "uic_ref": "505915",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6759677,
+          49.4558077
+        ]
+      },
+      "id": "node/1734078034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2070154133",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6791243,
+          49.4494802
+        ]
+      },
+      "id": "node/2070154133"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2189647629",
+        "access": "yes",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6672555,
+          49.4439924
+        ]
+      },
+      "id": "node/2189647629"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2409573573",
+        "amenity": "doctors",
+        "contact:phone": "+49 6221 860686",
+        "healthcare": "doctor",
+        "healthcare:speciality": "general",
+        "name": "Dr. Otmar Carewicz",
+        "opening_hours": "Mo-Fr 07:30-23:00, Mo,Fr 15:30-18:00, Tu,Th 15:00-17:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6709111,
+          49.4511434
+        ]
+      },
+      "id": "node/2409573573"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2410608397",
+        "addr:city": "Dossenheim",
+        "addr:housenumber": "6",
+        "addr:postcode": "69221",
+        "addr:street": "Am Kronenburger Hof",
+        "amenity": "childcare",
+        "email": "Ev.Marie-Boehm-Kiga.Dossenheim@t-online.de",
+        "name": "Evangelische Kindertagesstätte \"Kunterbunt\"",
+        "phone": "+49 6221 866830",
+        "website": "https://www.ev-kirchengemeinde-dossenheim.de/tageseinrichtungen-fuer-kinder/evang-kita-kunterbunt/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6747064,
+          49.4519439
+        ]
+      },
+      "id": "node/2410608397"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2411655192",
+        "check_date:opening_hours": "2021-04-21",
+        "name": "Bäckerei Rutz",
+        "opening_hours": "Mo-Sa 07:00-21:00",
+        "phone": "+49 6221 8673564",
+        "shop": "bakery",
+        "website": "https://www.rutz.de/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6652622,
+          49.454163
+        ]
+      },
+      "id": "node/2411655192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2418668440",
+        "addr:housenumber": "1",
+        "addr:place": "Bahnhofsplatz",
+        "check_date:opening_hours": "2022-08-05",
+        "name": "Bernauer",
+        "opening_hours": "Mo-Fr 06:00-18:00; Sa 06:00-13:00",
+        "shop": "bakery",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.669093,
+          49.4488696
+        ]
+      },
+      "id": "node/2418668440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2967145673",
+        "addr:city": "Dossenheim",
+        "addr:housenumber": "9-11",
+        "addr:postcode": "69221",
+        "addr:street": "Gewerbestraße",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "email": "dossenheim@easyapotheken.de",
+        "fax": "+49 6221 99894-29",
+        "healthcare": "pharmacy",
+        "name": "easyApotheke Dossenheim",
+        "opening_hours": "Mo-Fr 8:00-19:00; Sa 8:00-16:00",
+        "phone": "+49 6221 99894-20",
+        "website": "https://dossenheim.easyapotheken.de/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6659353,
+          49.4542392
+        ]
+      },
+      "id": "node/2967145673"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7238381059",
+        "name": "Riegler",
+        "shop": "bakery"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6733949,
+          49.4462146
+        ]
+      },
+      "id": "node/7238381059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9352389082",
+        "addr:city": "Dossenheim",
+        "addr:housenumber": "11",
+        "addr:postcode": "69221",
+        "addr:street": "Lessingstraße",
+        "amenity": "childcare",
+        "name": "Evangelische Kindertagesstätte \"Regenbogen\"",
+        "website": "https://www.ev-kirchengemeinde-dossenheim.de/tageseinrichtungen-fuer-kinder/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6705539,
+          49.4445771
+        ]
+      },
+      "id": "node/9352389082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9381442028",
+        "addr:city": "Dossenheim",
+        "addr:housenumber": "12",
+        "addr:postcode": "69221",
+        "addr:street": "Ortsstraße",
+        "amenity": "childcare",
+        "name": "Kindergarten Schwabenheimer Gänschen",
+        "website": "https://www.infamilia.eu/schwabenheimer-gaenschen/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6273876,
+          49.4454196
+        ]
+      },
+      "id": "node/9381442028"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9381444816",
+        "addr:city": "Dossenheim",
+        "addr:housenumber": "12",
+        "addr:postcode": "69221",
+        "addr:street": "Ortsstraße",
+        "amenity": "childcare",
+        "name": "Kindergarten Schwabenheimer Täubchen",
+        "website": "https://www.infamilia.eu/schwabenheimer-taeubchen-2/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6273044,
+          49.4453726
+        ]
+      },
+      "id": "node/9381444816"
+    }
+  ]
+}

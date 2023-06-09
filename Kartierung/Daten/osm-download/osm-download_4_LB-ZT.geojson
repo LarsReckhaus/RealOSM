@@ -1,0 +1,2255 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-03-13T07:01:25Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/28271843",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6175045,
+          49.469581
+        ]
+      },
+      "id": "way/28271843"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/28352194",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.610673,
+          49.4766786
+        ]
+      },
+      "id": "way/28352194"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/28477784",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5982323,
+          49.4748993
+        ]
+      },
+      "id": "way/28477784"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/33062393",
+        "access": "yes",
+        "leisure": "playground",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6071303,
+          49.4731979
+        ]
+      },
+      "id": "way/33062393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/38082840",
+        "leisure": "playground",
+        "wheelchair": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.608197,
+          49.4696852
+        ]
+      },
+      "id": "way/38082840"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/38555213",
+        "leisure": "park",
+        "name": "Waldpark",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6169425,
+          49.4712277
+        ]
+      },
+      "id": "way/38555213"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/54258337",
+        "leisure": "park",
+        "name": "Festwiese",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6054766,
+          49.4694493
+        ]
+      },
+      "id": "way/54258337"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/54623389",
+        "leisure": "playground",
+        "wheelchair": "limited",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6165764,
+          49.473734
+        ]
+      },
+      "id": "way/54623389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/60142066",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6119665,
+          49.4654883
+        ]
+      },
+      "id": "way/60142066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/71897891",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6126204,
+          49.4689885
+        ]
+      },
+      "id": "way/71897891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/72359231",
+        "leisure": "playground",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6155338,
+          49.4732923
+        ]
+      },
+      "id": "way/72359231"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/72364803",
+        "addr:city": "Ladenburg",
+        "addr:housenumber": "6",
+        "addr:street": "Neuweg",
+        "amenity": "social_facility",
+        "fax": "+49 6203 12546",
+        "landuse": "recreation_ground",
+        "name": "Heilpädagogisches Kinderheim - Haus Mirabelle",
+        "operator": "AWO",
+        "phone": "+49 6203 2100",
+        "social_facility": "group_home",
+        "social_facility:for": "child",
+        "website": "https://www.awo-baden.de/unsere-angebote-fuer/jugendliche-und-junge-erwachsene/heilpaedagogisch-therapeutische-einrichtung/awo-haus-mirabelle.html",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6292095,
+          49.4665263
+        ]
+      },
+      "id": "way/72364803"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/73512007",
+        "addr:housenumber": "64",
+        "addr:street": "Wallstadter Straße",
+        "brand": "Norma",
+        "brand:wikidata": "Q450180",
+        "brand:wikipedia": "de:Norma (Supermarkt)",
+        "building": "retail",
+        "name": "Norma",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "roof:shape": "gabled",
+        "shop": "supermarket",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.604812,
+          49.4800976
+        ]
+      },
+      "id": "way/73512007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/88445605",
+        "addr:city": "Ladenburg",
+        "addr:country": "DE",
+        "addr:housenumber": "61",
+        "addr:postcode": "68526",
+        "addr:street": "Breslauer Straße",
+        "amenity": "school",
+        "email": "poststelle@04141598.schule.bwl.de",
+        "fax": "+49 6203 1079505",
+        "name": "Astrid-Lindgren-Grundschule",
+        "phone": "+49 6203 15985",
+        "website": "http://www.ladenburg.de/schulen-in-ladenburg.html",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5959661,
+          49.4802239
+        ]
+      },
+      "id": "way/88445605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/98900935",
+        "addr:city": "Ladenburg",
+        "addr:housenumber": "61",
+        "addr:street": "Wallstadter Straße",
+        "brand": "Lidl",
+        "brand:wikidata": "Q151954",
+        "brand:wikipedia": "en:Lidl",
+        "building": "retail",
+        "building:levels": "1",
+        "name": "Lidl",
+        "opening_hours": "Mo-Sa 07:00-21:00",
+        "roof:levels": "0",
+        "roof:shape": "gabled",
+        "shop": "supermarket",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6030085,
+          49.4799097
+        ]
+      },
+      "id": "way/98900935"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/156211437",
+        "leisure": "park",
+        "name": "Neckarwiese",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.60717,
+          49.4660169
+        ]
+      },
+      "id": "way/156211437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/156212169",
+        "leisure": "park",
+        "name": "Carl-Benz-Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6053967,
+          49.4706664
+        ]
+      },
+      "id": "way/156212169"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/180604100",
+        "addr:city": "Ladenburg",
+        "addr:country": "DE",
+        "addr:housenumber": "12",
+        "addr:postcode": "68526",
+        "addr:street": "Lustgartenstraße",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "Haus des Kindes (Schülerhort)",
+        "phone": "+49 6203 70320",
+        "wheelchair": "limited",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6092207,
+          49.4698355
+        ]
+      },
+      "id": "way/180604100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/180604163",
+        "addr:city": "Ladenburg",
+        "addr:country": "DE",
+        "addr:housenumber": "8",
+        "addr:postcode": "68526",
+        "addr:street": "Lustgartenstraße",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "email": "roswitha.doering@ladenburg.de",
+        "name": "Städtische Kindertagesstätte Römernest",
+        "phone": "+49 6203 70310",
+        "website": "http://www.ladenburg.de/kinderg%C3%A4rten.html",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6089407,
+          49.470263
+        ]
+      },
+      "id": "way/180604163"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/180791959",
+        "addr:city": "Ladenburg",
+        "addr:housenumber": "83",
+        "addr:postcode": "68526",
+        "addr:street": "Breslauer Straße",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "St. Johannes",
+        "phone": "+49 6203 2539",
+        "toilets:wheelchair": "yes",
+        "website": "http://www.kindergarten-ladenburg.de/die-kindergaerten/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5937205,
+          49.480856
+        ]
+      },
+      "id": "way/180791959"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/181567323",
+        "addr:city": "Ladenburg",
+        "addr:country": "DE",
+        "addr:housenumber": "15",
+        "addr:postcode": "68526",
+        "addr:street": "Rheingaustraße",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "St. Joseph Kindergarten",
+        "phone": "+49 6203 2239",
+        "source:geometry": "LGL-BW, www.lgl-bw.de)",
+        "toilets:wheelchair": "yes",
+        "website": "http://www.ladenburg.de/kinderg%C3%A4rten.html",
+        "wheelchair": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6092596,
+          49.4736259
+        ]
+      },
+      "id": "way/181567323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/181722097",
+        "addr:city": "Ladenburg",
+        "addr:country": "DE",
+        "addr:housenumber": "10",
+        "addr:postcode": "68526",
+        "addr:street": "Vorderer Rindweg",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "Anne-Frank-Kindergarten (ev.)",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6164637,
+          49.4739727
+        ]
+      },
+      "id": "way/181722097"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/216374016",
+        "addr:city": "Ladenburg",
+        "addr:country": "DE",
+        "addr:housenumber": "12",
+        "addr:postcode": "68526",
+        "addr:street": "Eponastraße",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "Guenther'scher Kindergarten",
+        "phone": "+49 6203 181451",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6129361,
+          49.4694812
+        ]
+      },
+      "id": "way/216374016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/309716050",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Rosenhof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LARO",
+        "shelter": "yes",
+        "uic_ref": "507674",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6358386,
+          49.4691246
+        ]
+      },
+      "id": "node/309716050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/309716053",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Rosenhof",
+        "network": "VRN",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LARO",
+        "uic_ref": "507674",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6360746,
+          49.4689573
+        ]
+      },
+      "id": "node/309716053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/313085416",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Rautenthaler Mühle",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LARM",
+        "shelter": "yes",
+        "uic_ref": "507673",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6181741,
+          49.4721831
+        ]
+      },
+      "id": "node/313085416"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/314980618",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Am Graben",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LARU",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "uic_ref": "507675",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6137434,
+          49.4732935
+        ]
+      },
+      "id": "node/314980618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/314980619",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Ruckelshausen",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LARU",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "uic_ref": "507675",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6139175,
+          49.4731793
+        ]
+      },
+      "id": "node/314980619"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/318155983",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6122675,
+          49.4732517
+        ]
+      },
+      "id": "way/318155983"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336636279",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Schwarzkreuzstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LASW",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6103474,
+          49.4751258
+        ]
+      },
+      "id": "node/336636279"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336636284",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Carl-Benz-Platz",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LACB",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "uic_ref": "507664",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6063429,
+          49.4712131
+        ]
+      },
+      "id": "node/336636284"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336636290",
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Wallstadter Straße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAWL",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6067656,
+          49.4720652
+        ]
+      },
+      "id": "node/336636290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336636295",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Bahnhofstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LABF",
+        "shelter": "no",
+        "uic_ref": "518254"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6023511,
+          49.4723797
+        ]
+      },
+      "id": "node/336636295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/336636301",
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Ladenburg Kanalbrücke",
+        "network": "VRN",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAKA",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "uic_ref": "507667",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5862446,
+          49.4781754
+        ]
+      },
+      "id": "node/336636301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/422104524",
+        "amenity": "kindergarten",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6165046,
+          49.4739289
+        ]
+      },
+      "id": "way/422104524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/451709583",
+        "access:covid19": "yes",
+        "brand": "EDEKA",
+        "brand:wikidata": "Q701755",
+        "brand:wikipedia": "de:Edeka",
+        "delivery:covid19": "yes",
+        "drive_through:covid19": "no",
+        "name": "EDEKA",
+        "opening_hours": "Mo-Fr 08:00-18:30; Sa 08:00-14:00",
+        "opening_hours:covid19": "Mo-Fr 08:00-18:30; Sa 08:00-14:00",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6177418,
+          49.4740979
+        ]
+      },
+      "id": "node/451709583"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/465240722",
+        "leisure": "playground",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6208351,
+          49.4776438
+        ]
+      },
+      "id": "node/465240722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/465240723",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6207344,
+          49.4769728
+        ]
+      },
+      "id": "node/465240723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/465240748",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Weihergärten",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAWE",
+        "shelter": "yes",
+        "uic_ref": "506228",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6198247,
+          49.4755801
+        ]
+      },
+      "id": "node/465240748"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/465242473",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6176773,
+          49.4749919
+        ]
+      },
+      "id": "node/465242473"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/465242474",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6201561,
+          49.4745125
+        ]
+      },
+      "id": "node/465242474"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/466476130",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Ilvesheimer Straße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAIL",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "uic_ref": "507666",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5942851,
+          49.4748892
+        ]
+      },
+      "id": "node/466476130"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/466476132",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Ladenburg Benzstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5992139,
+          49.4800483
+        ]
+      },
+      "id": "node/466476132"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/466516323",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Am Kandelbach",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAAK",
+        "uic_ref": "506217",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6219448,
+          49.4714028
+        ]
+      },
+      "id": "node/466516323"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/474658349",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Ankerplatz",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAAN",
+        "shelter": "yes",
+        "source": "Bing 2012",
+        "uic_ref": "506231",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6064917,
+          49.4690242
+        ]
+      },
+      "id": "node/474658349"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/486088845",
+        "access": "yes",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5995031,
+          49.4811262
+        ]
+      },
+      "id": "way/486088845"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/535296689",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Ilvesheimer Straße",
+        "public_transport": "platform",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5956462,
+          49.4742745
+        ]
+      },
+      "id": "node/535296689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/579970033",
+        "brand": "ALDI Süd",
+        "brand:wikidata": "Q41171672",
+        "brand:wikipedia": "en:Aldi",
+        "name": "ALDI Süd",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6054008,
+          49.4761859
+        ]
+      },
+      "id": "node/579970033"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/581125796",
+        "addr:city": "Ladenburg",
+        "addr:housenumber": "53",
+        "addr:postcode": "68526",
+        "addr:street": "Wallstadter Straße",
+        "brand": "EDEKA",
+        "brand:wikidata": "Q701755",
+        "brand:wikipedia": "de:Edeka",
+        "name": "EDEKA",
+        "opening_hours": "Mo-Sa 08:00-21:00",
+        "shop": "supermarket",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6052382,
+          49.4759736
+        ]
+      },
+      "id": "node/581125796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/581126587",
+        "addr:city": "Ladenburg",
+        "addr:postcode": "68526",
+        "addr:street": "Wallstadter Straße",
+        "brand": "dm",
+        "brand:wikidata": "Q266572",
+        "brand:wikipedia": "en:Dm-drogerie markt",
+        "name": "dm",
+        "opening_hours": "Mo-Sa 08:00-20:00",
+        "shop": "chemist",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6049316,
+          49.4754872
+        ]
+      },
+      "id": "node/581126587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/667330157",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Jupiterplatz",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAJU",
+        "shelter": "no",
+        "uic_ref": "506229",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6140787,
+          49.4694853
+        ]
+      },
+      "id": "node/667330157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/667504905",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Bahnhofstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LABF",
+        "shelter": "yes",
+        "uic_ref": "518254",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.60225,
+          49.4722913
+        ]
+      },
+      "id": "node/667504905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/670802888",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Domitianstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LADO",
+        "uic_ref": "506230",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6091562,
+          49.4671486
+        ]
+      },
+      "id": "node/670802888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/670802889",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Domitianstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LADO",
+        "uic_ref": "506230",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6095171,
+          49.4673564
+        ]
+      },
+      "id": "node/670802889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/748160595",
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Ladenburg Weststadt",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.596986,
+          49.4824153
+        ]
+      },
+      "id": "node/748160595"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/772477301",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Jupiterplatz",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAJU",
+        "shelter": "no",
+        "uic_ref": "506229",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6138382,
+          49.4694984
+        ]
+      },
+      "id": "node/772477301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/833284019",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6201246,
+          49.475962
+        ]
+      },
+      "id": "node/833284019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/854522515",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Rautenthaler Mühle",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LARM",
+        "shelter": "yes",
+        "uic_ref": "507673",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6185498,
+          49.4719197
+        ]
+      },
+      "id": "node/854522515"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1080086017",
+        "access": "yes",
+        "leisure": "playground",
+        "playground:theme": "playground",
+        "surface": "wood",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5993433,
+          49.4792
+        ]
+      },
+      "id": "way/1080086017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1080086018",
+        "access": "yes",
+        "leisure": "playground",
+        "playground:theme": "playground",
+        "surface": "wood",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5991059,
+          49.4789186
+        ]
+      },
+      "id": "way/1080086018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1130905202",
+        "garden:type": "private",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6175543,
+          49.4694063
+        ]
+      },
+      "id": "way/1130905202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1131109605",
+        "garden:type": "private",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6246855,
+          49.4768811
+        ]
+      },
+      "id": "way/1131109605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1131109615",
+        "garden:type": "private",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6422285,
+          49.4697019
+        ]
+      },
+      "id": "way/1131109615"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1788572927",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "ABB Ladenburg",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6051285,
+          49.4787057
+        ]
+      },
+      "id": "node/1788572927"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1788572928",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "ABB Ladenburg",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6049329,
+          49.4787887
+        ]
+      },
+      "id": "node/1788572928"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1798615626",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Ladenburg Daimlerstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.596097,
+          49.4760177
+        ]
+      },
+      "id": "node/1798615626"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1866279226",
+        "name": "Bäckerei Tschakert",
+        "shop": "bakery",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6054093,
+          49.4715447
+        ]
+      },
+      "id": "node/1866279226"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1866279227",
+        "amenity": "doctors",
+        "email": "info@arztpraxis-ladenburg.de",
+        "fax": "+49 6203 16005",
+        "healthcare": "doctor",
+        "healthcare:speciality": "general",
+        "name": "Dr. Richard Michel",
+        "opening_hours": "Mo,Tu 09:00-12:00,16:00-18:00; Th 09:00-12:00",
+        "phone": "+49 6203 2066",
+        "website": "http://www.arztpraxis-ladenburg.de",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6060321,
+          49.471096
+        ]
+      },
+      "id": "node/1866279227"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1889416641",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6112815,
+          49.4671629
+        ]
+      },
+      "id": "node/1889416641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1909660312",
+        "addr:city": "Ladenburg",
+        "addr:housenumber": "10",
+        "addr:postcode": "68526",
+        "addr:street": "Hauptstraße",
+        "amenity": "cafe",
+        "changing_table": "yes",
+        "cuisine": "bistro",
+        "lastcheck": "2019-02-23",
+        "name": "Herzhaft-Süß",
+        "opening_hours": "Mo-Fr 7:00 - 17:00; Sa-Su 8:00 - 17:00",
+        "outdoor_seating": "yes",
+        "self_service": "yes",
+        "shop": "bakery",
+        "snack": "yes",
+        "takeaway": "yes",
+        "toilets:wheelchair": "no",
+        "url": "https://www.facebook.com/Herzhaft-S%C3%BC%C3%9F-Ladenburg-1632050940417800/?ref=page_internal",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6084075,
+          49.4713304
+        ]
+      },
+      "id": "node/1909660312"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1912562097",
+        "brand": "Bäckerei Grimminger",
+        "brand:wikidata": "Q106823533",
+        "name": "Bäckerei Grimminger",
+        "shop": "bakery",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6031047,
+          49.4799592
+        ]
+      },
+      "id": "node/1912562097"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1913708290",
+        "brand": "K&U Bäckerei",
+        "brand:wikidata": "Q1719433",
+        "brand:wikipedia": "de:K & U Bäckerei",
+        "description": "Bäckerei im EDEKA",
+        "name": "K&U Bäckerei",
+        "shop": "bakery",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6051234,
+          49.4758892
+        ]
+      },
+      "id": "node/1913708290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2257588724",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "fax": "+49 6203 16875",
+        "healthcare": "pharmacy",
+        "lastcheck": "2017-08-02",
+        "name": "Dr. Fuchs'sche Apotheke",
+        "opening_hours": "Mo,Tu,Th,Fr 08:30-13:00,14:30-18:30;We,Sa 08:30-13:00",
+        "phone": "+49 6203 2290",
+        "website": "http://www.dr-fuchssche-apotheke-ladenburg.de",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6110577,
+          49.4721469
+        ]
+      },
+      "id": "node/2257588724"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2257588731",
+        "access:covid19": "yes",
+        "amenity": "cafe",
+        "delivery:covid19": "no",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Bäckerei Riegler",
+        "opening_hours": "Su 07:00-18:00; Sa 06:00-18:00; Mo-Fr 06:00-18:30",
+        "opening_hours:covid19": "Su 07:00-18:00; Sa 06:00-18:00; Mo-Fr 06:00-18:30",
+        "outdoor_seating": "yes",
+        "shop": "bakery",
+        "wheelchair": "no",
+        "wheelchair:description": "Im Sommer rollstuhlgerechte Aussenbewirtschaftung"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6107886,
+          49.472028
+        ]
+      },
+      "id": "node/2257588731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2259951929",
+        "brand": "Bäckerei Grimminger",
+        "brand:wikidata": "Q106823533",
+        "name": "Bäckerei Grimminger",
+        "opening_hours": "Mo-Fr 06:30-18:30; Sa 06:00-13:00; Su 07:00-11:00",
+        "phone": "+49 6203 9562521",
+        "shop": "bakery",
+        "website": "https://www.grimminger.de/Filialen/fil_ladenburg.html",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6127014,
+          49.4674515
+        ]
+      },
+      "id": "node/2259951929"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2441693122",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Ladenburg Ankerplatz",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAAN",
+        "shelter": "yes",
+        "source": "Bing 2012",
+        "tactile_paving": "yes",
+        "uic_ref": "506231",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6062554,
+          49.468837
+        ]
+      },
+      "id": "node/2441693122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2459785918",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6164999,
+          49.474536
+        ]
+      },
+      "id": "node/2459785918"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2932302728",
+        "addr:city": "Ladenburg",
+        "addr:housenumber": "21",
+        "addr:postcode": "68526",
+        "addr:street": "Bahnhofstraße",
+        "amenity": "cafe",
+        "name": "Bäckerei Riegler",
+        "opening_hours": "Mo-Fr 06:00-18:30; Sa 06:00-13:00; Su 08:00-10:00",
+        "outdoor_seating": "yes",
+        "phone": "+49 6203 1079120",
+        "shop": "bakery",
+        "toilets:wheelchair": "no",
+        "website": "https://baeckerei-riegler.de/html/frames/index4.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6045557,
+          49.4717836
+        ]
+      },
+      "id": "node/2932302728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2932302729",
+        "amenity": "pharmacy",
+        "email": "galenus-apo-ladenburg@pharma-online.de",
+        "fax": "+49 6203 17033",
+        "healthcare": "pharmacy",
+        "name": "Galenus-Apotheke",
+        "opening_hours": "Mo-Tu,Th-Fr 08:30-13:00,14:30-18:30; We,Sa 08:30-13:00",
+        "phone": "+49 6203 14323",
+        "website": "https://www.galenus-apotheke-ladenburg.de",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6049492,
+          49.4716659
+        ]
+      },
+      "id": "node/2932302729"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2932381577",
+        "amenity": "pharmacy",
+        "email": "kronen.apotheke@heidelapo.de",
+        "healthcare": "pharmacy",
+        "lastcheck": "2017-08-02",
+        "name": "Kronen Apotheke",
+        "opening_hours": "Mo-Fr 08:30-13:00,14:30-18:30;Sa 08:30-13:00",
+        "phone": "+49 (0) 6203. 22 92",
+        "website": "https://reischmann-apotheken.de/apotheken/ladenburg-kronen-apotheke",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6085081,
+          49.4713709
+        ]
+      },
+      "id": "node/2932381577"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3152017154",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Ladenburg Martinstor",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAMA",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "uic_ref": "507669",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6078821,
+          49.4745111
+        ]
+      },
+      "id": "node/3152017154"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4000889152",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Am Kandelbach",
+        "public_transport": "platform",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6217841,
+          49.4715544
+        ]
+      },
+      "id": "node/4000889152"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4000889153",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Weihergärten",
+        "public_transport": "platform",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6198017,
+          49.4754174
+        ]
+      },
+      "id": "node/4000889153"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4498334554",
+        "leisure": "playground",
+        "name": "Bärenspielplatz",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6161911,
+          49.4715458
+        ]
+      },
+      "id": "node/4498334554"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4674265295",
+        "brand": "PENNY",
+        "brand:wikidata": "Q284688",
+        "brand:wikipedia": "en:Penny (supermarket)",
+        "name": "PENNY",
+        "opening_hours": "Mo-Sa 08:00-22:00; PH off",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5972535,
+          49.4781708
+        ]
+      },
+      "id": "node/4674265295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4853165921",
+        "addr:city": "Ladenburg",
+        "addr:housenumber": "1",
+        "addr:postcode": "68526",
+        "addr:street": "Kurzgewannstraße",
+        "amenity": "kindergarten",
+        "name": "Bärenstarke Kinder - Private Kinderkrippe",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.kindertagespflege-ladenburg.de/",
+        "wheelchair": "no",
+        "wheelchair:description": "+49 6203 8405346"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6122745,
+          49.4747216
+        ]
+      },
+      "id": "node/4853165921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4853952122",
+        "addr:city": "Ladenburg",
+        "addr:housenumber": "19",
+        "addr:postcode": "68526",
+        "addr:street": "Bahnhofstraße",
+        "amenity": "kindergarten",
+        "brand": "Arbeiterwohlfahrt",
+        "brand:short": "AWO",
+        "brand:wikidata": "Q627256",
+        "brand:wikipedia": "de:Arbeiterwohlfahrt",
+        "name": "AWO Kindervilla",
+        "phone": "+49 6203 1079229",
+        "toilets:wheelchair": "yes",
+        "website": "http://www.awo-rhein-neckar.de/kinderbetreuung/kinderkrippe-ladenburg-awo%C2%B4s-kindervilla",
+        "wheelchair": "yes",
+        "wheelchair:description": "http://www.awo-rhein-neckar.de/kinderbetreuung/kinderkrippe-ladenburg-awo%C2%B4s-kindervilla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6041598,
+          49.4720063
+        ]
+      },
+      "id": "node/4853952122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4856145258",
+        "amenity": "kindergarten",
+        "name": "Kindergarten im Waldpark, Pfiff",
+        "operator": "Pfiff e.V.",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6165078,
+          49.471693
+        ]
+      },
+      "id": "node/4856145258"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4968703791",
+        "brand": "Bäcker Görtz",
+        "brand:wikidata": "Q97572517",
+        "brand:wikipedia": "de:Bäcker Görtz",
+        "level": "0",
+        "name": "Bäcker Görtz",
+        "opening_hours": "Mo-Fr 05:30-19:00; Sa 06:00-19:00; Su 07:30-18:00",
+        "outdoor_seating": "yes",
+        "phone": "+49 6203 9309495",
+        "shop": "bakery",
+        "website": "https://www.baeckergoertz.de/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6000121,
+          49.4815811
+        ]
+      },
+      "id": "node/4968703791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5226020983",
+        "leisure": "playground"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6220527,
+          49.4780552
+        ]
+      },
+      "id": "node/5226020983"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5245460534",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Pflastermühle",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAMA",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6062625,
+          49.4744892
+        ]
+      },
+      "id": "node/5245460534"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7319247063",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Carl-Benz-Platz",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LACB",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "uic_ref": "507664",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6057805,
+          49.4712676
+        ]
+      },
+      "id": "node/7319247063"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7319247064",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Ladenburg Ilvesheimer Straße",
+        "public_transport": "platform"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5960666,
+          49.4742499
+        ]
+      },
+      "id": "node/7319247064"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7319247065",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Ladenburg Kanalbrücke",
+        "network": "VRN",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "LAKA",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "uic_ref": "507667",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5864632,
+          49.4779297
+        ]
+      },
+      "id": "node/7319247065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7319868621",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Ladenburg Benzstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5995269,
+          49.4801726
+        ]
+      },
+      "id": "node/7319868621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7319868622",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Ladenburg Daimlerstraße",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "network:wikipedia": "de:Verkehrsverbund Rhein-Neckar",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.5963753,
+          49.4761582
+        ]
+      },
+      "id": "node/7319868622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8145180153",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "description": "SEV-Haltesteig",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Ladenburg Bahnhof",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6025846,
+          49.4734746
+        ]
+      },
+      "id": "node/8145180153"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9388291917",
+        "leisure": "playground",
+        "opening_hours": "Mo-Su 09:00-20:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.6144791,
+          49.4783279
+        ]
+      },
+      "id": "node/9388291917"
+    }
+  ]
+}

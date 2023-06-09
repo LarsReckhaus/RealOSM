@@ -1,0 +1,2074 @@
+-> DB: Vergleich OSM-Punkte vs. alle realen Punkte -> "osm-aufbereitet" vs. "mapping"
+--
+-> Stand: areas & mapping in DB importiert + aufbereiteter OSM-Download für Gebiete einzeln in DB
+
+
+Schritte:
+[1] Vorbereitung  	-> u.a. Mergen aller Kartierungsgebiete (Kartierungsdateien & OSM-Tabellen)	| QGIS + DB
+[2] DQ-Analyse		-> Gesamtanalyse & Teilanalysen für DQ-Parameter -> Vgl. OSM & Mapping		| DB
+
+
+
+[1] Mergen
+
+[1.1] Kartierungsdateien mergen [QGIS - "Desktop"]  -- damit 1 gpkg-Tabelle mit allen Punkten (bisher alle Kartierungsdateien als einzelne gpkg-Tabellen unterhalb "mapping"-gpkg gesammelt)
+ 	
+		- Vektor -> Datenmanagement-Werkzeuge -> Vektorlayer zusammenführen:
+			- Eingabelayer: alle Kartierungstabellen des Formats "mapping_<areas.aid>_<areas.shortname>" auswählen
+			- Ziel-KBS: EPSG:25832 - ETRS89 / UTM zone 32N
+			- Zusammengeführt -> Speichere in GeoPackage: "mapping.gpkg":
+				- Layername: "mapping_merge"
+
+		- Neuer Layer "mapping_merge" -> Layereigenschaften:
+			- Felder:
+				- Bearbeitungsmodus umschalten -> Feld "layer" & "path" auswählen -> Feld löschen -> Bearbeitungsmodus umschalten: Speichern
+			- Stil -> Lade Stil:
+				- Stil laden -> Aus Datenbank laden
+				- Andere Stile in der Datenbank: "mapping_TEMPLATE_style" -> Stil laden
+			- Attributformular -> Fields [Ändern!]:
+				- source: 
+					- Vorgaben: Vorgabewert löschen
+			- Stil -> Als Vorgabe speichern:
+				- Vorgabestil speichern in: Datenquellen-Datenbank
+
+
+[1.2] DB-Import -> Gemergte Kartierungsdatei [QGIS - "Desktop"]
+
+		- Datenbank -> DB-Verwaltung:
+			- Datenanbieter: PostGIS -> "realosm" auswählen:
+				- Layer/Datei importieren:
+					- Eingabe: "mapping_merge"
+					- Ausgabetabelle:
+						- Schema: public
+						- Tabelle: "mapping_merge"
+					- Optionen:
+						- Primärschlüssel: uuid
+
+
+[1.3] Typumwandlung uuid-Feld (mapping_merge) [DB]
+		
+		- Query Tool (realosm/postgres@BA):
+			alter table mapping_merge
+				alter uuid type uuid using uuid::uuid;
+			
+
+[1.4] OSM-Merge-Tabelle [DB]
+
+[1.4.1] Aufbereitungs-Tabelle erstellen
+
+		- Query Tool (realosm/postgres@BA):
+			create table "osm_merge"
+			(
+			type varchar(11) not null,
+	 		subtype varchar,
+	 		name varchar,
+	 		street varchar,
+	 		housenumber varchar,
+	 		comment varchar,
+	 		cid serial not null,
+	 		osm_id varchar unique,
+	 		uuid uuid primary key,
+	 		aid int not null,
+	 		source varchar(6) not null,
+	 		importtime timestamp(0),
+	 		last_edit timestamp(0),  -- aktualisieren mit Trigger
+	 		geom geometry
+	 		);
+
+			create trigger last_edit
+				before update on "osm_merge"
+				for each row
+				execute function trigger_last_edit();
+
+			create trigger cid
+				before update of cid on "osm_merge"
+				for each row
+				execute function trigger_cid();
+
+
+[1.4.2] Insert in OSM-Merge-Tabelle
+
+		- Query Tool (realosm/postgres@BA):
+			insert into "osm_merge"
+				select * from "osm_1_NG-AS"
+				union all
+				select * from "osm_2_MAU"
+				union all
+				select * from "osm_3_GAL"
+				union all
+				select * from "osm_4_LB-ZT"
+				union all
+				select * from "osm_5_DH-NW"
+				union all
+				select * from "osm_6_EW"
+				union all
+				select * from "osm_7_HOE"
+				union all
+				select * from "osm_8_AVK"
+				union all
+				select * from "osm_9_WAF-IS"
+				union all
+				select * from "osm_10_WAF-NO"
+				union all
+				select * from "osm_11_MS-SM"
+				union all
+				select * from "osm_12_MIL"
+				union all
+				select * from "osm_13_SH-ZT"
+				union all
+				select * from "osm_14_MS-IS"
+				union all
+				select * from "osm_15_FH-N"
+				union all
+				select * from "osm_16_AH-IS"
+				union all
+				select * from "osm_17_AH-W"
+				union all
+				select * from "osm_18_MA-IS"
+				union all
+				select * from "osm_19_MA-LH"
+				union all
+				select * from "osm_20_WH-IS"
+				union all
+				select * from "osm_21_WH-WS"
+				union all
+				select * from "osm_22_WHF"
+				union all
+				select * from "osm_23_HD-IS"
+				union all
+				select * from "osm_24_HD-WS";
+
+
+
+[2] DQ-Analyse [DB]
+
+[2.0] Vorbereitung
+
+[2.0.1] areas - Grobe Siedlungsstruktur
+
+		- Query Tool (realosm/postgres@BA):
+		alter table areas
+		add rough_structure varchar(9);  -- neues Feld für grobe Siedlungsstruktur (Dichotomie)
+	
+		update areas
+		set rough_structure='städtisch'
+		where structure in ('innenstädtisch', 'städtisch');
+
+		update areas
+		set rough_structure='ländlich'
+		where structure in ('kleinstädtisch', 'dörflich');
+
+
+[2.1] Gesamtanalyse
+		
+[2.1.1] Standard
+			
+		- Query Tool (realosm/postgres@BA):
+		with matching_points as (
+			select o.uuid
+			from mapping_merge m, osm_merge o
+			where o.cid=m.cid
+				and o.aid=m.aid
+		), correct_points(tp) as (
+			select count(*)::numeric
+			from matching_points mp
+		), missing_points(fn) as (
+			select count(*)::numeric
+			from mapping_merge m
+			where m.uuid not in (
+				select mp.uuid
+				from matching_points mp
+			)
+		), false_points(fp) as (
+			select count(*)::numeric
+			from osm_merge o
+			where o.uuid not in (
+				select mp.uuid
+				from matching_points mp
+			)
+		), osm_import (osmimp) as (
+			select count(*)
+			from mapping_merge m
+			where m.source='osmimp'
+		), premapping (premap) as (
+			select count(*)
+			from mapping_merge m
+			where m.source='premap'
+		), fieldmapping (field) as (
+			select count(*)
+			from mapping_merge m
+			where m.source='field'
+		)
+		select tp as "TP",
+			fn as "FN",
+			fp as "FP",
+			tp+fn as "#mapped_points",
+			osmimp as "-> #osmimp",
+			premap as "-> #premap",
+			field as "-> #field",
+			tp+fp as "#osm_points",
+			tp+fn+fp as "#all_points",
+			round(tp/(tp+fn),2) as "Com", 
+			round(tp/(tp+fp),2) as "Cor", 	
+			round(2*tp/(2*tp+fn+fp),2) as "F1",
+			round(1.25*tp/(1.25*tp+0.25*fn+fp),2) as "F0,5", 	
+			round(tp/(tp+fn+fp),2) as "CSI"
+		from correct_points, missing_points, false_points, osm_import, premapping, fieldmapping;
+
+
+[2.1.2] Gewichtung (Typ)
+			
+		- Query Tool (realosm/postgres@BA):
+		with matching_points as (
+			select m.type, o.uuid
+			from mapping_merge m, osm_merge o
+			where o.cid=m.cid
+				and o.aid=m.aid
+		), correct_points(type, tp) as (
+			select mp.type, count(*)::numeric
+			from matching_points mp
+			group by mp.type
+		), missing_points(type, fn) as (
+			select m1.type, count(m2.uuid)::numeric
+			from mapping_merge m1
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+					)
+			group by m1.type
+		), false_points(type, fp) as (
+			select o1.type, count(o2.uuid)::numeric
+			from osm_merge o1
+			left join osm_merge o2
+				on o1.uuid=o2.uuid
+					and o2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+					)
+			group by o1.type
+		), osm_import (type, osmimp) as (				
+			select m1.type, count(m2.source)
+			from mapping_merge m1
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.source='osmimp'
+			group by m1.type
+		), premapping (type, premap) as (		
+			select m1.type, count(m2.source)
+			from mapping_merge m1
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.source='premap'
+			group by m1.type
+		), fieldmapping (type, field) as (
+			select m1.type, count(m2.source)
+			from mapping_merge m1
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.source='field'
+			group by m1.type	
+		)
+		select round(avg(tp/(tp+fn)),2) as "Com (tw)", -- tw=type-weighted -> Gleichgewichtung (arith. Mittel): jeder Typ 1/11 Einfluss
+			round(avg(tp/(tp+fp)),2) as "Cor (tw)", 	
+			round(avg(2*tp/(2*tp+fn+fp)),2) as "F1 (tw)",
+			round(avg(1.25*tp/(1.25*tp+0.25*fn+fp)),2) as "F0,5 (tw)", 	
+			round(avg(tp/(tp+fn+fp)),2) as "CSI (tw)"
+		from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+		where cp.type=mp.type
+			and mp.type=fp.type
+			and fp.type=oi.type
+			and oi.type=pm.type
+			and pm.type=fm.type;
+
+
+[2.1.3] Gewichtung (Region)
+			
+		- Query Tool (realosm/postgres@BA):
+		with matching_points as (
+			select a.region, o.uuid
+			from mapping_merge m, osm_merge o, areas a
+			where o.cid=m.cid
+				and o.aid=m.aid
+				and m.aid=a.aid
+		), correct_points(region, tp) as (
+			select mp.region, count(*)::numeric
+			from matching_points mp
+			group by mp.region
+		), missing_points(region, fn) as (
+			select a.region, count(m2.uuid)::numeric
+			from mapping_merge m1
+			inner join areas a
+				on m1.aid=a.aid
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+					)
+			group by a.region
+		), false_points(region, fp) as (
+			select a.region, count(o2.uuid)::numeric
+			from osm_merge o1
+			inner join areas a
+				on o1.aid=a.aid
+			left join osm_merge o2
+				on o1.uuid=o2.uuid
+					and o2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+					)
+			group by a.region
+		), osm_import (region, osmimp) as (	
+			select a.region, count(m2.source)
+			from mapping_merge m1
+			inner join areas a
+				on m1.aid=a.aid
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.source='osmimp'
+			group by a.region
+		), premapping (region, premap) as (		
+			select a.region, count(m2.source)
+			from mapping_merge m1
+			inner join areas a
+				on m1.aid=a.aid
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.source='premap'
+			group by a.region
+		), fieldmapping (region, field) as (
+			select a.region, count(m2.source)
+			from mapping_merge m1
+			inner join areas a
+				on m1.aid=a.aid
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.source='field'
+			group by a.region	
+		)
+		select round(avg(tp/(tp+fn)),2) as "Com (rw)", -- rw=region-weighted -> Gleichgewichtung (arith. Mittel): jede Region 1/2 Einfluss
+			round(avg(tp/(tp+fp)),2) as "Cor (rw)", 	
+			round(avg(2*tp/(2*tp+fn+fp)),2) as "F1 (rw)",
+			round(avg(1.25*tp/(1.25*tp+0.25*fn+fp)),2) as "F0,5 (rw)", 	
+			round(avg(tp/(tp+fn+fp)),2) as "CSI (rw)"
+		from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+		where cp.region=mp.region
+			and mp.region=fp.region
+			and fp.region=oi.region
+			and oi.region=pm.region
+			and pm.region=fm.region;
+
+
+[2.1.4] Gewichtung (Siedlungsstruktur)
+			
+		- Query Tool (realosm/postgres@BA):
+		with matching_points as (
+			select a.structure, o.uuid
+			from mapping_merge m, osm_merge o, areas a
+			where o.cid=m.cid
+				and o.aid=m.aid
+				and m.aid=a.aid
+		), correct_points(structure, tp) as (
+			select mp.structure, count(*)::numeric
+			from matching_points mp
+			group by mp.structure
+		), missing_points(structure, fn) as (
+			select a.structure, count(m2.uuid)::numeric
+			from mapping_merge m1
+			inner join areas a
+				on m1.aid=a.aid
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+					)
+			group by a.structure
+		), false_points(structure, fp) as (
+			select a.structure, count(o2.uuid)::numeric
+			from osm_merge o1
+			inner join areas a
+				on o1.aid=a.aid
+			left join osm_merge o2
+				on o1.uuid=o2.uuid
+					and o2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+					)
+			group by a.structure
+		), osm_import (structure, osmimp) as (	
+			select a.structure, count(m2.source)
+			from mapping_merge m1
+			inner join areas a
+				on m1.aid=a.aid
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.source='osmimp'
+			group by a.structure
+		), premapping (structure, premap) as (		
+			select a.structure, count(m2.source)
+			from mapping_merge m1
+			inner join areas a
+				on m1.aid=a.aid
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.source='premap'
+			group by a.structure
+		), fieldmapping (structure, field) as (
+			select a.structure, count(m2.source)
+			from mapping_merge m1
+			inner join areas a
+				on m1.aid=a.aid
+			left join mapping_merge m2
+				on m1.uuid=m2.uuid
+					and m2.source='field'
+			group by a.structure
+		)
+		select round(avg(tp/(tp+fn)),2) as "Com (sw)", -- sw=structure-weighted -> Gleichgewichtung (arith. Mittel): jede Siedlungsstruktur 1/4 Einfluss
+			round(avg(tp/(tp+fp)),2) as "Cor (sw)", 	
+			round(avg(2*tp/(2*tp+fn+fp)),2) as "F1 (sw)",
+			round(avg(1.25*tp/(1.25*tp+0.25*fn+fp)),2) as "F0,5 (sw)", 	
+			round(avg(tp/(tp+fn+fp)),2) as "CSI (sw)"
+		from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+		where cp.structure=mp.structure
+			and mp.structure=fp.structure
+			and fp.structure=oi.structure
+			and oi.structure=pm.structure
+			and pm.structure=fm.structure;
+
+
+[2.1.5] Gewichtung (Typ + Siedlungsstruktur)
+			
+		- Query Tool (realosm/postgres@BA):
+		with matching_points as (
+			select m.type, a.structure, o.uuid
+			from mapping_merge m, osm_merge o, areas a
+			where o.cid=m.cid
+				and o.aid=m.aid
+				and m.aid=a.aid
+		), correct_points(type, structure, tp) as (
+			select ts.type, ts.structure, count(mp.uuid)::numeric
+			from
+				(select distinct m1.type, a1.structure
+				from mapping_merge m1, areas a1
+				) as ts
+			left join matching_points mp
+				on ts.type=mp.type
+					and ts.structure=mp.structure
+			group by ts.type, ts.structure
+		), missing_points(type, structure, fn) as (
+			select ts.type, ts.structure, count(fn.uuid)::numeric
+			from
+				(select distinct m1.type, a1.structure
+				from mapping_merge m1, areas a1
+				) as ts
+			left join
+			(select m2.type, a2.structure, m2.uuid
+			from mapping_merge m2, areas a2
+			where m2.aid=a2.aid
+				and m2.uuid not in (
+					select mp.uuid
+					from matching_points mp
+					)
+			) as fn
+				on ts.type=fn.type
+					and ts.structure=fn.structure
+			group by ts.type, ts.structure
+		), false_points(type, structure, fp) as (
+			select ts.type, ts.structure, count(fp.uuid)::numeric
+			from
+				(select distinct o1.type, a1.structure
+				from osm_merge o1, areas a1
+				) as ts
+			left join
+			(select o2.type, a2.structure, o2.uuid
+			from osm_merge o2, areas a2
+			where o2.aid=a2.aid
+				and o2.uuid not in (
+					select mp.uuid
+					from matching_points mp
+					)
+			) as fp
+				on ts.type=fp.type
+					and ts.structure=fp.structure
+			group by ts.type, ts.structure
+		), osm_import (type, structure, osmimp) as (	
+			select ts.type, ts.structure, count(oi.uuid)::numeric
+			from
+				(select distinct m1.type, a1.structure
+				from mapping_merge m1, areas a1
+				) as ts
+			left join
+			(select m2.type, a2.structure, m2.uuid
+			from mapping_merge m2, areas a2
+			where m2.aid=a2.aid
+				and m2.source='osmimp'
+			) as oi
+				on ts.type=oi.type
+					and ts.structure=oi.structure
+			group by ts.type, ts.structure
+		), premapping (type, structure, premap) as (		
+			select ts.type, ts.structure, count(pm.uuid)::numeric
+			from
+				(select distinct m1.type, a1.structure
+				from mapping_merge m1, areas a1
+				) as ts
+			left join
+			(select m2.type, a2.structure, m2.uuid
+			from mapping_merge m2, areas a2
+			where m2.aid=a2.aid
+				and m2.source='premap'
+			) as pm
+				on ts.type=pm.type
+					and ts.structure=pm.structure
+			group by ts.type, ts.structure
+		), fieldmapping (type, structure, field) as (
+			select ts.type, ts.structure, count(fm.uuid)::numeric
+			from
+				(select distinct m1.type, a1.structure
+				from mapping_merge m1, areas a1
+				) as ts
+			left join
+			(select m2.type, a2.structure, m2.uuid
+			from mapping_merge m2, areas a2
+			where m2.aid=a2.aid
+				and m2.source='field'
+			) as fm
+				on ts.type=fm.type
+					and ts.structure=fm.structure
+			group by ts.type, ts.structure
+		)
+		select round(avg(tp/nullif(tp+fn,0)),2) as "Com (tsw)", -- tsw=type- & structure-weighted -> Gleichgewichtung (arith. Mittel)
+			round(avg(tp/nullif(tp+fp,0)),2) as "Cor (tsw)", 	
+			round(avg(2*tp/nullif(2*tp+fn+fp,0)),2) as "F1 (tsw)",
+			round(avg(1.25*tp/nullif(1.25*tp+0.25*fn+fp,0)),2) as "F0,5 (tsw)", 	
+			round(avg(tp/nullif(tp+fn+fp,0)),2) as "CSI (tsw)"		
+		from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+		where cp.type=mp.type
+			and mp.type=fp.type
+			and fp.type=oi.type
+			and oi.type=pm.type
+			and pm.type=fm.type
+			and cp.structure=mp.structure
+			and mp.structure=fp.structure
+			and fp.structure=oi.structure
+			and oi.structure=pm.structure
+			and pm.structure=fm.structure;
+		
+
+[2.1.6] Gewichtung (Typ + Siedlungsstruktur + Region)
+			
+		- Query Tool (realosm/postgres@BA):
+		with matching_points as (
+				select m.type, a.structure, a.region, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(type, structure, region, tp) as (
+				select ts.type, ts.structure, ts.region, count(mp.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join matching_points mp
+					on ts.type=mp.type
+						and ts.structure=mp.structure
+						and ts.region=mp.region
+				group by ts.type, ts.structure, ts.region
+			), missing_points(type, structure, region, fn) as (
+				select ts.type, ts.structure, ts.region, count(fn.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fn
+					on ts.type=fn.type
+						and ts.structure=fn.structure
+						and ts.region=fn.region
+				group by ts.type, ts.structure, ts.region
+			), false_points(type, structure, region, fp) as (
+				select ts.type, ts.structure, ts.region, count(fp.uuid)::numeric
+				from
+					(select distinct o1.type, a1.structure, a1.region
+					from osm_merge o1, areas a1
+					) as ts
+				left join
+				(select o2.type, a2.structure, a2.region, o2.uuid
+				from osm_merge o2, areas a2
+				where o2.aid=a2.aid
+					and o2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fp
+					on ts.type=fp.type
+						and ts.structure=fp.structure
+						and ts.region=fp.region
+				group by ts.type, ts.structure, ts.region
+			), osm_import (type, structure, region, osmimp) as (	
+				select ts.type, ts.structure, ts.region, count(oi.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='osmimp'
+				) as oi
+					on ts.type=oi.type
+						and ts.structure=oi.structure
+						and ts.region=oi.region
+				group by ts.type, ts.structure, ts.region
+			), premapping (type, structure, region, premap) as (		
+				select ts.type, ts.structure, ts.region, count(pm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='premap'
+				) as pm
+					on ts.type=pm.type
+						and ts.structure=pm.structure
+						and ts.region=pm.region
+				group by ts.type, ts.structure, ts.region
+			), fieldmapping (type, structure, region, field) as (
+				select ts.type, ts.structure, ts.region, count(fm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='field'
+				) as fm
+					on ts.type=fm.type
+						and ts.structure=fm.structure
+						and ts.region=fm.region
+				group by ts.type, ts.structure, ts.region
+			)
+			select round(avg(tp/nullif(tp+fn,0)),2) as "Com (tsrw)", -- tsrw=type- & structure- & region-weighted -> Gleichgewichtung (arith. Mittel)
+			round(avg(tp/nullif(tp+fp,0)),2) as "Cor (tsrw)", 	
+			round(avg(2*tp/nullif(2*tp+fn+fp,0)),2) as "F1 (tsrw)",
+			round(avg(1.25*tp/nullif(1.25*tp+0.25*fn+fp,0)),2) as "F0,5 (tsrw)", 	
+			round(avg(tp/nullif(tp+fn+fp,0)),2) as "CSI (tsrw)"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.type=mp.type
+				and mp.type=fp.type
+				and fp.type=oi.type
+				and oi.type=pm.type
+				and pm.type=fm.type
+				and cp.structure=mp.structure
+				and mp.structure=fp.structure
+				and fp.structure=oi.structure
+				and oi.structure=pm.structure
+				and pm.structure=fm.structure
+				and cp.region=mp.region
+				and mp.region=fp.region
+				and fp.region=oi.region
+				and oi.region=pm.region
+				and pm.region=fm.region;
+
+
+--> Teilanalysen
+
+[2.2] Regionsanalyse
+
+[2.2.1] Standard
+			
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select a.region, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(region, tp) as (
+				select mp.region, count(*)::numeric
+				from matching_points mp
+				group by mp.region
+			), missing_points(region, fn) as (
+				select a.region, count(m2.uuid)::numeric
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by a.region
+			), false_points(region, fp) as (
+				select a.region, count(o2.uuid)::numeric
+				from osm_merge o1
+				inner join areas a
+					on o1.aid=a.aid
+				left join osm_merge o2
+					on o1.uuid=o2.uuid
+						and o2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by a.region
+			), osm_import (region, osmimp) as (	
+				select a.region, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='osmimp'
+				group by a.region
+			), premapping (region, premap) as (		
+				select a.region, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='premap'
+				group by a.region
+			), fieldmapping (region, field) as (
+				select a.region, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='field'
+				group by a.region	
+			)
+			select cp.region,
+				tp as "TP",
+				fn as "FN",
+				fp as "FP",
+				tp+fn as "#mapped_points",
+				osmimp as "-> #osmimp",
+				premap as "-> #premap",
+				field as "-> #field",
+				tp+fp as "#osm_points",
+				tp+fn+fp as "#all_points",
+				round(tp/(tp+fn),2) as "Com", 
+				round(tp/(tp+fp),2) as "Cor", 	
+				round(2*tp/(2*tp+fn+fp),2) as "F1",
+				round(1.25*tp/(1.25*tp+0.25*fn+fp),2) as "F0,5", 	
+				round(tp/(tp+fn+fp),2) as "CSI"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.region=mp.region
+				and mp.region=fp.region
+				and fp.region=oi.region
+				and oi.region=pm.region
+				and pm.region=fm.region;
+
+			
+[2.2.2] Gewichtung (Typ)
+			
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select m.type, a.region, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(type, region, tp) as (
+				select ts.type, ts.region, count(mp.uuid)::numeric
+				from
+					(select distinct m1.type, a1.region
+					from mapping_merge m1, areas a1
+					) as ts  -- ts=table_structure
+				left join matching_points mp
+					on ts.type=mp.type
+						and ts.region=mp.region
+				group by ts.type, ts.region
+			), missing_points(type, region, fn) as (
+				select ts.type, ts.region, count(fn.uuid)::numeric
+				from
+					(select distinct m1.type, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fn
+					on ts.type=fn.type
+						and ts.region=fn.region
+				group by ts.type, ts.region
+			), false_points(type, region, fp) as (
+				select ts.type, ts.region, count(fp.uuid)::numeric
+				from
+					(select distinct o1.type, a1.region
+					from osm_merge o1, areas a1
+					) as ts
+				left join
+				(select o2.type, a2.region, o2.uuid
+				from osm_merge o2, areas a2
+				where o2.aid=a2.aid
+					and o2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fp
+					on ts.type=fp.type
+						and ts.region=fp.region
+				group by ts.type, ts.region
+			), osm_import (type, region, osmimp) as (	
+				select ts.type, ts.region, count(oi.uuid)::numeric
+				from
+					(select distinct m1.type, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='osmimp'
+				) as oi  -- oi=osm_import
+					on ts.type=oi.type
+						and ts.region=oi.region
+				group by ts.type, ts.region
+			), premapping (type, region, premap) as (		
+				select ts.type, ts.region, count(pm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='premap'
+				) as pm  -- pm=premapping
+					on ts.type=pm.type
+						and ts.region=pm.region
+				group by ts.type, ts.region
+			), fieldmapping (type, region, field) as (
+				select ts.type, ts.region, count(fm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='field'
+				) as fm  -- fm=fieldmapping
+					on ts.type=fm.type
+						and ts.region=fm.region
+				group by ts.type, ts.region
+			)
+			select cp.region, 
+				round(avg(tp/nullif(tp+fn,0)),2) as "Com (tw)",
+				round(avg(tp/nullif(tp+fp,0)),2) as "Cor (tw)", 	
+				round(avg(2*tp/nullif(2*tp+fn+fp,0)),2) as "F1 (tw)",
+				round(avg(1.25*tp/nullif(1.25*tp+0.25*fn+fp,0)),2) as "F0,5 (tw)", 	
+				round(avg(tp/nullif(tp+fn+fp,0)),2) as "CSI (tw)"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.type=mp.type
+				and mp.type=fp.type
+				and fp.type=oi.type
+				and oi.type=pm.type
+				and pm.type=fm.type
+				and cp.region=mp.region
+				and mp.region=fp.region
+				and fp.region=oi.region
+				and oi.region=pm.region
+				and pm.region=fm.region
+			group by cp.region;
+
+
+[2.2.3] Gewichtung (Siedlungsstruktur)
+			
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select a.region, a.structure, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(region, structure, tp) as (
+				select ts.region, ts.structure, count(mp.uuid)::numeric
+				from
+					(select distinct a1.region, a1.structure
+					from areas a1
+					) as ts
+				left join matching_points mp
+					on ts.region=mp.region
+						and ts.structure=mp.structure
+				group by ts.region, ts.structure
+			), missing_points(region, structure, fn) as (
+				select ts.region, ts.structure, count(fn.uuid)::numeric
+				from
+					(select distinct a1.region, a1.structure
+					from areas a1
+					) as ts
+				left join
+				(select a2.region, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fn
+					on ts.region=fn.region
+						and ts.structure=fn.structure
+				group by ts.region, ts.structure
+			), false_points(region, structure, fp) as (
+				select ts.region, ts.structure, count(fp.uuid)::numeric
+				from
+					(select distinct a1.region, a1.structure
+					from areas a1
+					) as ts
+				left join
+				(select a2.region, a2.structure, o2.uuid
+				from osm_merge o2, areas a2
+				where o2.aid=a2.aid
+					and o2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fp
+					on ts.region=fp.region
+						and ts.structure=fp.structure
+				group by ts.region, ts.structure
+			), osm_import (region, structure, osmimp) as (	
+				select ts.region, ts.structure, count(oi.uuid)::numeric
+				from
+					(select distinct a1.region, a1.structure
+					from areas a1
+					) as ts
+				left join
+				(select a2.region, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='osmimp'
+				) as oi
+					on ts.region=oi.region
+						and ts.structure=oi.structure
+				group by ts.region, ts.structure
+			), premapping (region, structure, premap) as (		
+				select ts.region, ts.structure, count(pm.uuid)::numeric
+				from
+					(select distinct a1.region, a1.structure
+					from areas a1
+					) as ts
+				left join
+				(select a2.region, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='premap'
+				) as pm
+					on ts.region=pm.region
+						and ts.structure=pm.structure
+				group by ts.region, ts.structure
+			), fieldmapping (region, structure, field) as (
+				select ts.region, ts.structure, count(fm.uuid)::numeric
+				from
+					(select distinct a1.region, a1.structure
+					from areas a1
+					) as ts
+				left join
+				(select a2.region, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='field'
+				) as fm
+					on ts.region=fm.region
+						and ts.structure=fm.structure
+				group by ts.region, ts.structure
+			)
+			select cp.region,
+				round(avg(tp/(tp+fn)),2) as "Com (sw)",
+				round(avg(tp/(tp+fp)),2) as "Cor (sw)", 	
+				round(avg(2*tp/(2*tp+fn+fp)),2) as "F1 (sw)",
+				round(avg(1.25*tp/(1.25*tp+0.25*fn+fp)),2) as "F0,5 (sw)", 	
+				round(avg(tp/(tp+fn+fp)),2) as "CSI (sw)"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.region=mp.region
+				and mp.region=fp.region
+				and fp.region=oi.region
+				and oi.region=pm.region
+				and pm.region=fm.region
+				and cp.structure=mp.structure
+				and mp.structure=fp.structure
+				and fp.structure=oi.structure
+				and oi.structure=pm.structure
+				and pm.structure=fm.structure
+			group by cp.region;
+
+		
+[2.2.4] Gewichtung (Typ + Siedlungsstruktur)
+			
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select m.type, a.structure, a.region, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(type, structure, region, tp) as (
+				select ts.type, ts.structure, ts.region, count(mp.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join matching_points mp
+					on ts.type=mp.type
+						and ts.structure=mp.structure
+						and ts.region=mp.region
+				group by ts.type, ts.structure, ts.region
+			), missing_points(type, structure, region, fn) as (
+				select ts.type, ts.structure, ts.region, count(fn.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fn
+					on ts.type=fn.type
+						and ts.structure=fn.structure
+						and ts.region=fn.region
+				group by ts.type, ts.structure, ts.region
+			), false_points(type, structure, region, fp) as (
+				select ts.type, ts.structure, ts.region, count(fp.uuid)::numeric
+				from
+					(select distinct o1.type, a1.structure, a1.region
+					from osm_merge o1, areas a1
+					) as ts
+				left join
+				(select o2.type, a2.structure, a2.region, o2.uuid
+				from osm_merge o2, areas a2
+				where o2.aid=a2.aid
+					and o2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fp
+					on ts.type=fp.type
+						and ts.structure=fp.structure
+						and ts.region=fp.region
+				group by ts.type, ts.structure, ts.region
+			), osm_import (type, structure, region, osmimp) as (	
+				select ts.type, ts.structure, ts.region, count(oi.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='osmimp'
+				) as oi
+					on ts.type=oi.type
+						and ts.structure=oi.structure
+						and ts.region=oi.region
+				group by ts.type, ts.structure, ts.region
+			), premapping (type, structure, region, premap) as (		
+				select ts.type, ts.structure, ts.region, count(pm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='premap'
+				) as pm
+					on ts.type=pm.type
+						and ts.structure=pm.structure
+						and ts.region=pm.region
+				group by ts.type, ts.structure, ts.region
+			), fieldmapping (type, structure, region, field) as (
+				select ts.type, ts.structure, ts.region, count(fm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure, a1.region
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, a2.region, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='field'
+				) as fm
+					on ts.type=fm.type
+						and ts.structure=fm.structure
+						and ts.region=fm.region
+				group by ts.type, ts.structure, ts.region
+			)
+			select cp.region,
+				round(avg(tp/nullif(tp+fn,0)),2) as "Com (tsw)",
+				round(avg(tp/nullif(tp+fp,0)),2) as "Cor (tsw)", 	
+				round(avg(2*tp/nullif(2*tp+fn+fp,0)),2) as "F1 (tsw)",
+				round(avg(1.25*tp/nullif(1.25*tp+0.25*fn+fp,0)),2) as "F0,5 (tsw)", 	
+				round(avg(tp/nullif(tp+fn+fp,0)),2) as "CSI (tsw)"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.type=mp.type
+				and mp.type=fp.type
+				and fp.type=oi.type
+				and oi.type=pm.type
+				and pm.type=fm.type
+				and cp.structure=mp.structure
+				and mp.structure=fp.structure
+				and fp.structure=oi.structure
+				and oi.structure=pm.structure
+				and pm.structure=fm.structure
+				and cp.region=mp.region
+				and mp.region=fp.region
+				and fp.region=oi.region
+				and oi.region=pm.region
+				and pm.region=fm.region
+			group by cp.region;
+
+
+[2.3] Siedlungsstrukturanalyse
+
+[2.3.1] Standard
+			
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select a.structure, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(structure, tp) as (
+				select mp.structure, count(*)::numeric
+				from matching_points mp
+				group by mp.structure
+			), missing_points(structure, fn) as (
+				select a.structure, count(m2.uuid)::numeric
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by a.structure
+			), false_points(structure, fp) as (
+				select a.structure, count(o2.uuid)::numeric
+				from osm_merge o1
+				inner join areas a
+					on o1.aid=a.aid
+				left join osm_merge o2
+					on o1.uuid=o2.uuid
+						and o2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by a.structure
+			), osm_import (structure, osmimp) as (	
+				select a.structure, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='osmimp'
+				group by a.structure
+			), premapping (structure, premap) as (		
+				select a.structure, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='premap'
+				group by a.structure
+			), fieldmapping (structure, field) as (
+				select a.structure, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='field'
+				group by a.structure
+			)
+			select cp.structure,
+				tp as "TP",
+				fn as "FN",
+				fp as "FP",
+				tp+fn as "#mapped_points",
+				osmimp as "-> #osmimp",
+				premap as "-> #premap",
+				field as "-> #field",
+				tp+fp as "#osm_points",
+				tp+fn+fp as "#all_points",
+				round(tp/(tp+fn),2) as "Com", 
+				round(tp/(tp+fp),2) as "Cor", 	
+				round(2*tp/(2*tp+fn+fp),2) as "F1",
+				round(1.25*tp/(1.25*tp+0.25*fn+fp),2) as "F0,5", 	
+				round(tp/(tp+fn+fp),2) as "CSI"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.structure=mp.structure
+				and mp.structure=fp.structure
+				and fp.structure=oi.structure
+				and oi.structure=pm.structure
+				and pm.structure=fm.structure
+			order by tp+fn;
+
+
+[2.3.2] Gewichtung (Typ)
+			
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select m.type, a.structure, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(type, structure, tp) as (
+				select ts.type, ts.structure, count(mp.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join matching_points mp
+					on ts.type=mp.type
+						and ts.structure=mp.structure
+				group by ts.type, ts.structure
+			), missing_points(type, structure, fn) as (
+				select ts.type, ts.structure, count(fn.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fn
+					on ts.type=fn.type
+						and ts.structure=fn.structure
+				group by ts.type, ts.structure
+			), false_points(type, structure, fp) as (
+				select ts.type, ts.structure, count(fp.uuid)::numeric
+				from
+					(select distinct o1.type, a1.structure
+					from osm_merge o1, areas a1
+					) as ts
+				left join
+				(select o2.type, a2.structure, o2.uuid
+				from osm_merge o2, areas a2
+				where o2.aid=a2.aid
+					and o2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fp
+					on ts.type=fp.type
+						and ts.structure=fp.structure
+				group by ts.type, ts.structure
+			), osm_import (type, structure, osmimp) as (	
+				select ts.type, ts.structure, count(oi.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='osmimp'
+				) as oi
+					on ts.type=oi.type
+						and ts.structure=oi.structure
+				group by ts.type, ts.structure
+			), premapping (type, structure, premap) as (		
+				select ts.type, ts.structure, count(pm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='premap'
+				) as pm
+					on ts.type=pm.type
+						and ts.structure=pm.structure
+				group by ts.type, ts.structure
+			), fieldmapping (type, structure, field) as (
+				select ts.type, ts.structure, count(fm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='field'
+				) as fm
+					on ts.type=fm.type
+						and ts.structure=fm.structure
+				group by ts.type, ts.structure
+			)
+			select cp.structure,
+				round(avg(tp/nullif(tp+fn,0)),2) as "Com (tw)",
+				round(avg(tp/nullif(tp+fp,0)),2) as "Cor (tw)", 	
+				round(avg(2*tp/nullif(2*tp+fn+fp,0)),2) as "F1 (tw)",
+				round(avg(1.25*tp/nullif(1.25*tp+0.25*fn+fp,0)),2) as "F0,5 (tw)", 	
+				round(avg(tp/nullif(tp+fn+fp,0)),2) as "CSI (tw)"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.type=mp.type
+				and mp.type=fp.type
+				and fp.type=oi.type
+				and oi.type=pm.type
+				and pm.type=fm.type
+				and cp.structure=mp.structure
+				and mp.structure=fp.structure
+				and fp.structure=oi.structure
+				and oi.structure=pm.structure
+				and pm.structure=fm.structure
+			group by cp.structure
+			order by "Cor (tw)" desc;
+
+
+[2.3.3] Grobe Siedlungsstrukturanalyse (Stadt vs. Land)
+
+[2.3.3.1] Standard
+			
+			- Query Tool (realosm/postgres@BA)
+			with matching_points as (
+				select a.rough_structure, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(rough_structure, tp) as (
+				select mp.rough_structure, count(*)::numeric
+				from matching_points mp
+				group by mp.rough_structure
+			), missing_points(rough_structure, fn) as (
+				select a.rough_structure, count(m2.uuid)::numeric
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by a.rough_structure
+			), false_points(rough_structure, fp) as (
+				select a.rough_structure, count(o2.uuid)::numeric
+				from osm_merge o1
+				inner join areas a
+					on o1.aid=a.aid
+				left join osm_merge o2
+					on o1.uuid=o2.uuid
+						and o2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by a.rough_structure
+			), osm_import (rough_structure, osmimp) as (	
+				select a.rough_structure, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='osmimp'
+				group by a.rough_structure
+			), premapping (rough_structure, premap) as (		
+				select a.rough_structure, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='premap'
+				group by a.rough_structure
+			), fieldmapping (rough_structure, field) as (
+				select a.rough_structure, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='field'
+				group by a.rough_structure
+			)
+			select cp.rough_structure,
+				tp as "TP",
+				fn as "FN",
+				fp as "FP",
+				tp+fn as "#mapped_points",
+				osmimp as "-> #osmimp",
+				premap as "-> #premap",
+				field as "-> #field",
+				tp+fp as "#osm_points",
+				tp+fn+fp as "#all_points",
+				round(tp/(tp+fn),2) as "Com", 
+				round(tp/(tp+fp),2) as "Cor", 	
+				round(2*tp/(2*tp+fn+fp),2) as "F1",
+				round(1.25*tp/(1.25*tp+0.25*fn+fp),2) as "F0,5", 	
+				round(tp/(tp+fn+fp),2) as "CSI"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.rough_structure=mp.rough_structure
+				and mp.rough_structure=fp.rough_structure
+				and fp.rough_structure=oi.rough_structure
+				and oi.rough_structure=pm.rough_structure
+				and pm.rough_structure=fm.rough_structure;
+
+
+[2.3.3.2] Gewichtung (Typ)
+			
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select m.type, a.rough_structure, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(type, rough_structure, tp) as (
+				select ts.type, ts.rough_structure, count(mp.uuid)::numeric
+				from
+					(select distinct m1.type, a1.rough_structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join matching_points mp
+					on ts.type=mp.type
+						and ts.rough_structure=mp.rough_structure
+				group by ts.type, ts.rough_structure
+			), missing_points(type, rough_structure, fn) as (
+				select ts.type, ts.rough_structure, count(fn.uuid)::numeric
+				from
+					(select distinct m1.type, a1.rough_structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.rough_structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fn
+					on ts.type=fn.type
+						and ts.rough_structure=fn.rough_structure
+				group by ts.type, ts.rough_structure
+			), false_points(type, rough_structure, fp) as (
+				select ts.type, ts.rough_structure, count(fp.uuid)::numeric
+				from
+					(select distinct o1.type, a1.rough_structure
+					from osm_merge o1, areas a1
+					) as ts
+				left join
+				(select o2.type, a2.rough_structure, o2.uuid
+				from osm_merge o2, areas a2
+				where o2.aid=a2.aid
+					and o2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fp
+					on ts.type=fp.type
+						and ts.rough_structure=fp.rough_structure
+				group by ts.type, ts.rough_structure
+			), osm_import (type, rough_structure, osmimp) as (	
+				select ts.type, ts.rough_structure, count(oi.uuid)::numeric
+				from
+					(select distinct m1.type, a1.rough_structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.rough_structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='osmimp'
+				) as oi
+					on ts.type=oi.type
+						and ts.rough_structure=oi.rough_structure
+				group by ts.type, ts.rough_structure
+			), premapping (type, rough_structure, premap) as (		
+				select ts.type, ts.rough_structure, count(pm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.rough_structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.rough_structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='premap'
+				) as pm
+					on ts.type=pm.type
+						and ts.rough_structure=pm.rough_structure
+				group by ts.type, ts.rough_structure
+			), fieldmapping (type, rough_structure, field) as (
+				select ts.type, ts.rough_structure, count(fm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.rough_structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.rough_structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='field'
+				) as fm
+					on ts.type=fm.type
+						and ts.rough_structure=fm.rough_structure
+				group by ts.type, ts.rough_structure
+			)
+			select cp.rough_structure,
+				round(avg(tp/nullif(tp+fn,0)),2) as "Com (tw)",
+				round(avg(tp/nullif(tp+fp,0)),2) as "Cor (tw)", 	
+				round(avg(2*tp/nullif(2*tp+fn+fp,0)),2) as "F1 (tw)",
+				round(avg(1.25*tp/nullif(1.25*tp+0.25*fn+fp,0)),2) as "F0,5 (tw)", 	
+				round(avg(tp/nullif(tp+fn+fp,0)),2) as "CSI (tw)"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.type=mp.type
+				and mp.type=fp.type
+				and fp.type=oi.type
+				and oi.type=pm.type
+				and pm.type=fm.type
+				and cp.rough_structure=mp.rough_structure
+				and mp.rough_structure=fp.rough_structure
+				and fp.rough_structure=oi.rough_structure
+				and oi.rough_structure=pm.rough_structure
+				and pm.rough_structure=fm.rough_structure
+			group by cp.rough_structure;
+
+
+[2.4] Gebietsanalyse
+
+[2.4.1] Standard
+
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select a.name, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(name, tp) as (
+				select mp.name, count(*)::numeric
+				from matching_points mp
+				group by mp.name
+			), missing_points(name, fn) as (
+				select a.name, count(m2.uuid)::numeric
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by a.name
+			), false_points(name, fp) as (
+				select a.name, count(o2.uuid)::numeric
+				from osm_merge o1
+				inner join areas a
+					on o1.aid=a.aid
+				left join osm_merge o2
+					on o1.uuid=o2.uuid
+						and o2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by a.name
+			), osm_import (name, osmimp) as (	
+				select a.name, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='osmimp'
+				group by a.name
+			), premapping (name, premap) as (		
+				select a.name, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='premap'
+				group by a.name
+			), fieldmapping (name, field) as (
+				select a.name, count(m2.source)
+				from mapping_merge m1
+				inner join areas a
+					on m1.aid=a.aid
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='field'
+				group by a.name
+			)
+			select cp.name,
+				tp as "TP",
+				fn as "FN",
+				fp as "FP",
+				tp+fn as "#mapped_points",
+				osmimp as "-> #osmimp",
+				premap as "-> #premap",
+				field as "-> #field",
+				tp+fp as "#osm_points",
+				tp+fn+fp as "#all_points",
+				round(tp/(tp+fn),2) as "Com", 
+				round(tp/(tp+fp),2) as "Cor", 	
+				round(2*tp/(2*tp+fn+fp),2) as "F1",
+				round(1.25*tp/(1.25*tp+0.25*fn+fp),2) as "F0,5", 	
+				round(tp/(tp+fn+fp),2) as "CSI"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.name=mp.name
+				and mp.name=fp.name
+				and fp.name=oi.name
+				and oi.name=pm.name
+				and pm.name=fm.name
+			order by "CSI" desc, cp.name;
+
+
+[2.4.2] Gewichtung (Typ)
+
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select m.type, a.name, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(type, name, tp) as (
+				select ts.type, ts.name, count(mp.uuid)::numeric
+				from
+					(select distinct m1.type, a1.name
+					from mapping_merge m1, areas a1
+					) as ts
+				left join matching_points mp
+					on ts.type=mp.type
+						and ts.name=mp.name
+				group by ts.type, ts.name
+			), missing_points(type, name, fn) as (
+				select ts.type, ts.name, count(fn.uuid)::numeric
+				from
+					(select distinct m1.type, a1.name
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.name, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fn
+					on ts.type=fn.type
+						and ts.name=fn.name
+				group by ts.type, ts.name
+			), false_points(type, name, fp) as (
+				select ts.type, ts.name, count(fp.uuid)::numeric
+				from
+					(select distinct o1.type, a1.name
+					from osm_merge o1, areas a1
+					) as ts
+				left join
+				(select o2.type, a2.name, o2.uuid
+				from osm_merge o2, areas a2
+				where o2.aid=a2.aid
+					and o2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fp
+					on ts.type=fp.type
+						and ts.name=fp.name
+				group by ts.type, ts.name
+			), osm_import (type, name, osmimp) as (	
+				select ts.type, ts.name, count(oi.uuid)::numeric
+				from
+					(select distinct m1.type, a1.name
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.name, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='osmimp'
+				) as oi
+					on ts.type=oi.type
+						and ts.name=oi.name
+				group by ts.type, ts.name
+			), premapping (type, name, premap) as (		
+				select ts.type, ts.name, count(pm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.name
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.name, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='premap'
+				) as pm
+					on ts.type=pm.type
+						and ts.name=pm.name
+				group by ts.type, ts.name
+			), fieldmapping (type, name, field) as (
+				select ts.type, ts.name, count(fm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.name
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.name, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='field'
+				) as fm
+					on ts.type=fm.type
+						and ts.name=fm.name
+				group by ts.type, ts.name
+			)
+			select cp.name,
+				round(avg(tp/nullif(tp+fn,0)),2) as "Com (tw)",
+				round(avg(tp/nullif(tp+fp,0)),2) as "Cor (tw)", 	
+				round(avg(2*tp/nullif(2*tp+fn+fp,0)),2) as "F1 (tw)",
+				round(avg(1.25*tp/nullif(1.25*tp+0.25*fn+fp,0)),2) as "F0,5 (tw)", 	
+				round(avg(tp/nullif(tp+fn+fp,0)),2) as "CSI (tw)"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.type=mp.type
+				and mp.type=fp.type
+				and fp.type=oi.type
+				and oi.type=pm.type
+				and pm.type=fm.type
+				and cp.name=mp.name
+				and mp.name=fp.name
+				and fp.name=oi.name
+				and oi.name=pm.name
+				and pm.name=fm.name
+			group by cp.name
+			order by "CSI (tw)" desc, cp.name;
+
+
+[2.5] Typanalyse
+		
+[2.5.1] Standard
+			
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select m.type, o.uuid
+				from mapping_merge m, osm_merge o
+				where o.cid=m.cid
+					and o.aid=m.aid
+			), correct_points(type, tp) as (
+				select mp.type, count(*)::numeric
+				from matching_points mp
+				group by mp.type
+			), missing_points(type, fn) as (
+				select m1.type, count(m2.uuid)::numeric
+				from mapping_merge m1
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by m1.type
+			), false_points(type, fp) as (
+				select o1.type, count(o2.uuid)::numeric
+				from osm_merge o1
+				left join osm_merge o2
+					on o1.uuid=o2.uuid
+						and o2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by o1.type
+			), osm_import (type, osmimp) as (				
+				select m1.type, count(m2.source)
+				from mapping_merge m1
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='osmimp'
+				group by m1.type
+			), premapping (type, premap) as (		
+				select m1.type, count(m2.source)
+				from mapping_merge m1
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='premap'
+				group by m1.type
+			), fieldmapping (type, field) as (
+				select m1.type, count(m2.source)
+				from mapping_merge m1
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='field'
+				group by m1.type	
+			)
+			select cp.type,
+				tp as "TP",
+				fn as "FN",
+				fp as "FP",
+				tp+fn as "#mapped_points",
+				osmimp as "-> #osmimp",
+				premap as "-> #premap",
+				field as "-> #field",
+				tp+fp as "#osm_points",
+				tp+fn+fp as "#all_points",
+				round(tp/(tp+fn),2) as "Com", 
+				round(tp/(tp+fp),2) as "Cor", 	
+				round(2*tp/(2*tp+fn+fp),2) as "F1",
+				round(1.25*tp/(1.25*tp+0.25*fn+fp),2) as "F0,5", 	
+				round(tp/(tp+fn+fp),2) as "CSI"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.type=mp.type
+				and mp.type=fp.type
+				and fp.type=oi.type
+				and oi.type=pm.type
+				and pm.type=fm.type
+			order by cp.type;
+
+
+[2.5.2] Gewichtung (Siedlungsstruktur)
+			
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select m.type, a.structure, o.uuid
+				from mapping_merge m, osm_merge o, areas a
+				where o.cid=m.cid
+					and o.aid=m.aid
+					and m.aid=a.aid
+			), correct_points(type, structure, tp) as (
+				select ts.type, ts.structure, count(mp.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join matching_points mp
+					on ts.type=mp.type
+						and ts.structure=mp.structure
+				group by ts.type, ts.structure
+			), missing_points(type, structure, fn) as (
+				select ts.type, ts.structure, count(fn.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fn
+					on ts.type=fn.type
+						and ts.structure=fn.structure
+				group by ts.type, ts.structure
+			), false_points(type, structure, fp) as (
+				select ts.type, ts.structure, count(fp.uuid)::numeric
+				from
+					(select distinct o1.type, a1.structure
+					from osm_merge o1, areas a1
+					) as ts
+				left join
+				(select o2.type, a2.structure, o2.uuid
+				from osm_merge o2, areas a2
+				where o2.aid=a2.aid
+					and o2.uuid not in (
+						select mp.uuid
+						from matching_points mp
+						)
+				) as fp
+					on ts.type=fp.type
+						and ts.structure=fp.structure
+				group by ts.type, ts.structure
+			), osm_import (type, structure, osmimp) as (	
+				select ts.type, ts.structure, count(oi.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='osmimp'
+				) as oi
+					on ts.type=oi.type
+						and ts.structure=oi.structure
+				group by ts.type, ts.structure
+			), premapping (type, structure, premap) as (		
+				select ts.type, ts.structure, count(pm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='premap'
+				) as pm
+					on ts.type=pm.type
+						and ts.structure=pm.structure
+				group by ts.type, ts.structure
+			), fieldmapping (type, structure, field) as (
+				select ts.type, ts.structure, count(fm.uuid)::numeric
+				from
+					(select distinct m1.type, a1.structure
+					from mapping_merge m1, areas a1
+					) as ts
+				left join
+				(select m2.type, a2.structure, m2.uuid
+				from mapping_merge m2, areas a2
+				where m2.aid=a2.aid
+					and m2.source='field'
+				) as fm
+					on ts.type=fm.type
+						and ts.structure=fm.structure
+				group by ts.type, ts.structure
+			)
+			select cp.type,
+				round(avg(tp/nullif(tp+fn,0)),2) as "Com (sw)",
+				round(avg(tp/nullif(tp+fp,0)),2) as "Cor (sw)", 	
+				round(avg(2*tp/nullif(2*tp+fn+fp,0)),2) as "F1 (sw)",
+				round(avg(1.25*tp/nullif(1.25*tp+0.25*fn+fp,0)),2) as "F0,5 (sw)", 	
+				round(avg(tp/nullif(tp+fn+fp,0)),2) as "CSI (sw)"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.type=mp.type
+				and mp.type=fp.type
+				and fp.type=oi.type
+				and oi.type=pm.type
+				and pm.type=fm.type
+				and cp.structure=mp.structure
+				and mp.structure=fp.structure
+				and fp.structure=oi.structure
+				and oi.structure=pm.structure
+				and pm.structure=fm.structure
+			group by cp.type;
+
+
+[2.5.3] Subtypanalyse
+		
+[2.5.3.1] Standard
+			
+			- Query Tool (realosm/postgres@BA):
+			with matching_points as (
+				select m.type, m.subtype, o.uuid
+				from mapping_merge m, osm_merge o
+				where o.cid=m.cid
+					and o.aid=m.aid
+			), correct_points(type, subtype, tp) as (
+				select mp.type, mp.subtype, count(*)::numeric
+				from matching_points mp
+				group by mp.type, mp.subtype
+				order by mp.type
+			), missing_points(type, subtype, fn) as (
+				select m1.type, m1.subtype, count(m2.uuid)::numeric
+				from mapping_merge m1
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by m1.type, m1.subtype
+			), false_points(type, subtype, fp) as (
+				select o1.type, o1.subtype, count(o2.uuid)::numeric
+				from osm_merge o1
+				left join osm_merge o2
+					on o1.uuid=o2.uuid
+						and o2.uuid not in (
+							select mp.uuid
+							from matching_points mp
+						)
+				group by o1.type, o1.subtype
+			), osm_import (type, subtype, osmimp) as (				
+				select m1.type, m1.subtype, count(m2.source)
+				from mapping_merge m1
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='osmimp'
+				group by m1.type, m1.subtype
+			), premapping (type, subtype, premap) as (		
+				select m1.type, m1.subtype, count(m2.source)
+				from mapping_merge m1
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='premap'
+				group by m1.type, m1.subtype
+			), fieldmapping (type, subtype, field) as (
+				select m1.type, m1.subtype, count(m2.source)
+				from mapping_merge m1
+				left join mapping_merge m2
+					on m1.uuid=m2.uuid
+						and m2.source='field'
+				group by m1.type, m1.subtype
+			)
+			select cp.type,
+				cp.subtype,
+				tp as "TP",
+				fn as "FN",
+				fp as "FP",
+				tp+fn as "#mapped_points",
+				osmimp as "-> #osmimp",
+				premap as "-> #premap",
+				field as "-> #field",
+				tp+fp as "#osm_points",
+				tp+fn+fp as "#all_points",
+				round(tp/(tp+fn),2) as "Com", 
+				round(tp/(tp+fp),2) as "Cor", 	
+				round(2*tp/(2*tp+fn+fp),2) as "F1",
+				round(1.25*tp/(1.25*tp+0.25*fn+fp),2) as "F0,5", 	
+				round(tp/(tp+fn+fp),2) as "CSI"
+			from correct_points cp, missing_points mp, false_points fp, osm_import oi, premapping pm, fieldmapping fm
+			where cp.subtype=mp.subtype
+				and mp.subtype=fp.subtype
+				and fp.subtype=oi.subtype
+				and oi.subtype=pm.subtype
+				and pm.subtype=fm.subtype
+			order by cp.type, cp.subtype;

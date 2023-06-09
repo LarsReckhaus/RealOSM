@@ -1,0 +1,1679 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-03-17T20:28:22Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24419644",
+        "leisure": "playground",
+        "name": "Spielplatz an der Konradkirche",
+        "operator": "Stadt Münster",
+        "source": "extrapolation",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6781722,
+          51.9631472
+        ]
+      },
+      "id": "way/24419644"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24483457",
+        "leisure": "playground",
+        "name": "Spielplatz Parkallee",
+        "operator": "Stadt Münster",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6807241,
+          51.9611833
+        ]
+      },
+      "id": "way/24483457"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24845207",
+        "landuse": "village_green",
+        "name": "Erikaplatz",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6726495,
+          51.9592331
+        ]
+      },
+      "id": "way/24845207"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24845209",
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "82a",
+        "addr:postcode": "48155",
+        "addr:street": "Hans-Bredow-Weg",
+        "leisure": "playground",
+        "name": "Spielplatz Hans-Bredow-Weg",
+        "operator": "Stadt Münster",
+        "source": "NRW Atlas",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6708256,
+          51.9577178
+        ]
+      },
+      "id": "way/24845209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24977549",
+        "fixme": "Spielplatz Gallenkamp",
+        "leisure": "playground",
+        "name": "Gausepohl",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6637635,
+          51.9592868
+        ]
+      },
+      "id": "way/24977549"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/25118200",
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "16a",
+        "addr:postcode": "48155",
+        "addr:street": "Brentanoweg",
+        "leisure": "playground",
+        "name": "Spielplatz Margarethenschule",
+        "operator": "Stadt Münster",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6738145,
+          51.9524366
+        ]
+      },
+      "id": "way/25118200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/60951632",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "An der Konradkirche",
+        "network": "WestfalenTarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:43021:0:01",
+        "website": "https://www.stadtwerke-muenster.de/fis/4302101"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6762795,
+          51.963903
+        ]
+      },
+      "id": "node/60951632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/60951634",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Adlerhorst",
+        "network": "WestfalenTarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:43631:0:01;de:05515:43631:0:02",
+        "website": "https://www.stadtwerke-muenster.de/fis/monitor.php?mastids=4363101;4363102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6770497,
+          51.9664541
+        ]
+      },
+      "id": "node/60951634"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/181146089",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.656477,
+          51.9503507
+        ]
+      },
+      "id": "way/181146089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/235138568",
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "25a",
+        "addr:postcode": "48155",
+        "addr:street": "Mühlhäuser Straße",
+        "leisure": "playground",
+        "name": "Spielplatz Mühlhäuser Straße",
+        "note": "Gibt es diesen Spielplatz noch?",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6657453,
+          51.9503606
+        ]
+      },
+      "id": "way/235138568"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/255241208",
+        "leisure": "playground",
+        "operator": "CVJM Münster e.V.",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6654105,
+          51.9583921
+        ]
+      },
+      "id": "way/255241208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/255526100",
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "25",
+        "addr:postcode": "48155",
+        "addr:street": "Merschkamp",
+        "amenity": "kindergarten",
+        "building": "kindergarten",
+        "name": "Johannes-Busch-Haus",
+        "operator": "CVJM Münster e.V.",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6651359,
+          51.9583151
+        ]
+      },
+      "id": "way/255526100"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/258647849",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6686574,
+          51.9549201
+        ]
+      },
+      "id": "way/258647849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/259559344",
+        "leisure": "playground",
+        "name": "Spielplatz Wolbecker Straße",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6663057,
+          51.95053
+        ]
+      },
+      "id": "way/259559344"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/265221090",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "An der Konradkirche",
+        "network": "WestfalenTarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:43021:0:02",
+        "website": "https://www.stadtwerke-muenster.de/fis/4302102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6759629,
+          51.9628697
+        ]
+      },
+      "id": "node/265221090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268850604",
+        "brand": "EDEKA",
+        "brand:wikidata": "Q701755",
+        "brand:wikipedia": "de:Edeka",
+        "description": "Edekamarkt Tinz",
+        "name": "EDEKA",
+        "opening_hours": "Mo-Sa 07:30-21:00",
+        "phone": "+49 251 316974",
+        "shop": "supermarket",
+        "website": "https://www.edeka.de/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6763564,
+          51.9612243
+        ]
+      },
+      "id": "node/268850604"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269842320",
+        "brand": "EDEKA",
+        "brand:wikidata": "Q701755",
+        "brand:wikipedia": "de:Edeka",
+        "name": "Edeka",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6684925,
+          51.9512884
+        ]
+      },
+      "id": "node/269842320"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269940990",
+        "name": "Schrunz",
+        "opening_hours": "Mo-Fr 06:00-19:00; Sa 06:00-17:00; Su 06:00-19:00",
+        "phone": "+49 251 381379",
+        "shop": "bakery",
+        "website": "https://schrunz.de",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6759541,
+          51.9607979
+        ]
+      },
+      "id": "node/269940990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/269941012",
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "81",
+        "addr:postcode": "48155",
+        "addr:street": "Mondstraße",
+        "amenity": "pharmacy",
+        "contact:email": "info@park-apotheke-muenster.de",
+        "contact:fax": "+49 251 381238",
+        "contact:phone": "+49 251 381237",
+        "contact:website": "https://www.park-apotheke-muenster.de/",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Park-Apotheke",
+        "opening_hours": "Mo-Fr 08:00-13:00,14:00-18:30; Sa 08:00-13:00",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6759458,
+          51.9606079
+        ]
+      },
+      "id": "node/269941012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271405703",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "ms_fis_id": "3032",
+        "name": "Frauenburgstraße",
+        "network": "WestfalenTarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:43031:0:02",
+        "share_taxi": "yes",
+        "share_taxi:phone": "+49 251 694-5000",
+        "shelter": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/monitor.php?mastids=4303101;4303102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.669481,
+          51.9608395
+        ]
+      },
+      "id": "node/271405703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/271405731",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Maikottenweg",
+        "network": "WestfalenTarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:43120:0:02",
+        "share_taxi": "yes",
+        "share_taxi:phone": "+49 251 694-5000",
+        "website": "https://www.stadtwerke-muenster.de/fis/monitor.php?mastids=4312001;4312002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6677187,
+          51.9569136
+        ]
+      },
+      "id": "node/271405731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/288385694",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "local_ref": "B",
+        "name": "Sankt Mauritz",
+        "network": "WestfalenTarif",
+        "network:short": "WT",
+        "network:wikidata": "Q27926285",
+        "network:wikipedia": "de:Westfalentarif",
+        "operator": "Stadtwerke Münster GmbH",
+        "public_transport": "platform",
+        "ref": "B",
+        "ref:IFOPT": "de:05515:42361:2:B",
+        "shelter": "no",
+        "short_name": "St. Mauritz",
+        "tactile_paving": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/4236102",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6750931,
+          51.9705805
+        ]
+      },
+      "id": "node/288385694"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/295671792",
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "40",
+        "addr:postcode": "48155",
+        "addr:street": "Heinrich-Lersch-Weg",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6756313,
+          51.9535545
+        ]
+      },
+      "id": "way/295671792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/337959169",
+        "amenity": "school",
+        "description": "Städtische Gemeinschaftsgrundschule",
+        "name": "Margaretenschule",
+        "school": "primary",
+        "school:de": "Grundschule",
+        "website": "https://www.margaretenschule.de/",
+        "wheelchair": "no",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6739918,
+          51.9519823
+        ]
+      },
+      "id": "way/337959169"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/340387352",
+        "amenity": "kindergarten",
+        "name": "Kita St. Margareta",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6755783,
+          51.9505448
+        ]
+      },
+      "id": "way/340387352"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/350070040",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6702261,
+          51.9666454
+        ]
+      },
+      "id": "way/350070040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/393233967",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6764192,
+          51.9672843
+        ]
+      },
+      "id": "way/393233967"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/393233971",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6762888,
+          51.9663373
+        ]
+      },
+      "id": "way/393233971"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/393233974",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6765277,
+          51.9676953
+        ]
+      },
+      "id": "way/393233974"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/430810091",
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "129a",
+        "addr:postcode": "48155",
+        "addr:street": "Hegerskamp",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6723269,
+          51.9481797
+        ]
+      },
+      "id": "way/430810091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/476764715",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.670523,
+          51.9503935
+        ]
+      },
+      "id": "way/476764715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1051094230",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Sankt Margareta-Kirche",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43091:2:y",
+        "shelter": "yes",
+        "short_name": "St. Margareta-Kirche",
+        "website": "https://www.stadtwerke-muenster.de/fis/4309102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6698144,
+          51.9514598
+        ]
+      },
+      "id": "node/1051094230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1051094886",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Sankt Margareta-Kirche",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43091:1:x",
+        "shelter": "yes",
+        "short_name": "St. Margareta-Kirche",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/4309101",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6706919,
+          51.9509417
+        ]
+      },
+      "id": "node/1051094886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1064077210",
+        "amenity": "kindergarten",
+        "name": "Ev. Kindertageseinrichtung Paul Schneider Haus",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6732759,
+          51.9469801
+        ]
+      },
+      "id": "way/1064077210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1080956088",
+        "amenity": "kindergarten",
+        "designation": "Kindergarten",
+        "name": "St. Konrad Kindergarten",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6771588,
+          51.9633517
+        ]
+      },
+      "id": "way/1080956088"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1080956723",
+        "amenity": "school",
+        "description": "Katholische Grundschule",
+        "name": "Pleisterschule",
+        "school": "primary",
+        "school:de": "Grundschule",
+        "website": "https://www.pleisterschule.de/",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6780903,
+          51.9637536
+        ]
+      },
+      "id": "way/1080956723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1205808896",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "local_ref": "A",
+        "name": "Mondstraße",
+        "public_transport": "platform",
+        "ref": "A",
+        "ref:IFOPT": "de:05515:43080:1:A",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4308002",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6747779,
+          51.9497756
+        ]
+      },
+      "id": "node/1205808896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1205808897",
+        "bus": "yes",
+        "local_ref": "B",
+        "name": "Mondstraße",
+        "public_transport": "platform",
+        "ref": "B",
+        "ref:IFOPT": "de:05515:43080:2:B",
+        "shelter": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/4308001",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6758982,
+          51.9498468
+        ]
+      },
+      "id": "node/1205808897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1205808898",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "local_ref": "C",
+        "name": "Mondstraße",
+        "public_transport": "platform",
+        "ref": "C",
+        "ref:IFOPT": "de:05515:43080:3:C",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4308003",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6759236,
+          51.9491797
+        ]
+      },
+      "id": "node/1205808898"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1238495774",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Im Drostebusch",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43051:0:01",
+        "shelter": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4305101",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6771504,
+          51.9563041
+        ]
+      },
+      "id": "node/1238495774"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1238495775",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Im Drostebusch",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43051:0:02",
+        "shelter": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/4305102",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6769506,
+          51.9562549
+        ]
+      },
+      "id": "node/1238495775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1597502621",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "ms_fis_id": "3102",
+        "name": "Institut der Feuerwehr",
+        "old_name": "Lohausweg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43101:0:01",
+        "shelter": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/4310101"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6598347,
+          51.9539385
+        ]
+      },
+      "id": "node/1597502621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1597502623",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "ms_fis_id": "3101",
+        "name": "Institut der Feuerwehr",
+        "old_name": "Lohausweg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43101:0:02",
+        "shelter": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/4310102",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6600998,
+          51.9540323
+        ]
+      },
+      "id": "node/1597502623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1853451883",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "ms_fis_id": "3042",
+        "name": "Erikaweg / WDR",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43041:0:01",
+        "shelter": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/4304101",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6761397,
+          51.9592226
+        ]
+      },
+      "id": "node/1853451883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1853451884",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "local_ref": "A",
+        "name": "Tannenhof",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43010:1:A",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4301001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6778099,
+          51.9686596
+        ]
+      },
+      "id": "node/1853451884"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2082278751",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "A",
+        "name": "Gallenkamp",
+        "network": "WestfalenTarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "share_taxi": "yes",
+        "share_taxi:phone": "+49 251 694-5000",
+        "website": "https://www.stadtwerke-muenster.de/fis/4313102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6633695,
+          51.9567885
+        ]
+      },
+      "id": "node/2082278751"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2302343001",
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "220-226",
+        "addr:postcode": "48155",
+        "addr:street": "Wolbecker Straße",
+        "brand": "Netto Marken-Discount",
+        "brand:wikidata": "Q879858",
+        "brand:wikipedia": "de:Netto Marken-Discount",
+        "name": "Netto Marken-Discount",
+        "opening_hours": "Mo-Sa 07:00-21:00",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6657057,
+          51.9516375
+        ]
+      },
+      "id": "node/2302343001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2302343015",
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "300",
+        "addr:postcode": "48155",
+        "addr:street": "Wolbecker Straße",
+        "name": "Schrunz",
+        "shop": "bakery",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6696573,
+          51.951119
+        ]
+      },
+      "id": "node/2302343015"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2420826265",
+        "addr:city": "Münster",
+        "addr:country": "DE",
+        "addr:housenumber": "226",
+        "addr:postcode": "48155",
+        "addr:street": "Wolbecker Straße",
+        "amenity": "pharmacy",
+        "dispensing": "yes",
+        "healthcare": "pharmacy",
+        "name": "Margareten-Apotheke",
+        "operator": "Sylke Bergmann",
+        "website": "https://www.margareten-apotheke.de/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.665959,
+          51.9510509
+        ]
+      },
+      "id": "node/2420826265"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2541192250",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "local_ref": "A",
+        "name": "Sankt Mauritz",
+        "public_transport": "platform",
+        "ref": "A",
+        "ref:IFOPT": "de:05515:42361:1:A",
+        "shelter": "no",
+        "short_name": "St. Mauritz",
+        "tactile_paving": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6771803,
+          51.9707566
+        ]
+      },
+      "id": "node/2541192250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2542822943",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Adlerhorst",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43631:0:02",
+        "website": "https://www.stadtwerke-muenster.de/fis/4363102",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6768178,
+          51.9659375
+        ]
+      },
+      "id": "node/2542822943"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2542822948",
+        "bus": "yes",
+        "name": "Adlerhorst",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43631:0:01",
+        "website": "https://www.stadtwerke-muenster.de/fis/4363101",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6772277,
+          51.9666409
+        ]
+      },
+      "id": "node/2542822948"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2542822952",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "name": "An der Konradkirche",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43021:0:01",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4302101",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6763688,
+          51.9638954
+        ]
+      },
+      "id": "node/2542822952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2542822957",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "An der Konradkirche",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43021:0:02",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4302102",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6758815,
+          51.9628759
+        ]
+      },
+      "id": "node/2542822957"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2542822961",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "name": "Brentanoweg",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43061:0:02",
+        "shelter": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/4306102",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6765817,
+          51.9533556
+        ]
+      },
+      "id": "node/2542822961"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2542822965",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "covered": "no",
+        "name": "Brentanoweg",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43061:0:01",
+        "shelter": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4306101",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6768973,
+          51.953437
+        ]
+      },
+      "id": "node/2542822965"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2542822969",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Erikaweg / WDR",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43041:0:02",
+        "shelter": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/4304102",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6758191,
+          51.9593495
+        ]
+      },
+      "id": "node/2542822969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2542900460",
+        "bus": "yes",
+        "name": "Maikottenweg",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43120:0:02",
+        "website": "https://www.stadtwerke-muenster.de/fis/monitor.php?mastids=4312001;4312002",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6677691,
+          51.9568956
+        ]
+      },
+      "id": "node/2542900460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2994129819",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Brentanoweg",
+        "network": "WestfalenTarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:43061:0:01;de:05515:43061:0:02",
+        "website": "https://www.stadtwerke-muenster.de/fis/monitor.php?mastids=4306101;4306102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6767506,
+          51.9533663
+        ]
+      },
+      "id": "node/2994129819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4313285191",
+        "brand": "Hosselmann",
+        "brand:wikidata": "Q107203160",
+        "name": "Hosselmann",
+        "shop": "bakery",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6683243,
+          51.9513216
+        ]
+      },
+      "id": "node/4313285191"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4580421952",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Im Drostebusch",
+        "network": "WestfalenTarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:43051:0:01;de:05515:43051:0:02",
+        "website": "https://www.stadtwerke-muenster.de/fis/monitor.php?mastids=4305101;4305102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6770412,
+          51.9562768
+        ]
+      },
+      "id": "node/4580421952"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4582145261",
+        "bus": "yes",
+        "name": "Frauenburgstraße",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43031:0:02",
+        "shelter": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/monitor.php?mastids=4303101;4303102",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6695484,
+          51.9608406
+        ]
+      },
+      "id": "node/4582145261"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4737084896",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "B",
+        "name": "Gallenkamp",
+        "network": "WestfalenTarif",
+        "note": "Ladestation für den Elektrobus",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:43131:0:02",
+        "tactile_paving": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4313102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6658322,
+          51.9560044
+        ]
+      },
+      "id": "node/4737084896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4737084897",
+        "bench": "no",
+        "bus": "yes",
+        "covered": "no",
+        "local_ref": "B",
+        "name": "Gallenkamp",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:43131:0:02",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4313102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6657619,
+          51.9559212
+        ]
+      },
+      "id": "node/4737084897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5913610829",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Sankt Mauritz",
+        "network": "WestfalenTarif",
+        "network:short": "WT",
+        "network:wikidata": "Q27926285",
+        "network:wikipedia": "de:Westfalentarif",
+        "operator": "Stadtwerke Münster GmbH",
+        "public_transport": "platform",
+        "ref": "C",
+        "ref:IFOPT": "de:05515:42361:3:C",
+        "website": "https://www.stadtwerke-muenster.de/fis/4236103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6761671,
+          51.9710865
+        ]
+      },
+      "id": "node/5913610829"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6152287685",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "B",
+        "name": "Mondstraße",
+        "network": "WestfalenTarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:43080:2:B",
+        "website": "https://www.stadtwerke-muenster.de/fis/4308001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6757902,
+          51.9498794
+        ]
+      },
+      "id": "node/6152287685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6153574717",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Sankt Mauritz",
+        "network": "WestfalenTarif",
+        "network:short": "WT",
+        "network:wikidata": "Q27926285",
+        "network:wikipedia": "de:Westfalentarif",
+        "operator": "Stadtwerke Münster GmbH",
+        "public_transport": "platform",
+        "ref": "D",
+        "ref:IFOPT": "de:05515:42361:4:D",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4236104"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.676843,
+          51.9696909
+        ]
+      },
+      "id": "node/6153574717"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6153574718",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "D",
+        "name": "Sankt Mauritz",
+        "network": "WestfalenTarif",
+        "network:short": "WT",
+        "network:wikidata": "Q27926285",
+        "network:wikipedia": "de:Westfalentarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:42361:4:D",
+        "short_name": "St. Mauritz",
+        "website": "https://www.stadtwerke-muenster.de/fis/4236104"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6769227,
+          51.9697021
+        ]
+      },
+      "id": "node/6153574718"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6153574719",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "C",
+        "name": "Sankt Mauritz",
+        "network": "WestfalenTarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:42361:3:C",
+        "short_name": "St. Mauritz",
+        "website": "https://www.stadtwerke-muenster.de/fis/4236103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6760047,
+          51.971126
+        ]
+      },
+      "id": "node/6153574719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6351685604",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "A",
+        "name": "Tannenhof",
+        "network": "WestfalenTarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "stop_position",
+        "ref:IFOPT": "de:05515:43010:1:A",
+        "website": "https://www.stadtwerke-muenster.de/fis/4301001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6778247,
+          51.9686103
+        ]
+      },
+      "id": "node/6351685604"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9121657807",
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Pulverschuppen",
+        "network": "WestfalenTarif",
+        "network:short": "WT",
+        "network:wikidata": "Q27926285",
+        "network:wikipedia": "de:Westfalentarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:42371:0:01",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4237102",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6645221,
+          51.9683058
+        ]
+      },
+      "id": "node/9121657807"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9121657808",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Pulverschuppen",
+        "network": "WestfalenTarif",
+        "network:short": "WT",
+        "network:wikidata": "Q27926285",
+        "network:wikipedia": "de:Westfalentarif",
+        "operator": "Stadtwerke Münster",
+        "public_transport": "platform",
+        "ref:IFOPT": "de:05515:42371:0:02",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "website": "https://www.stadtwerke-muenster.de/fis/4237102",
+        "wheelchair": "limited",
+        "wheelchair:description:de": "Hochbordstein, kein Buskapstein"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6647887,
+          51.9685654
+        ]
+      },
+      "id": "node/9121657808"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9502842366",
+        "bench": "no",
+        "highway": "bus_stop",
+        "name": "Mühlhäuser Straße",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/monitor.php?mastids=4309202;4309201"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6657604,
+          51.9518847
+        ]
+      },
+      "id": "node/9502842366"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9502842369",
+        "bench": "no",
+        "highway": "bus_stop",
+        "name": "Mühlhäuser Straße",
+        "passenger_information_display": "no",
+        "public_transport": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes",
+        "website": "https://www.stadtwerke-muenster.de/fis/monitor.php?mastids=4309202;4309201"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6653614,
+          51.9522508
+        ]
+      },
+      "id": "node/9502842369"
+    }
+  ]
+}

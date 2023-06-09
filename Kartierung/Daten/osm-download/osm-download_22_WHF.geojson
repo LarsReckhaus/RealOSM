@@ -1,0 +1,572 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-04-04T10:34:23Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/243742987",
+        "addr:housenumber": "14",
+        "addr:street": "Schulstraße",
+        "amenity": "school",
+        "building": "yes",
+        "email": "morgenstern.gs@web.de",
+        "name": "Christian Morgenstern Grundschule",
+        "opening_hours": "Mo 8:30-12:30; Th 8:30-12:30",
+        "phone": "+49 6220 50942",
+        "source:geometry": "LGL, www.lgl-bw.de",
+        "website": "https://www.grundschule-wilhelmsfeld.de/",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7631913,
+          49.4655473
+        ]
+      },
+      "id": "way/243742987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/243742988",
+        "addr:housenumber": "11",
+        "addr:street": "Schulstraße",
+        "amenity": "kindergarten",
+        "building": "yes",
+        "name": "Eulennest",
+        "source:geometry": "LGL, www.lgl-bw.de",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7618752,
+          49.4661648
+        ]
+      },
+      "id": "way/243742988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/277176557",
+        "leisure": "park",
+        "name": "José-Rizal-Park",
+        "name:de": "José-Rizal-Park",
+        "name:en": "Rizal Park",
+        "short_name": "Rizal-Park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7624445,
+          49.4651069
+        ]
+      },
+      "id": "way/277176557"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/304645532",
+        "bench": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wilhelmsfeld Rathaus",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "WFRH",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "uic_ref": "510630",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7608706,
+          49.4656719
+        ]
+      },
+      "id": "node/304645532"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/304645533",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wilhelmsfeld Wilhelmshöhe",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "WFWH",
+        "shelter": "no",
+        "source:position": "Bing 2012",
+        "uic_ref": "510633",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.758313,
+          49.4681982
+        ]
+      },
+      "id": "node/304645533"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/311875206",
+        "access": "yes",
+        "leisure": "playground",
+        "opening_hours": "08:00-20:00",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7707957,
+          49.4635604
+        ]
+      },
+      "id": "way/311875206"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/327128079",
+        "access": "yes",
+        "leisure": "playground",
+        "opening_hours": "08:00-20:00",
+        "source:geometry": "Bing 2012",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7551724,
+          49.4754403
+        ]
+      },
+      "id": "way/327128079"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/340782758",
+        "leisure": "garden",
+        "source:geometry": "Bing 2012",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7596649,
+          49.4769347
+        ]
+      },
+      "id": "way/340782758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/347675800",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7631837,
+          49.4663384
+        ]
+      },
+      "id": "way/347675800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/372941462",
+        "bench": "no",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Wilhelmsfeld Schriesheimer Hof",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "WFSH",
+        "shelter": "no",
+        "tactile_paving": "no",
+        "uic_ref": "510631"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.754163,
+          49.4702203
+        ]
+      },
+      "id": "node/372941462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/372941464",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Wilhelmsfeld Schriesheimer Hof",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "WFSH",
+        "shelter": "yes",
+        "tactile_paving": "no",
+        "uic_ref": "510631"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7544485,
+          49.4702837
+        ]
+      },
+      "id": "node/372941464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/372941469",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wilhelmsfeld Wilhelmshöhe",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "WFWH",
+        "shelter": "no",
+        "source:position": "Bing 2012",
+        "uic_ref": "510633",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7581598,
+          49.4681164
+        ]
+      },
+      "id": "node/372941469"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/372941470",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wilhelmsfeld Rathaus",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "WFRH",
+        "shelter": "no",
+        "uic_ref": "510630",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7607339,
+          49.4655684
+        ]
+      },
+      "id": "node/372941470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/372945216",
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wilhelmsfeld Autohalle",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "WFAU",
+        "shelter": "yes",
+        "uic_name": "Autohalle, Wilhelmsfeld",
+        "uic_ref": "510627",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7635808,
+          49.4630185
+        ]
+      },
+      "id": "node/372945216"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/372945219",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wilhelmsfeld Unterdorf",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "public_transport": "platform",
+        "shelter": "no",
+        "uic_ref": "510632"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7728335,
+          49.4666361
+        ]
+      },
+      "id": "node/372945219"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/372945223",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wilhelmsfeld Unterdorf",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "uic_ref": "510632"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7723773,
+          49.4666316
+        ]
+      },
+      "id": "node/372945223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/417101744",
+        "access": "yes",
+        "leisure": "playground",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7560657,
+          49.469857
+        ]
+      },
+      "id": "way/417101744"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/551472710",
+        "leisure": "garden",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7821673,
+          49.4701596
+        ]
+      },
+      "id": "way/551472710"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/672566765",
+        "name": "Wilka Zimmermann",
+        "opening_hours": "Mo-Fr 08:30-13:00,15:00-18:30; Sa 07:30-13:00; Su,PH off",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7578372,
+          49.4685631
+        ]
+      },
+      "id": "node/672566765"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1089883275",
+        "leisure": "park",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7609389,
+          49.4608824
+        ]
+      },
+      "id": "way/1089883275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2347554493",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wilhelmsfeld Autohalle",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "WFAU",
+        "shelter": "yes",
+        "source": "HiRes aerial imagery",
+        "uic_ref": "510627",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7633535,
+          49.4631526
+        ]
+      },
+      "id": "node/2347554493"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2347554498",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Wilhelmsfeld Autohalle",
+        "network": "Verkehrsverbund Rhein-Neckar",
+        "network:guid": "DE-BW-VRN",
+        "network:short": "VRN",
+        "network:wikidata": "Q1553051",
+        "public_transport": "platform",
+        "ref:RNV:RBL": "WFAU",
+        "shelter": "no",
+        "source": "HiRes aerial imagery",
+        "uic_name": "Autohalle, Wilhelmsfeld",
+        "uic_ref": "510627",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7631102,
+          49.4632899
+        ]
+      },
+      "id": "node/2347554498"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2510478688",
+        "addr:city": "Wilhelmsfeld",
+        "addr:housenumber": "105",
+        "addr:postcode": "69259",
+        "addr:street": "Johann-Wilhelm-Straße",
+        "name": "Bäckerei Bernauer",
+        "opening_hours": "Mo-Sa 06:00-13:00, Mo,Tu,Th,Fr 15:00-18:00",
+        "shop": "bakery",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7559856,
+          49.4689662
+        ]
+      },
+      "id": "node/2510478688"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2510478695",
+        "amenity": "kindergarten",
+        "email": "wilhelmsfeld@postillion.org",
+        "fax": "+49 6220 52171-29",
+        "name": "Postillion e.V. Kinderkrippe",
+        "phone": "+49 6220 52171-0",
+        "website": "https://www.postillion.org/wilhelmsfeld/index.shtml",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7554703,
+          49.4690501
+        ]
+      },
+      "id": "node/2510478695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4346607327",
+        "addr:housenumber": "2",
+        "addr:street": "Angelhofweg",
+        "amenity": "kindergarten",
+        "name": "Krippe Angelhofweg",
+        "website": "https://www.postillion.org/wilhelmsfeld/krippe.shtml"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.7502883,
+          49.4762436
+        ]
+      },
+      "id": "node/4346607327"
+    }
+  ]
+}
